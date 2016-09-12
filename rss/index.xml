@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>http://jser.info/</link>
     <atom:link href="http://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Sep 2016 00:46:41 +0900</pubDate>
-    <lastBuildDate>Tue, 13 Sep 2016 00:46:41 +0900</lastBuildDate>
+    <pubDate>Tue, 13 Sep 2016 07:36:15 +0900</pubDate>
+    <lastBuildDate>Tue, 13 Sep 2016 07:36:15 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -41,6 +41,8 @@
 &lt;/ul&gt;
 
 &lt;p&gt;どちらもα版といった感じですが、気になる方はためしてみると良いかもしれません。&lt;/p&gt;
+
+&lt;p&gt;追記: &lt;a href=&quot;http://gfx.hatenablog.com/entry/2016/09/12/232554&quot; title=&quot;dts-gen(1) でJavaScripファイルからdtsを生成する - Islands in the byte stream&quot;&gt;dts-gen(1) でJavaScripファイルからdtsを生成する - Islands in the byte stream&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
