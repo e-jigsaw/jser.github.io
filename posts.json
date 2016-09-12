@@ -1,4 +1,11 @@
 [{
+"title":"2016-09-12のJS: Polymer 2.0 Preview、Service Worker入門、JSから型定義ファイルの生成",
+"url":"http://jser.info/2016/09/12/polymer-20aservice-workerjs/",
+"date":"2016-09-12T20:19:00+09:00",
+"content":"JSer.info #296 - Polymer 2.0 Previewがリリースされました。...",
+"category":"JSer",
+"tags":["Polymer","WebComponent","ServiceWorker","Flow","TypeScript"]
+},{
 "title":"2016-09-05のJS: Babili α、TypeScript 2.0 RC、Sass 3.5 RC",
 "url":"http://jser.info/2016/09/05/babili-atypescript20-rcsass-35-rc/",
 "date":"2016-09-05T19:41:00+09:00",

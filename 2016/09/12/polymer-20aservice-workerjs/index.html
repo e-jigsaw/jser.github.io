@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2016-09-12のJS: Polymer 2.0 Preview、Service Worker入門、JSから型定義ファイルの生成 - JSer.info</title>
+    <meta name="description" content="JSer.info #296 - Polymer 2.0 Previewがリリースされました。">
+    
+    <meta name="keywords" content="Polymer,WebComponent,ServiceWorker,Flow,TypeScript" />
+    
+    <meta name="author" content="azu">
+    
+      <meta content="2016-09-12T20:19:00+09:00" property="article:published_time">
+      <meta content="http://jser.info/about/" property="article:author">
+    
+    
+      
+      <meta content="_i18n" property="article:section">
+      
+    
+    
+      
+      <meta content="Polymer" property="article:tag">
+      
+      <meta content="WebComponent" property="article:tag">
+      
+      <meta content="ServiceWorker" property="article:tag">
+      
+      <meta content="Flow" property="article:tag">
+      
+      <meta content="TypeScript" property="article:tag">
+      
+    
+
+    
+    <link rel="canonical" href="http://jser.info/2016/09/12/polymer-20aservice-workerjs/">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jser.info/rss/">
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/public/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/public/img/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/index.css">
+    <!-- JavaScript -->
+    <script src="/public/js/switch-alt-link.js"></script>
+    <!-- Open graph tags -->
+<meta name="twitter:card" content="JSer.info #296 - Polymer 2.0 Previewがリリースされました。" />
+<meta name="twitter:site" content="@jser_info" />
+
+
+<meta property="og:title" content="2016-09-12のJS: Polymer 2.0 Preview、Service Worker入門、JSから型定義ファイルの生成">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://jser.info/2016/09/12/polymer-20aservice-workerjs/">
+<meta property="og:image" content="http://jser.info/media/logo.png">
+
+<meta property="og:description" content="JSer.info #296 - Polymer 2.0 Previewがリリースされました。">
+<meta property="og:site_name" content="JSer.info">
+
+
+
+<meta property="article:published_time" content="2016-09-12T20:19:00+09:00">
+
+<meta property="og:see_also" content="http://jser.info/2016/09/05/babili-atypescript20-rcsass-35-rc/">
+
+<meta property="og:see_also" content="http://jser.info/2016/08/30/pixijs-babel-jsframwork/">
+
+<meta property="og:see_also" content="http://jser.info/2016/08/23/web-audio-apiangularjs-2-rc5ngmoduleproperty-based-testing/">
+
+
+
+
+
+<meta property="article:tag" content="Polymer">
+
+<meta property="article:tag" content="WebComponent">
+
+<meta property="article:tag" content="ServiceWorker">
+
+<meta property="article:tag" content="Flow">
+
+<meta property="article:tag" content="TypeScript">
+
+
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+<script async>
+    window.ga = window.ga || function () {
+                (ga.q = ga.q || []).push(arguments)
+            };
+    ga.l = +new Date;
+    ga('create', 'UA-2184335-9', 'auto');
+    ga('send', 'pageview');
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = Array.prototype.slice.call(document.querySelectorAll("a[href^='http']:not([href*='jser.info'])"));
+        // add _blank and track
+        links.forEach(function (link) {
+            if (!link.target) {
+                link.target = "_blank";
+            }
+            link.addEventListener("click", function (event) {
+                var elementTarget = event.target;
+                var url = elementTarget.href;
+                ga('send', 'event', 'outbound', 'click', url);
+            });
+        });
+    });
+</script>
+
+</head>
+
+
+<body>
+<header>
+    <a href="https://github.com/jser/jser.github.io" class="github-ribbon">
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+             src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+             alt="Fork me on GitHub"
+             data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+    </a>
+    <div class="global-header">
+    <h1 class="site-title"><a href="/"><img alt="JSer.info" src="/public/img/logo.png" /></a></h1>
+    <h2 class="site-description">JavaScriptの最新情報を紹介する週刊ブログ</h2>
+    <nav class="lang-menu">
+        <ul>
+            <li><a href="/" data-alt-href="/2016/09/12/polymer-20aservice-workerjs/">日本語</a></li>
+            <li><a href="/ko/" data-alt-href="/ko/2016/09/12/polymer-20aservice-workerjs/">한국어</a></li>
+        </ul>
+        
+        <div>
+            <p>リアルタイム版 => <a href="http://realtime.jser.info/" title="Realtime JSer.info">Realtime JSer.info</a></p>
+        </div>
+        
+    </nav>
+</div>
+
+</header>
+<div class="content-wrapper">
+    <article>
+        <div class="page-content">
+            <div class="post">
+    <header>
+        <div class="post-header">
+            <h1><a href="/2016/09/12/polymer-20aservice-workerjs/">2016-09-12のJS: Polymer 2.0 Preview、Service Worker入門、JSから型定義ファイルの生成</a></h1>
+
+            <div class="pre-post-toolbar">
+                <span class="post-date">2016年09月12日</span>
+                
+                <span class="svg-icon"><img src="/public/svg/github.svg"/></span>
+                <a class="btn edit-on-github" href="https://github.com/jser/jser.github.io/edit/develop/_i18n/ja/_posts/2016/2016-09-12-polymer-20aservice-workerjs.md"><span class="edit-on-github-label"></span>Edit on GitHub</a>
+                <span class="svg-icon"><img src="/public/svg/git.svg"/></span>
+                <a class="btn revision-on-github" href="https://github.com/jser/jser.github.io/commits/develop/_i18n/ja/_posts/2016/2016-09-12-polymer-20aservice-workerjs.md"><span class="revision-on-github-label"></span>編集履歴を見る</a>
+            </div>
+
+        </div>
+        <div class="social-buttons">
+            <ul>
+    <!-- Feedly -->
+    
+    <li>
+      <a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp://jser.info/rss/'  target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a>
+    </li>
+    <!-- Twitter -->
+    <li class="twitter-button-item">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="jser_info">Tweet</a>
+    </li>
+    <!-- Hatena -->
+    <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button"
+           data-hatena-bookmark-layout="standard-balloon"
+           data-hatena-bookmark-url="http://jser.info/2016/09/12/polymer-20aservice-workerjs/">
+            <img src="http://b.st-hatena.com/images/entry-button/button-only.gif"
+                 alt="はてなブックマークに追加" width="20" height="20"
+                 style="border: none">
+        </a>
+    </li>
+    <!-- Pocket -->
+    <li>
+        <a href="https://getpocket.com/save" class="pocket-btn" data-lang="ja"
+           data-save-url="http://jser.info/2016/09/12/polymer-20aservice-workerjs/"
+           data-pocket-count="horizontal"
+           data-pocket-align="left">Pocket</a>
+    </li>
+</ul>
+
+        </div>
+    </header>
+    <article class="post-content">
+        <p>JSer.info #296 - <a href="https://www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0" title="Polymer 2.0 Preview">Polymer 2.0 Preview</a>がリリースされました。</p>
+
+<p>Polymer 2.0ではWebComponent v1(<a href="http://hayato.io/2016/shadowdomv1/" title="Shadow DOM v1">Shadow DOM v1</a>や<a href="https://developers.google.com/web/fundamentals/primers/customelements/" title="Custom Elements v1">Custom Elements v1</a>)の上に形成されています。<br>
+そのため、v1の仕様に準拠した変更やクラスベースのコンポーネントが作成できるようになっています。</p>
+
+<ul>
+<li><a href="https://github.com/Polymer/polymer/tree/2.0-preview" title="Polymer/polymer at 2.0-preview">Polymer/polymer at 2.0-preview</a></li>
+</ul>
+
+<hr>
+
+<p>Flow 0.32.0がリリースされました。</p>
+
+<ul>
+<li><a href="https://github.com/facebook/flow/releases/tag/v0.32.0" title="Release v0.32.0 · facebook/flow">Release v0.32.0 · facebook/flow</a></li>
+</ul>
+
+<p>0.32.0では、JavaScriptファイルからFlowの型定義ファイルを生成する<code>gen-flow-files</code>コマンドが追加されています。</p>
+
+<ul>
+<li><a href="http://joe-re.hatenablog.com/entry/2016/09/06/101529" title="flowtype v0.32.0 changes - Please Drive Faster">flowtype v0.32.0 changes - Please Drive Faster</a></li>
+</ul>
+
+<p>また、TypeScriptの方でもJavaScriptファイルからTypeScriptの型定義ファイルを生成する<a href="https://github.com/Microsoft/dts-gen" title="dts-gen">dts-gen</a>というツールが公開されています。</p>
+
+<ul>
+<li><a href="https://github.com/Microsoft/dts-gen" title="Microsoft/dts-gen: dts-gen creates starter TypeScript definition files for any module or library.">Microsoft/dts-gen: dts-gen creates starter TypeScript definition files for any module or library.</a></li>
+</ul>
+
+<p>どちらもα版といった感じですが、気になる方はためしてみると良いかもしれません。</p>
+
+<hr>
+
+<p><a href="http://qiita.com/y_fujieda/items/f9e765ac9d89ba241154">Service Workerの基本とそれを使ってできること - Qiita</a>という記事では、Service Workerの基本的なライフサイクルやキャッシュ、Pushの実現について紹介されています。</p>
+
+<p>また、Googleの<a href="https://developers.google.com/web/fundamentals/primers/service-worker/?hl=en" title="Introduction to Service Worker | Web Fundamentals - Google Developers">Introduction to Service Worker | Web Fundamentals - Google Developers</a>の<a href="https://developers.google.com/web/fundamentals/primers/service-worker/">翻訳</a>も公開されているので、合わせて読んでみるといいかもしれません。</p>
+
+<blockquote>
+<p>Promise を多用する</p>
+</blockquote>
+
+<p>とあるようにService WorkerはPromiseがネストするので、それに対するアプローチを紹介している<a href="https://philipwalton.com/articles/untangling-deeply-nested-promise-chains/" title="Untangling Deeply-Nested Promise Chains — Philip Walton">Untangling Deeply-Nested Promise Chains — Philip Walton</a>も読んでみると面白いかもしれません。</p>
+
+<hr>
+
+<h1 class="site-genre">ヘッドライン</h1>
+
+<hr>
+
+<h2 id="polymer-2.0-preview---polymer-project">Polymer 2.0 Preview - Polymer Project</h2>
+
+<p><a href="https://www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0" title="Polymer 2.0 Preview - Polymer Project">www.polymer-project.org/1.0/blog/2016-09-09-polymer-2.0</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">WebComponents</span> <span class="jser-tag">library</span></p>
+
+<p>Polymer 2.0 Previewリリース。<br>
+Shadow DOM v1、クラスベースで書けるようになるなど</p>
+
+<hr>
+
+<h2 id="v8-javascript-engine:-v8-release-5.4">V8 JavaScript Engine: V8 Release 5.4</h2>
+
+<p><a href="http://v8project.blogspot.com/2016/09/v8-release-54.html" title="V8 JavaScript Engine: V8 Release 5.4">v8project.blogspot.com/2016/09/v8-release-54.html</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">V8</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>V8 5.4リリース。<br>
+メモリが少ない端末でのメモリ消費量の改善、起動速度の改善など</p>
+
+<hr>
+
+<h2 id="ember.js---ember.js-2.8-and-2.9-beta-released">Ember.js - Ember.js 2.8 and 2.9 Beta Released</h2>
+
+<p><a href="http://emberjs.com/blog/2016/09/08/ember-2-8-and-2-9-beta-released.html" title="Ember.js - Ember.js 2.8 and 2.9 Beta Released">emberjs.com/blog/2016/09/08/ember-2-8-and-2-9-beta-released.html</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">library</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>Ember.js 2.8と2.9βリリース<br>
+2.8で<code>Ember.Engine</code> APIを追加など</p>
+
+<hr>
+
+<h2 id="jest-15.0:-new-defaults-for-jest-·-jest">Jest 15.0: New Defaults for Jest · Jest</h2>
+
+<p><a href="http://facebook.github.io/jest/blog/2016/09/01/jest-15.html" title="Jest 15.0: New Defaults for Jest · Jest">facebook.github.io/jest/blog/2016/09/01/jest-15.html</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">React</span> <span class="jser-tag">testing</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>Jest 15.0リリース。<br>
+CLIの表示を改善、Watchコマンドを追加、jest-react-nativeの改善など</p>
+
+<hr>
+
+<h2 id="release-v0.32.0-·-facebook/flow">Release v0.32.0 · facebook/flow</h2>
+
+<p><a href="https://github.com/facebook/flow/releases/tag/v0.32.0" title="Release v0.32.0 · facebook/flow">github.com/facebook/flow/releases/tag/v0.32.0</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">flowtype</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>Flow 0.32.0リリース<br>
+<code>{|</code>と<code>|}</code>を使ったexact object typeの追加、<code>flow gen-flow-files</code>コマンドの追加など</p>
+
+<hr>
+
+<h2 id="eslint-v3.5.0-released---eslint---pluggable-javascript-linter">ESLint v3.5.0 released - ESLint - Pluggable JavaScript linter</h2>
+
+<p><a href="http://eslint.org/blog/2016/09/eslint-v3.5.0-released" title="ESLint v3.5.0 released - ESLint - Pluggable JavaScript linter">eslint.org/blog/2016/09/eslint-v3.5.0-released</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">ESLint</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>ESLint 3.5.0リリース。<br>
+新しいルールの追加、<code>--fix</code>の対応ルールの追加など</p>
+
+<ul>
+<li><a href="http://qiita.com/mysticatea/items/875c801362f337bc4ce9" title="ESLint v3.5.0 - Qiita">ESLint v3.5.0 - Qiita</a></li>
+</ul>
+
+<hr>
+
+<h2 id="release-release-4.0.0-·-ternjs/acorn">Release Release 4.0.0 · ternjs/acorn</h2>
+
+<p><a href="https://github.com/ternjs/acorn/releases/tag/4.0.0" title="Release Release 4.0.0 · ternjs/acorn">github.com/ternjs/acorn/releases/tag/4.0.0</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">library</span> <span class="jser-tag">AST</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>acorn 4.0.0リリース。<br>
+デフォルトの<code>ecmaVersion</code>が<code>7</code>となり、async/awaitの構文をサポートなど</p>
+
+<hr>
+
+<h1 class="site-genre">アーティクル</h1>
+
+<hr>
+
+<h2 id="es2015で始めるjavascript入門---qiita">ES2015で始めるJavaScript入門 - Qiita</h2>
+
+<p><a href="http://qiita.com/ABCanG1015/items/824681cb88676da4f9a8" title="ES2015で始めるJavaScript入門 - Qiita">qiita.com/ABCanG1015/items/824681cb88676da4f9a8</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">tutorial</span></p>
+
+<p>ES2015ベースでJavaScriptについて学ぶレッスン式のチュートリアル</p>
+
+<hr>
+
+<h2 id="わぁいアリア（wai-aria）大好き-|-れいぶろぐ">わぁいアリア（WAI-ARIA）大好き | れいぶろぐ</h2>
+
+<p><a href="http://labe.wp.xdomain.jp/post/567" title="わぁいアリア（WAI-ARIA）大好き | れいぶろぐ">labe.wp.xdomain.jp/post/567</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">WAI-ARIA</span></p>
+
+<p>WAI-ARIAはどんなもので何のためにあるのかを分かりやすく解説してる</p>
+
+<hr>
+
+<h2 id="service-worker-の紹介-|-web-fundamentals---google-developers">Service Worker の紹介 | Web Fundamentals - Google Developers</h2>
+
+<p><a href="https://developers.google.com/web/fundamentals/primers/service-worker/" title="Service Worker の紹介 | Web Fundamentals - Google Developers">developers.google.com/web/fundamentals/primers/service-worker/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">ServiceWorker</span> <span class="jser-tag">翻訳</span></p>
+
+<p>Service Workerについての紹介記事翻訳</p>
+
+<hr>
+
+<h2 id="service-workerの基本とそれを使ってできること---qiita">Service Workerの基本とそれを使ってできること - Qiita</h2>
+
+<p><a href="http://qiita.com/y_fujieda/items/f9e765ac9d89ba241154" title="Service Workerの基本とそれを使ってできること - Qiita">qiita.com/y_fujieda/items/f9e765ac9d89ba241154</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">ServiceWorker</span></p>
+
+<p>Service Workerのライフサイクルやどのような事ができるかの紹介記事。<br>
+Cache、Pushについて</p>
+
+<hr>
+
+<h2 id="flowtype-v0.32.0-changes---please-drive-faster">flowtype v0.32.0 changes - Please Drive Faster</h2>
+
+<p><a href="http://joe-re.hatenablog.com/entry/2016/09/06/101529" title="flowtype v0.32.0 changes - Please Drive Faster">joe-re.hatenablog.com/entry/2016/09/06/101529</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">flowtype</span> <span class="jser-tag">Tools</span></p>
+
+<p>JavaScriptファイルからFlowの型定義ファイルを生成する<code>gen-flow-files</code>コマンドについて</p>
+
+<hr>
+
+<h2 id="untangling-deeply-nested-promise-chains-—-philip-walton">Untangling Deeply-Nested Promise Chains — Philip Walton</h2>
+
+<p><a href="https://philipwalton.com/articles/untangling-deeply-nested-promise-chains/" title="Untangling Deeply-Nested Promise Chains — Philip Walton">philipwalton.com/articles/untangling-deeply-nested-promise-chains/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">Promises</span> <span class="jser-tag">JavaScript</span></p>
+
+<p>Promiseでネストが深くなったものを、関数へ分割やasync/awaitを使いネストを浅くリファクタリングする話</p>
+
+<hr>
+
+<h1 class="site-genre">スライド、動画関係</h1>
+
+<hr>
+
+<h2 id="remark">Remark</h2>
+
+<p><a href="https://iros.github.io/d3-v4-whats-new/#1" title="Remark">iros.github.io/d3-v4-whats-new/#1</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">d3.js</span> <span class="jser-tag">スライド</span></p>
+
+<p>D3.js v4についてのスライド。<br>
+モジュール分割、Canvasへの書き出し、分割されたモジュール毎の解説</p>
+
+<hr>
+
+<h1 class="site-genre">サイト、サービス、ドキュメント</h1>
+
+<hr>
+
+<h2 id="devtools-timeline-viewer">DevTools Timeline Viewer</h2>
+
+<p><a href="https://chromedevtools.github.io/timeline-viewer/" title="DevTools Timeline Viewer">chromedevtools.github.io/timeline-viewer/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">Chrome</span> <span class="jser-tag">debug</span></p>
+
+<p>Chromeの開発者ツールのTimelineデータを読み込ませて表示できるサイト</p>
+
+<hr>
+
+<h1 class="site-genre">ソフトウェア、ツール、ライブラリ関係</h1>
+
+<hr>
+
+<h2 id="microsoft/dts-gen:-dts-gen-creates-starter-typescript-definition-files-for-any-module-or-library.">Microsoft/dts-gen: dts-gen creates starter TypeScript definition files for any module or library.</h2>
+
+<p><a href="https://github.com/Microsoft/dts-gen" title="Microsoft/dts-gen: dts-gen creates starter TypeScript definition files for any module or library.">github.com/Microsoft/dts-gen</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">TypeScript</span> <span class="jser-tag">Tools</span></p>
+
+<p>npmパッケージやコードからd.tsを自動生成してくれるツール</p>
+
+<hr>
+
+<h2 id="fuse.js---javascript-fuzzy-search-library">Fuse.js - JavaScript fuzzy-search library</h2>
+
+<p><a href="http://fusejs.io/" title="Fuse.js - JavaScript fuzzy-search library">fusejs.io/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">library</span> <span class="jser-tag">検索</span></p>
+
+<p>データからあいまい検索を行えるJavaScriptライブラリ</p>
+
+<hr>
+
+<h2 id="ebidel/appmetrics.js:-a-small-(1.1kb)-library-for-measuring-things-in-your-web-app-and-reporting-the-results-to-google-analytics.">ebidel/appmetrics.js: A small (1.1kb) library for measuring things in your web app and reporting the results to Google Analytics.</h2>
+
+<p><a href="https://github.com/ebidel/appmetrics.js" title="ebidel/appmetrics.js: A small (1.1kb) library for measuring things in your web app and reporting the results to Google Analytics.">github.com/ebidel/appmetrics.js</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">performance</span> <span class="jser-tag">アクセス解析</span> <span class="jser-tag">library</span></p>
+
+<p>User Timing APIを使って計測したデータをGoogle Analyticsにレポートできるライブラリ</p>
+
+<hr>
+
+<h2 id="jgornick/asyncp:-port-of-the-async.js-api-to-use-promises">jgornick/asyncp: Port of the Async.js API to use Promises</h2>
+
+<p><a href="https://github.com/jgornick/asyncp" title="jgornick/asyncp: Port of the Async.js API to use Promises">github.com/jgornick/asyncp</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">library</span> <span class="jser-tag">Promises</span></p>
+
+<p>async.jsのAPIをPromiseを使って実装したライブラリ</p>
+
+<hr>
+
+<h1 class="site-genre">書籍関係</h1>
+
+<hr>
+
+<h2 id="javascript:-the-new-toys:-t.-j.-crowder:-9781119367956:-amazon.com:-books">JavaScript: The New Toys: T. J. Crowder: 9781119367956: Amazon.com: Books</h2>
+
+<p><a href="https://www.amazon.com/JavaScript-Toys-T-J-Crowder/dp/1119367956" title="JavaScript: The New Toys: T. J. Crowder: 9781119367956: Amazon.com: Books">www.amazon.com/JavaScript-Toys-T-J-Crowder/dp/1119367956</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">book</span></p>
+
+<p>2017年4月10日発売<br>
+ES2015+についての書籍</p>
+
+<hr>
+
+<h2 id="改訂新版javascript本格入門　～モダンスタイルによる基礎から現場での応用まで：書籍案内｜技術評論社">改訂新版JavaScript本格入門　～モダンスタイルによる基礎から現場での応用まで：書籍案内｜技術評論社</h2>
+
+<p><a href="http://gihyo.jp/book/2016/978-4-7741-8411-1" title="改訂新版JavaScript本格入門　～モダンスタイルによる基礎から現場での応用まで：書籍案内｜技術評論社">gihyo.jp/book/2016/978-4-7741-8411-1</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">book</span></p>
+
+<p>2016年9月30日発売<br>
+JavaScript本格入門の改訂版</p>
+
+<ul>
+<li><a href="http://gihyo.jp/book/2010/978-4-7741-4466-5" title="JavaScript本格入門　～モダンスタイルによる基礎からAjax・jQueryまで：書籍案内｜技術評論社">JavaScript本格入門　～モダンスタイルによる基礎からAjax・jQueryまで：書籍案内｜技術評論社</a></li>
+</ul>
+
+<hr>
+
+    </article>
+
+    <div class="post-post-toolbar">
+        <span class="svg-icon"><img src="/public/svg/github.svg"/></span>
+        <a class="btn edit-on-github"
+           href="https://github.com/jser/jser.github.io/edit/develop/_i18n/ja/_posts/2016/2016-09-12-polymer-20aservice-workerjs.md"><span
+                class="edit-on-github-label"></span>この記事へ修正リクエストをする</a>
+        
+        <nav>
+            <span class="svg-icon"><img src="/public/svg/favorite.svg"/></span>
+            <span>JSer.infoへ記事を紹介したい場合は<a href="http://jser.info/support/">こちら</a>から</span>
+        </nav>
+        
+        <nav class="tags"
+             id="js-post-tags"
+             data-post-tags='["Polymer","WebComponent","ServiceWorker","Flow","TypeScript"]'>
+            <span><span class="svg-icon"><img src="/public/svg/tag.svg"/></span>タグ:</span>
+            <ul>
+                
+                <li>Polymer</li>
+                
+                <li>WebComponent</li>
+                
+                <li>ServiceWorker</li>
+                
+                <li>Flow</li>
+                
+                <li>TypeScript</li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="social-buttons post-content">
+    <ul>
+    <!-- Feedly -->
+    
+    <li>
+      <a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp://jser.info/rss/'  target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a>
+    </li>
+    <!-- Twitter -->
+    <li class="twitter-button-item">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="jser_info">Tweet</a>
+    </li>
+    <!-- Hatena -->
+    <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button"
+           data-hatena-bookmark-layout="standard-balloon"
+           data-hatena-bookmark-url="http://jser.info/2016/09/12/polymer-20aservice-workerjs/">
+            <img src="http://b.st-hatena.com/images/entry-button/button-only.gif"
+                 alt="はてなブックマークに追加" width="20" height="20"
+                 style="border: none">
+        </a>
+    </li>
+    <!-- Pocket -->
+    <li>
+        <a href="https://getpocket.com/save" class="pocket-btn" data-lang="ja"
+           data-save-url="http://jser.info/2016/09/12/polymer-20aservice-workerjs/"
+           data-pocket-count="horizontal"
+           data-pocket-align="left">Pocket</a>
+    </li>
+</ul>
+
+</div>
+<div class="disqus-embed" id="js-disqus-embed">
+    <button class="comment-button" id="js-comment-button">コメントを表示</button>
+</div>
+
+<script async type="text/javascript" src="/public/build/related-item.js"></script>
+
+<script async type="text/javascript" src="/public/js/show-disqus.js"></script>
+<script>
+    (function (w, d) {
+        var s, e = d.getElementsByTagName("script")[0],
+                a = function (u, f) {
+                    if (!d.getElementById(f)) {
+                        s = d.createElement("script");
+                        s.async = true;
+                        s.src = u;
+                        e.parentNode.insertBefore(s, e);
+                    }
+                };
+        a("//b.st-hatena.com/js/bookmark_button_wo_al.js");
+        a("//platform.twitter.com/widgets.js");
+        a("//widgets.getpocket.com/v1/j/btn.js?v=1");
+    })(window, document);
+</script>
+
+        </div>
+    </article>
+    <aside>
+        <div class="page-sidebar">
+    <div class="profile">
+        <a href="http://twitter.com/azu_re"><img src="/public/img/azu.png" alt="Profile"></a>
+
+        <h2><a href="http://twitter.com/azu_re">azu</a></h2>
+    </div>
+    
+    <div class="social-icons">
+        <a class="social-icon__twitter" href="https://twitter.com/jser_info" title="Twitter">
+            <img src="/public/svg/twitter.svg" alt="twitter">
+        </a>
+        <a class="social-icon__github" href="https://github.com/jser" title="GitHub">
+            <img src="/public/svg/github.svg" alt="GitHub">
+        </a>
+        <a class="social-icon__rss" href="http://jser.info/rss/" title="RSS Feed">
+            <img src="/public/svg/feed.svg" alt="RSS">
+        </a>
+        <a class="social-icon__feedly" href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp://jser.info/rss/'
+           target='blank'>
+            <img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-square-flat-green_2x.png'
+                 alt='follow us in feedly' width='28' height='28'></a>
+    </div>
+
+    <nav>
+        <div class="search-bar">
+            <div class="search-and-submit">
+                <form class="search-box" method="get" action="https://www.google.co.jp/search">
+                    <input type="search" name="q" placeholder="Enter Search"/>
+                    <input type="hidden" name="q" value="site:jser.info">
+                    <button type="submit">
+                        <span class="drawic drawic-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="side-menu">
+            <h1>ページ</h1>
+            <ul>
+                <li><a class="page-link" href="http://jser.info/about/">JSer.infoについて</a></li>
+                <li><a class="page-link" href="http://jser.info/support/">Support</a></li>
+            </ul>
+        </div>
+        <div class="side-menu">
+            <h1>最近の投稿</h1>
+            <ul>
+                
+                
+                <li><a class="page-link" href="/2016/09/12/polymer-20aservice-workerjs/">2016-09-12のJS: Polymer 2.0 Preview、Service Worker入門、JSから型定義ファイルの生成</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/09/05/babili-atypescript20-rcsass-35-rc/">2016-09-05のJS: Babili α、TypeScript 2.0 RC、Sass 3.5 RC</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/30/pixijs-babel-jsframwork/">2016-08-30のJS: pixi.js 4.0.0、Babel 6.14.0、JSフレームワークアンケート</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/23/web-audio-apiangularjs-2-rc5ngmoduleproperty-based-testing/">2016-08-23のJS: Web Audio APIの変更点、AngularJS 2 RC5のNgModule、Property-based Testing</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/15/chrome-53-beta60fps-css-animation/">2016-08-15のJS: Chrome 53 Beta、使わなくて良いイディオム、60FPS CSS Animation</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/09/firefox-480nodewhatwg-streamwebpack/">2016-08-09のJS: Firefox 48.0、Node/WHATWG Stream、webpackチュートリアル</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/01/mocha-30react-1530ecmascript-proposal/">2016-08-02のJS: Mocha 3.0、React 15.3.0、ECMAScript Proposalの進捗</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/07/26/angular2-state-react-component-accessibility/">2016-07-26のJS: AngularJS 2でのState管理、React Componentパターン、アクセシビリティガイドライン</a></li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    </aside>
+</div>
+<footer>
+    <div class="page-footer">
+    <div class="copyright-footer">
+        <div class="copyright">
+            <p>JSer.info is maintained by @<a href="https://twitter.com/azu_re"
+                                              title="azu (azu_re) on Twitter">azu_re</a>.
+            </p>
+        </div>
+        <div class="cc-license">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative commons LISENCE"
+                                                                                     style="border-width:0"
+                                                                                     src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
+        </div>
+    </div>
+</div>
+</footer>
+<script>
+    ((window.gitter = {}).chat = {}).options = {
+        room: 'jser/jser.info'
+    };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+</body>
+</html>
