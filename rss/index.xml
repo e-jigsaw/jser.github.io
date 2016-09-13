@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>http://jser.info/</link>
     <atom:link href="http://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Sep 2016 07:36:15 +0900</pubDate>
-    <lastBuildDate>Tue, 13 Sep 2016 07:36:15 +0900</lastBuildDate>
+    <pubDate>Tue, 13 Sep 2016 11:48:23 +0900</pubDate>
+    <lastBuildDate>Tue, 13 Sep 2016 11:48:23 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -212,9 +212,9 @@ Cache、Pushについて&lt;/p&gt;
 
 &lt;hr&gt;
 
-&lt;h2 id=&quot;remark&quot;&gt;Remark&lt;/h2&gt;
+&lt;h2 id=&quot;d3-v4---what&amp;#39;s-new?&quot;&gt;D3 V4 - What&amp;#39;s new?&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://iros.github.io/d3-v4-whats-new/#1&quot; title=&quot;Remark&quot;&gt;iros.github.io/d3-v4-whats-new/#1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://iros.github.io/d3-v4-whats-new/#1&quot; title=&quot;D3 V4 - What&amp;#39;s new?&quot;&gt;iros.github.io/d3-v4-whats-new/#1&lt;/a&gt;&lt;/p&gt;
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;d3.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;スライド&lt;/span&gt;&lt;/p&gt;
 
