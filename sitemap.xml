@@ -1687,23 +1687,23 @@
   </url>
   <url>
     <loc>http://jser.info/</loc>
-    <lastmod>2016-09-20T11:29:32+09:00</lastmod>
+    <lastmod>2016-09-20T11:40:55+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://jser.info/404.html</loc>
-    <lastmod>2016-09-20T11:28:27+09:00</lastmod>
+    <lastmod>2016-09-20T11:39:39+09:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://jser.info/public/event/textillate/index.html</loc>
-    <lastmod>2016-09-20T11:28:27+09:00</lastmod>
+    <lastmod>2016-09-20T11:39:39+09:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://jser.info/public/svg/test.html</loc>
-    <lastmod>2016-09-20T11:28:27+09:00</lastmod>
+    <lastmod>2016-09-20T11:39:39+09:00</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
