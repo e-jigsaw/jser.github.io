@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>http://jser.info/</link>
     <atom:link href="http://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 20 Sep 2016 11:40:55 +0900</pubDate>
-    <lastBuildDate>Tue, 20 Sep 2016 11:40:55 +0900</lastBuildDate>
+    <pubDate>Wed, 21 Sep 2016 11:07:18 +0900</pubDate>
+    <lastBuildDate>Wed, 21 Sep 2016 11:07:18 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -265,7 +265,7 @@ Fallback、i18n、CSS Custom Propertiesとcalc、JavaScriptからの利用、@su
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;accessibility&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;スライド&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;デフォルトの&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;はどういうサポートがあるからaccessibleであるかについてを独自のリンク実装で見ていく話。&lt;br&gt;
-またデフォルトではaccessibleでないツールチップ、タブパネルなどをどうじっそうするか。&lt;br&gt;
+またデフォルトではaccessibleでないツールチップ、タブパネルなどをどう実装するか。&lt;br&gt;
 実際にスクリーンリーダーの音を聞きながら確認できる&lt;/p&gt;
 
 &lt;hr&gt;
