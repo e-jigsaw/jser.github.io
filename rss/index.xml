@@ -5,9 +5,332 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>http://jser.info/</link>
     <atom:link href="http://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Sep 2016 11:07:18 +0900</pubDate>
-    <lastBuildDate>Wed, 21 Sep 2016 11:07:18 +0900</lastBuildDate>
+    <pubDate>Tue, 27 Sep 2016 10:48:30 +0900</pubDate>
+    <lastBuildDate>Tue, 27 Sep 2016 10:48:30 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>2016-09-27のJS: Firefox 49.0、Safari 10.0、TypeScript 2.0、CoffeeScript 1.11.0</title>
+        <description>&lt;p&gt;JSer.info #298 - &lt;a href=&quot;https://www.mozilla.jp/firefox/49.0/releasenotes/&quot; title=&quot;Firefox 49&quot;&gt;Firefox 49&lt;/a&gt;がリリースされました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/Firefox/Releases/49&quot; title=&quot;Firefox 49 for developers&quot;&gt;Firefox 49 for developers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.fxsitecompat.com/ja/versions/49/&quot; title=&quot;Firefox 49 サイト互換性情報 | Firefox サイト互換性情報&quot;&gt;Firefox 49 サイト互換性情報 | Firefox サイト互換性情報&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hacks.mozilla.org/2016/09/firefox-49-fixes-sites-designed-with-webkit-in-mind-and-more/&quot; title=&quot;Firefox 49 fixes sites designed with WebKit in mind, and more ★ Mozilla Hacks – the Web developer blog&quot;&gt;Firefox 49 fixes sites designed with WebKit in mind, and more ★ Mozilla Hacks – the Web developer blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Web Speech APIの音声合成をサポートや&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/API/Window/isSecureContext&quot; title=&quot;Window.isSecureContext&quot;&gt;Window.isSecureContext&lt;/a&gt;のサポート、&lt;br&gt;
+既存のサイトとの互換性のために&lt;code&gt;-webkit&lt;/code&gt; prefixのサポートが追加されています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.otsukare.info/2016/01/04/webkit-resolved-fixed&quot; title=&quot;Webkit! RESOLVED FIXED - otsukare&quot;&gt;Webkit! RESOLVED FIXED - otsukare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html&quot; title=&quot;Safari 10.0&quot;&gt;Safari 10.0&lt;/a&gt;がリリースされました。&lt;/p&gt;
+
+&lt;p&gt;IndexedDB、CSP 2.0、Shadow DOM v1、ES2015、Font Loading、ECMAScript i18n APIのサポートなどが行われています。&lt;br&gt;
+また、WebDriverや開発者ツールの改善なども行われています。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/typescript/2016/09/22/announcing-typescript-2-0/&quot; title=&quot;TypeScript 2.0&quot;&gt;TypeScript 2.0&lt;/a&gt;がリリースされました。&lt;/p&gt;
+
+&lt;p&gt;DefinitelyTypedの型定義ファイルをnpmモジュール(&lt;code&gt;@type&lt;/code&gt;)としてインストールできるように、non-nullable、read only modifierのサポートなどが追加されています。&lt;/p&gt;
+
+&lt;p&gt;破壊的な変更や具体的な変更はWikiにまとまっているので下記を参照してください。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes#typescript-20&quot; title=&quot;Breaking Changes · Microsoft/TypeScript Wiki&quot;&gt;Breaking Changes · Microsoft/TypeScript Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#typescript-20&quot; title=&quot;What&amp;amp;#x27;s new in TypeScript · Microsoft/TypeScript Wiki&quot;&gt;What&amp;#x27;s new in TypeScript · Microsoft/TypeScript Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;CoffeeScript &lt;a href=&quot;http://coffeescript.org/#1.11.0&quot; title=&quot;1.11.0&quot;&gt;1.11.0&lt;/a&gt;がリリースされました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://coffeescript.org/#1.11.0&quot;&gt;http://coffeescript.org/#1.11.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;import&lt;/code&gt;/&lt;code&gt;export&lt;/code&gt;の構文をサポート、&lt;code&gt;--inline-map&lt;/code&gt;コマンドラインオプションのサポートなどが行われています。&lt;/p&gt;
+
+&lt;p&gt;最近になって&lt;a href=&quot;https://github.com/coffeescript6/discuss&quot; title=&quot;coffeescript6/discuss: A place to discuss the future of CoffeeScript&quot;&gt;coffeescript6/discuss: A place to discuss the future of CoffeeScript&lt;/a&gt;というリポジトリで、今後のCoffeeScriptをどうするかという議論が活発化しています。&lt;/p&gt;
+
+&lt;p&gt;今回のリリースは、&lt;a href=&quot;https://github.com/lydell&quot;&gt;アクティブなメンテナー&lt;/a&gt;と&lt;a href=&quot;https://github.com/GeoffreyBooth&quot;&gt;アクティブなコミッター&lt;/a&gt;により行われました。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;ヘッドライン&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;dev.opera-—-what’s-new-in-chromium-53-and-opera-40&quot;&gt;Dev.Opera — What’s new in Chromium 53 and Opera 40&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dev.opera.com/blog/opera-40/&quot; title=&quot;Dev.Opera — What’s new in Chromium 53 and Opera 40&quot;&gt;dev.opera.com/blog/opera-40/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Opera&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;input patternのRegExpが&lt;code&gt;u&lt;/code&gt;フラグ扱いに、Shadow DOM v1、MediaStreamTrack Constraints APIの追加など&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;firefox-49.0-リリースノート&quot;&gt;Firefox 49.0 リリースノート&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.mozilla.jp/firefox/49.0/releasenotes/&quot; title=&quot;Firefox 49.0 リリースノート&quot;&gt;www.mozilla.jp/firefox/49.0/releasenotes/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;firefox&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Firefox 49リリース。&lt;br&gt;
+既存コンテンツの互換性のために&lt;code&gt;-webkit-&lt;/code&gt; prefixのプロパティをサポート、&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;要素の&lt;code&gt;referrerpolicy&lt;/code&gt;属性のサポート、Web Speech APIの音声合成をサポートなど&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/Firefox/Releases/49&quot; title=&quot;Firefox 49 for developers&quot;&gt;Firefox 49 for developers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.fxsitecompat.com/ja/versions/49/&quot; title=&quot;Firefox 49 サイト互換性情報 | Firefox サイト互換性情報&quot;&gt;Firefox 49 サイト互換性情報 | Firefox サイト互換性情報&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hacks.mozilla.org/2016/09/firefox-49-fixes-sites-designed-with-webkit-in-mind-and-more/&quot; title=&quot;Firefox 49 fixes sites designed with WebKit in mind, and more ★ Mozilla Hacks – the Web developer blog&quot;&gt;Firefox 49 fixes sites designed with WebKit in mind, and more ★ Mozilla Hacks – the Web developer blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;safari-10.0&quot;&gt;Safari 10.0&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html&quot; title=&quot;Safari 10.0&quot;&gt;developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;apple&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;safari&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Safari 10.0リリース。&lt;br&gt;
+IndexedDB、CSP 2.0、Shadow DOM v1、ES2015、Font Loading、ES i18n APIのサポートなど&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;pm2-v2---bradbury&quot;&gt;PM2 v2 - Bradbury&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://keymetrics.io/2016/08/24/pm2-v2-released/&quot; title=&quot;PM2 v2 - Bradbury&quot;&gt;keymetrics.io/2016/08/24/pm2-v2-released/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Docker&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;PM2 V2リリース。&lt;br&gt;
+pm2-docker、transpilerサポートなど&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;typescript-2.0-is-now-available!-|-typescript&quot;&gt;TypeScript 2.0 is now available! | TypeScript&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/typescript/2016/09/22/announcing-typescript-2-0/&quot; title=&quot;TypeScript 2.0 is now available! | TypeScript&quot;&gt;blogs.msdn.microsoft.com/typescript/2016/09/22/announcing-typescript-2-0/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;TypeScript 2.0リリース。&lt;br&gt;
+DefinitelyTypedの型定義ファイルをnpmモジュールとしてインストールできるように、non-nullable、read only modifierなど&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.sitepen.com/blog/2016/09/01/typescript-2-0-awesomeness/&quot; title=&quot;| TypeScript 2.0 Awesomeness | Blog | SitePen&quot;&gt;| TypeScript 2.0 Awesomeness | Blog | SitePen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes#typescript-20&quot; title=&quot;Breaking Changes · Microsoft/TypeScript Wiki&quot;&gt;Breaking Changes · Microsoft/TypeScript Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#typescript-20&quot; title=&quot;What&amp;amp;#x27;s new in TypeScript · Microsoft/TypeScript Wiki&quot;&gt;What&amp;#39;s new in TypeScript · Microsoft/TypeScript Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;coffeescript&quot;&gt;CoffeeScript&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://coffeescript.org/#1.11.0&quot; title=&quot;CoffeeScript&quot;&gt;coffeescript.org/#1.11.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CoffeeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;CoffeeScript 1.11.0リリース。&lt;br&gt;
+&lt;code&gt;import&lt;/code&gt;/&lt;code&gt;export&lt;/code&gt;の構文をサポート、&lt;code&gt;--inline-map&lt;/code&gt;コマンドラインオプションのサポートなど&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jashkenas/coffeescript/issues/4218&quot; title=&quot;treat Infinity and NaN as reserved words · Issue #4218 · jashkenas/coffeescript&quot;&gt;treat Infinity and NaN as reserved words · Issue #4218 · jashkenas/coffeescript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jashkenas/coffeescript/pull/4300&quot; title=&quot;Support import and export of ES2015 modules by GeoffreyBooth · Pull Request #4300 · jashkenas/coffeescript&quot;&gt;Support import and export of ES2015 modules by GeoffreyBooth · Pull Request #4300 · jashkenas/coffeescript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/coffeescript6/discuss/issues/40&quot; title=&quot;Opt-in ESNext features in 1.x · Issue #40 · coffeescript6/discuss&quot;&gt;Opt-in ESNext features in 1.x · Issue #40 · coffeescript6/discuss&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;eslint-v3.6.0-released---eslint---pluggable-javascript-linter&quot;&gt;ESLint v3.6.0 released - ESLint - Pluggable JavaScript linter&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://eslint.org/blog/2016/09/eslint-v3.6.0-released&quot; title=&quot;ESLint v3.6.0 released - ESLint - Pluggable JavaScript linter&quot;&gt;eslint.org/blog/2016/09/eslint-v3.6.0-released&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ESLint&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;ESLint 3.6.0リリース。&lt;br&gt;
+async/awaitの対応と既存ルールの修正、&lt;code&gt;--fix&lt;/code&gt;対応ルールの追加など&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://qiita.com/mysticatea/items/9fd48f9ac3faac578c62&quot; title=&quot;ESLint v3.6.0 - Qiita&quot;&gt;ESLint v3.6.0 - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;jquery-3.1.1-released!-|-official-jquery-blog&quot;&gt;jQuery 3.1.1 Released! | Official jQuery Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.jquery.com/2016/09/22/jquery-3-1-1-released/&quot; title=&quot;jQuery 3.1.1 Released! | Official jQuery Blog&quot;&gt;blog.jquery.com/2016/09/22/jquery-3-1-1-released/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;jQuery&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;jQuery 3.1.1リリース&lt;br&gt;
+&lt;code&gt;:disabled&lt;/code&gt;セレクタのバグ修正、AMDとして読み込んだときに&lt;code&gt;noConflict&lt;/code&gt;を公開するようになるなど&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;アーティクル&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;ahead-of-time-compilation-in-angular-2-–-minko-gechev&amp;#x27;s-blog&quot;&gt;Ahead-of-Time Compilation in Angular 2 – Minko Gechev&amp;#x27;s blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/&quot; title=&quot;Ahead-of-Time Compilation in Angular 2 – Minko Gechev&amp;#39;s blog&quot;&gt;blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;AnguarJS 2のAhead-of-Time (AOT)について&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;welcome-to-html-5.2!telerik-developer-network&quot;&gt;Welcome to HTML 5.2!Telerik Developer Network&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://developer.telerik.com/featured/welcome-to-html-5-2/&quot; title=&quot;Welcome to HTML 5.2!Telerik Developer Network&quot;&gt;developer.telerik.com/featured/welcome-to-html-5-2/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;W3C&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;HTML&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;W3C HTML5.2について。&lt;br&gt;
+5.1からの差分について&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;snapshot-testing-in-react-storybook&quot;&gt;Snapshot Testing in React Storybook&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://voice.kadira.io/snapshot-testing-in-react-storybook-43b3b71cec4f&quot; title=&quot;Snapshot Testing in React Storybook&quot;&gt;voice.kadira.io/snapshot-testing-in-react-storybook-43b3b71cec4f&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;React Storybookを使ったスナップショットテストについて&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kadirahq/storyshots&quot; title=&quot;kadirahq/storyshots: Snapshot testing for React Storybook&quot;&gt;kadirahq/storyshots: Snapshot testing for React Storybook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kadirahq/react-storybook&quot; title=&quot;kadirahq/react-storybook: UI Component Dev Environment for React&quot;&gt;kadirahq/react-storybook: UI Component Dev Environment for React&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;testing-components-in-angular-2-with-jasmine---semaphore&quot;&gt;Testing Components in Angular 2 with Jasmine - Semaphore&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://semaphoreci.com/community/tutorials/testing-components-in-angular-2-with-jasmine&quot; title=&quot;Testing Components in Angular 2 with Jasmine - Semaphore&quot;&gt;semaphoreci.com/community/tutorials/testing-components-in-angular-2-with-jasmine&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;AngularJS 2のコンポーネントをjasmineでテストする話&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;use-easy-fix-to-run-integration-tests-like-unit-tests-–-walmartlabs-–-medium&quot;&gt;Use Easy-Fix to Run Integration Tests Like Unit Tests – WalmartLabs – Medium&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/walmartlabs/use-easy-fix-to-run-integration-tests-like-unit-tests-834288ec446d&quot; title=&quot;Use Easy-Fix to Run Integration Tests Like Unit Tests – WalmartLabs – Medium&quot;&gt;medium.com/walmartlabs/use-easy-fix-to-run-integration-tests-like-unit-tests-834288ec446d&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;vcr系のテストライブラリ。&lt;br&gt;
+実行結果を記録/リプレイするライブラリ。&lt;br&gt;
+他のVCR系とは異なり非同期処理を記録することで、HTTPのみ限定していないという話&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/walmartlabs/easy-fix&quot; title=&quot;walmartlabs/easy-fix: easy-fix: run integration tests like unit tests&quot;&gt;walmartlabs/easy-fix: easy-fix: run integration tests like unit tests&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;スライド、動画関係&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;webassembly:-birth-of-a-virtual-isa-(ben-smith)---full-stack-fest-2016---youtube&quot;&gt;WebAssembly: birth of a virtual ISA (Ben Smith) - Full Stack Fest 2016 - YouTube&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=vmzz17JGPHI&quot; title=&quot;WebAssembly: birth of a virtual ISA (Ben Smith) - Full Stack Fest 2016 - YouTube&quot;&gt;www.youtube.com/watch?v=vmzz17JGPHI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;WebAssembly&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;video&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;WebAssemblyが何であって、何でないか。&lt;br&gt;
+歴史、asm.jsとの関係、コンパイル結果がどのような構造になってるかについての解説など&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;サイト、サービス、ドキュメント&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;browser-bug-searcher&quot;&gt;Browser Bug Searcher&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://browser-issue-tracker-search.appspot.com/&quot; title=&quot;Browser Bug Searcher&quot;&gt;browser-issue-tracker-search.appspot.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;issue&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;検索&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;MSEdge、Firefox、Chrome、Opera、WebKitのIssue Trackerをまとめて検索できるサイト。&lt;br&gt;
+ブラウザのバグ検索エンジン&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;ソフトウェア、ツール、ライブラリ関係&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;csp-evaluator&quot;&gt;CSP Evaluator&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://csp-evaluator.withgoogle.com/&quot; title=&quot;CSP Evaluator&quot;&gt;csp-evaluator.withgoogle.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSP&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;CSPのポリシーディレクティブのチェックツール。&lt;br&gt;
+ポリシーの設定の構文エラー、設定の問題などを見つけてくれるツール&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;jumpinjackie/jsdoc-typescript-plugin:-jsdoc-plugin-to-generate-typescript-definition-files-(.d.ts)-from-jsdoc-annotated-source&quot;&gt;jumpinjackie/jsdoc-typescript-plugin: JSDoc plugin to generate TypeScript definition files (.d.ts) from JSDoc-annotated source&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jumpinjackie/jsdoc-typescript-plugin&quot; title=&quot;jumpinjackie/jsdoc-typescript-plugin: JSDoc plugin to generate TypeScript definition files (.d.ts) from JSDoc-annotated source&quot;&gt;github.com/jumpinjackie/jsdoc-typescript-plugin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JSDoc&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;JSDocからTypeScriptの型定義ファイルを生成するJSDoc plugin&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;書籍関係&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;refactoring-javascript---o&amp;#x27;reilly-media&quot;&gt;Refactoring JavaScript - O&amp;#x27;Reilly Media&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://shop.oreilly.com/product/0636920053262.do&quot; title=&quot;Refactoring JavaScript - O&amp;#39;Reilly Media&quot;&gt;shop.oreilly.com/product/0636920053262.do&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;2017年1月発売&lt;br&gt;
+JavaScriptのリファクタリングについての書籍&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Tue, 27 Sep 2016 08:34:00 +0900</pubDate>
+        <link>http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/</link>
+        <guid isPermaLink="true">http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/</guid>
+        
+        <category>Firefox</category>
+        
+        <category>Safari</category>
+        
+        <category>TypeScript</category>
+        
+        <category>CoffeeScript</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>ja</category>
+        
+        <category>jser</category>
+        
+      </item>
     
       <item>
         <title>2016-09-20のJS: AngularJS 2、Node 6.6.0、Chrome 54の開発者ツール</title>
@@ -2891,312 +3214,6 @@ ApplicationはObservableを受け取りObservableを返す、ApplicationとView�
         <category>React</category>
         
         <category>Accessibility</category>
-        
-        
-        <category>_i18n</category>
-        
-        <category>ja</category>
-        
-        <category>jser</category>
-        
-      </item>
-    
-      <item>
-        <title>2016-07-19のJS: Async 2.0、aXe 2.0、TypeScript 2.0β</title>
-        <description>&lt;p&gt;JSer.info #288 - 非同期処理ライブラリ&lt;a href=&quot;https://github.com/caolan/async&quot; title=&quot;Async&quot;&gt;Async&lt;/a&gt;の2.0がリリースされました。&lt;br&gt;
-2.0ではライブラリ内部が整理され、&lt;code&gt;require(&amp;quot;async/series&amp;quot;)&lt;/code&gt;のように直接参照でそれぞれの機能が利用できるようになっています。また、内部的にES2015 modulesでimport/exportしている&lt;a href=&quot;https://www.npmjs.com/package/async-es&quot; title=&quot;async-es&quot;&gt;async-es&lt;/a&gt;も合わせて公開されています。&lt;/p&gt;
-
-&lt;p&gt;機能的な変更点についてはCHANGELOGを参照してください。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/caolan/async/blob/v2.0.0/CHANGELOG.md&quot; title=&quot;async/CHANGELOG.md at v2.0.0 · caolan/async&quot;&gt;async/CHANGELOG.md at v2.0.0 · caolan/async&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;HTMLのアクセシビリティテストライブラリである&lt;a href=&quot;https://github.com/dequelabs/axe-core&quot; title=&quot;aXe&quot;&gt;aXe&lt;/a&gt; 2.0がリリースされました。&lt;/p&gt;
-
-&lt;p&gt;aXeはHTMLにスクリプトとして読み込ませて実行し、&lt;a href=&quot;https://github.com/dequelabs/axe-core/blob/master/doc/rule-descriptions.md&quot;&gt;定義したルール&lt;/a&gt;にもとづきアクセシビリティのチェックをするライブラリ/ツールです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.deque.com/blog/introducing-axe-2-0/&quot; title=&quot;Deque Launches aXe 2.0&quot;&gt;Deque Launches aXe 2.0&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;2.0では&lt;a href=&quot;https://github.com/dequelabs/axe-core/blob/master/doc/plugins.md&quot; title=&quot;Plugins&quot;&gt;Plugins&lt;/a&gt;の仕組みが追加されています。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/typescript/2016/07/11/announcing-typescript-2-0-beta/&quot; title=&quot;TypeScript 2.0 Beta&quot;&gt;TypeScript 2.0 Beta&lt;/a&gt;が公開されました。&lt;/p&gt;
-
-&lt;p&gt;Non-nullable type、module定義でワイルドカード(&lt;code&gt;*&lt;/code&gt;)のサポート、&lt;code&gt;never&lt;/code&gt; typeなどの機能が追加されています。&lt;br&gt;
-また、tsconfigの&lt;code&gt;include&lt;/code&gt;でglobサポート、built-inの型定義ファイルを&lt;code&gt;--lib&lt;/code&gt;で指定できるように、&lt;code&gt;--skipLibCheck&lt;/code&gt;の追加など&lt;/p&gt;
-
-&lt;p&gt;詳しくは以下を参照してください。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#typescript-20&quot; title=&quot;What&amp;amp;amp;#39;s new in TypeScript · Microsoft/TypeScript Wiki&quot;&gt;What&amp;#39;s new in TypeScript · Microsoft/TypeScript Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qiita.com/vvakame/items/ae239f3d6f6f08f7c719&quot; title=&quot;TypeScript 2.0 Beta 変更点 - Qiita&quot;&gt;TypeScript 2.0 Beta 変更点 - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;ヘッドライン&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;eslint-v3.1.0-released---eslint---pluggable-javascript-linter&quot;&gt;ESLint v3.1.0 released - ESLint - Pluggable JavaScript linter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://eslint.org/blog/2016/07/eslint-v3.1.0-released&quot; title=&quot;ESLint v3.1.0 released - ESLint - Pluggable JavaScript linter&quot;&gt;eslint.org/blog/2016/07/eslint-v3.1.0-released&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ESLint&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ESLint 3.1.0リリース。&lt;br&gt;
-ルールがエラーの開始位置のみしかレポートできなかったのが、範囲指定してエラーレポートできるようになるなど&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://qiita.com/mysticatea/items/723a467a4eb47e4913e2&quot; title=&quot;ESLint v3.1.0 - Qiita&quot;&gt;ESLint v3.1.0 - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;release-zepto.js-1.2.0-·-madrobby/zepto&quot;&gt;Release Zepto.js 1.2.0 · madrobby/zepto&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/madrobby/zepto/releases/tag/v1.2.0&quot; title=&quot;Release Zepto.js 1.2.0 · madrobby/zepto&quot;&gt;github.com/madrobby/zepto/releases/tag/v1.2.0&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;jQuery&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Zepto.js 1.2.0リリース。&lt;br&gt;
-&lt;code&gt;__proto__&lt;/code&gt;をコードベースから削除、&lt;code&gt;$.noop&lt;/code&gt;や&lt;code&gt;$.isNumeric()&lt;/code&gt;の追加など&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;async/changelog.md-at-v2.0.0-·-caolan/async&quot;&gt;async/CHANGELOG.md at v2.0.0 · caolan/async&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/caolan/async/blob/v2.0.0/CHANGELOG.md&quot; title=&quot;async/CHANGELOG.md at v2.0.0 · caolan/async&quot;&gt;github.com/caolan/async/blob/v2.0.0/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;async 2.0.0リリース。&lt;br&gt;
-ES2015版の&lt;code&gt;async-es&lt;/code&gt;の提供、&lt;code&gt;race&lt;/code&gt;などの機能追加。&lt;br&gt;
-破壊的な変更として&lt;code&gt;waterfall&lt;/code&gt;の挙動変更、&lt;code&gt;filter&lt;/code&gt;や&lt;code&gt;reject&lt;/code&gt;などのコールバック関数が受け取る引数を変更など&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://qiita.com/suguru03/items/b73ab97482d5394b8f43&quot; title=&quot;Async v2.0.0 リリース - Qiita&quot;&gt;Async v2.0.0 リリース - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;deque-launches-axe-2.0&quot;&gt;Deque Launches aXe 2.0&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.deque.com/blog/introducing-axe-2-0/&quot; title=&quot;Deque Launches aXe 2.0&quot;&gt;www.deque.com/blog/introducing-axe-2-0/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;accessibility&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ウェブサイトのAccessibilityテストエンジンであるaXe 2.0リリース&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/dequelabs/axe-core&quot; title=&quot;dequelabs/axe-core: Accessibility engine for automated Web UI testing&quot;&gt;dequelabs/axe-core: Accessibility engine for automated Web UI testing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;protractor/changelog.md-at-4.0.0-·-angular/protractor&quot;&gt;protractor/CHANGELOG.md at 4.0.0 · angular/protractor&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/angular/protractor/blob/4.0.0/CHANGELOG.md&quot; title=&quot;protractor/CHANGELOG.md at 4.0.0 · angular/protractor&quot;&gt;github.com/angular/protractor/blob/4.0.0/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Protractor 4.0.0リリース。&lt;br&gt;
-&lt;code&gt;webdriver-manager&lt;/code&gt;が個別のnpmモジュールとしてインストール可能に、TypeScriptの型定義ファイルを追加など&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/webdriver-manager&quot; title=&quot;webdriver-manager&quot;&gt;webdriver-manager&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;announcing-typescript-2.0-beta-|-typescript&quot;&gt;Announcing TypeScript 2.0 Beta | TypeScript&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/typescript/2016/07/11/announcing-typescript-2-0-beta/&quot; title=&quot;Announcing TypeScript 2.0 Beta | TypeScript&quot;&gt;blogs.msdn.microsoft.com/typescript/2016/07/11/announcing-typescript-2-0-beta/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;TypeScript 2.0βリリース。&lt;br&gt;
-Non-nullable Type、module定義に&lt;code&gt;*&lt;/code&gt;などが使えるように。&lt;br&gt;
-&lt;code&gt;never&lt;/code&gt; typeの追加、tsconfigでglobサポート、built-inの型定義ファイルを&lt;code&gt;--lib&lt;/code&gt;で指定できるように、&lt;code&gt;--skipLibCheck&lt;/code&gt;の追加など&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#typescript-20&quot; title=&quot;What&amp;amp;amp;#39;s new in TypeScript · Microsoft/TypeScript Wiki&quot;&gt;What&amp;#39;s new in TypeScript · Microsoft/TypeScript Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qiita.com/vvakame/items/ae239f3d6f6f08f7c719&quot; title=&quot;TypeScript 2.0 Beta 変更点 - Qiita&quot;&gt;TypeScript 2.0 Beta 変更点 - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;アーティクル&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;4-types-of-memory-leaks-in-javascript-and-how-to-get-rid-of-them&quot;&gt;4 Types of Memory Leaks in JavaScript and How to Get Rid Of Them&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://auth0.com/blog/2016/01/26/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/&quot; title=&quot;4 Types of Memory Leaks in JavaScript and How to Get Rid Of Them&quot;&gt;auth0.com/blog/2016/01/26/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;debug&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;JavaScriptでよくあるメモリリークのパターンについて。&lt;br&gt;
-Chrome開発者ツールを使ってメモリリークを見つける方法について&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;node.js-における-promise-を使った例外処理---from-scratch&quot;&gt;Node.js における Promise を使った例外処理 - from scratch&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://yosuke-furukawa.hatenablog.com/entry/2016/07/12/103734&quot; title=&quot;Node.js における Promise を使った例外処理 - from scratch&quot;&gt;yosuke-furukawa.hatenablog.com/entry/2016/07/12/103734&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Promises&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Node.jsのuncaughtExceptionとPromiseを使った場合のunhandledRejectionについて。&lt;br&gt;
-それぞれの違いや動作について&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;what’s-inside-jquery-3.0-|-jquery-3.0-new-features&quot;&gt;What’s inside jQuery 3.0 | jQuery 3.0 new features&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://codebrahma.com/whats-new-jquery-3-0/&quot; title=&quot;What’s inside jQuery 3.0 | jQuery 3.0 new features&quot;&gt;codebrahma.com/whats-new-jquery-3-0/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;jQuery&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;jQuery 3の細かな変更について。&lt;br&gt;
-strict mode、for of、&lt;code&gt;requestAnimationFrame()&lt;/code&gt;、エスケープの仕組み、jqXHR、&lt;code&gt;.show()&lt;/code&gt;/&lt;code&gt;hide()&lt;/code&gt;の改善、&lt;code&gt;.width()&lt;/code&gt;/&lt;code&gt;.height()&lt;/code&gt;が整数値ではなくなるなど&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;the-lumpy-web---tales-of-a-developer-advocate&quot;&gt;The Lumpy Web - Tales of a Developer Advocate&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://paul.kinlan.me/the-lumpy-web/&quot; title=&quot;The Lumpy Web - Tales of a Developer Advocate&quot;&gt;paul.kinlan.me/the-lumpy-web/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;web &lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;WebPlatformAPI&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;spec&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Webとブラウザにおける問題は大きく分けて3つに分類できる。&lt;br&gt;
-ブラウザ毎の実装違い(実装のバージョン違い)、仕様と実装の齟齬、実装優先度の問題。&lt;br&gt;
-これらの問題に対してどこを参照すれば、どのカテゴリの問題であるかを把握できるかについて書かれてる&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;javascript-variables-hoisting-in-details&quot;&gt;JavaScript variables hoisting in details&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://rainsoft.io/javascript-hoisting-in-details/&quot; title=&quot;JavaScript variables hoisting in details&quot;&gt;rainsoft.io/javascript-hoisting-in-details/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;var&lt;/code&gt;のhoisting(巻き上げ)についての解説。&lt;br&gt;
-また&lt;code&gt;let&lt;/code&gt;や&lt;code&gt;const&lt;/code&gt;、&lt;code&gt;class&lt;/code&gt;とTDZについて&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;mixins-considered-harmful-|-react&quot;&gt;Mixins Considered Harmful | React&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html&quot; title=&quot;Mixins Considered Harmful | React&quot;&gt;facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ReactのMixinでやっていることは、higher-order componentsやutilを使うなど別の方法で解決できるという話&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;enzyme+mocha+power-assertでreactコンポーネントのフルレンダリングテスト---wadackel.me&quot;&gt;enzyme+mocha+power-assertでReactコンポーネントのフルレンダリングテスト - wadackel.me&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.wadackel.me/2016/react-enzyme-mocha-power-assert/&quot; title=&quot;enzyme+mocha+power-assertでReactコンポーネントのフルレンダリングテスト - wadackel.me&quot;&gt;blog.wadackel.me/2016/react-enzyme-mocha-power-assert/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DOM&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Reactコンポーネントをjsdomとenzymeでテストする話&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;スライド、動画関係&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;redux-middleware-wars-(japanese)-//-speaker-deck&quot;&gt;Redux Middleware Wars (Japanese) // Speaker Deck&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/shuhei/redux-middleware-wars-japanese&quot; title=&quot;Redux Middleware Wars (Japanese) // Speaker Deck&quot;&gt;speakerdeck.com/shuhei/redux-middleware-wars-japanese&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;redux&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;スライド&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Reduxで非同期処理を扱うMiddlewareについてのスライド。&lt;br&gt;
-redux-thunk、redux-promise、redux-saga、redux-loop、redux-observableの比較&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;ソフトウェア、ツール、ライブラリ関係&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;ianstormtaylor/slate:-a-completely-customizable-framework-for-building-rich-text-editors-in-the-browser.&quot;&gt;ianstormtaylor/slate: A completely customizable framework for building rich text editors in the browser.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ianstormtaylor/slate&quot; title=&quot;ianstormtaylor/slate: A completely customizable framework for building rich text editors in the browser.&quot;&gt;github.com/ianstormtaylor/slate&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;editor&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;リッチエディタを実装できるReact Component。&lt;br&gt;
-ロジックはプラグインとして実装できるためカスタマイズしやすい作り。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;sindresorhus/conf:-simple-config-handling-for-your-app-or-module&quot;&gt;sindresorhus/conf: Simple config handling for your app or module&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/sindresorhus/conf&quot; title=&quot;sindresorhus/conf: Simple config handling for your app or module&quot;&gt;github.com/sindresorhus/conf&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Node.jsでシンプルな設定保存ライブラリ。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;carteb/carte-blanche:-an-isolated-development-space-with-integrated-fuzz-testing-for-your-components.-see-them-individually,-explore-them-in-different-states-and-quickly-and-confidently-develop-them.&quot;&gt;carteb/carte-blanche: An isolated development space with integrated fuzz testing for your components. See them individually, explore them in different states and quickly and confidently develop them.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/carteb/carte-blanche&quot; title=&quot;carteb/carte-blanche: An isolated development space with integrated fuzz testing for your components. See them individually, explore them in different states and quickly and confidently develop them.&quot;&gt;github.com/carteb/carte-blanche&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;React Componentのチェックができるツール。&lt;br&gt;
-ランダム/任意のデータを入れて描画結果がどうなるかを確認できる。&lt;br&gt;
-スタイルガイド的なツール&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;ecmascript-version-detector&quot;&gt;ECMAScript Version Detector&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://azu.github.io/ecmascript-version-detector/&quot; title=&quot;ECMAScript Version Detector&quot;&gt;azu.github.io/ecmascript-version-detector/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;JavaScriptのコードを入力すると、そのコードの構文のECMAScript versionを出してくれるツールとライブラリ。&lt;br&gt;
-書いてるコードがProposal段階なのかを判定できる&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;zingchart/zingtouch:-a-javascript-touch-gesture-detection-library-for-the-modern-web&quot;&gt;zingchart/zingtouch: A JavaScript touch gesture detection library for the modern web&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/zingchart/zingtouch&quot; title=&quot;zingchart/zingtouch: A JavaScript touch gesture detection library for the modern web&quot;&gt;github.com/zingchart/zingtouch&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;mobile&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;TouchとGestureの管理ライブラリ。&lt;br&gt;
-&lt;code&gt;ZingTouch.Region(element)&lt;/code&gt;で領域を作成し、その領域に対してイベントを設定できる&lt;/p&gt;
-
-&lt;hr&gt;
-</description>
-        <pubDate>Tue, 19 Jul 2016 09:50:00 +0900</pubDate>
-        <link>http://jser.info/2016/07/19/async-20axe-20typescript-20b/</link>
-        <guid isPermaLink="true">http://jser.info/2016/07/19/async-20axe-20typescript-20b/</guid>
-        
-        <category>async</category>
-        
-        <category>promise</category>
-        
-        <category>accessibility</category>
-        
-        <category>TypeScript</category>
         
         
         <category>_i18n</category>

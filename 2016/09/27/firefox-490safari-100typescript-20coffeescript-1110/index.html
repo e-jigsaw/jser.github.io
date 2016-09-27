@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2016-09-27のJS: Firefox 49.0、Safari 10.0、TypeScript 2.0、CoffeeScript 1.11.0 - JSer.info</title>
+    <meta name="description" content="JSer.info #298 - Firefox 49がリリースされました。">
+    
+    <meta name="keywords" content="Firefox,Safari,TypeScript,CoffeeScript" />
+    
+    <meta name="author" content="azu">
+    
+      <meta content="2016-09-27T08:34:00+09:00" property="article:published_time">
+      <meta content="http://jser.info/about/" property="article:author">
+    
+    
+      
+      <meta content="_i18n" property="article:section">
+      
+    
+    
+      
+      <meta content="Firefox" property="article:tag">
+      
+      <meta content="Safari" property="article:tag">
+      
+      <meta content="TypeScript" property="article:tag">
+      
+      <meta content="CoffeeScript" property="article:tag">
+      
+    
+
+    
+    <link rel="canonical" href="http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jser.info/rss/">
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/public/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/public/img/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/index.css">
+    <!-- JavaScript -->
+    <script src="/public/js/switch-alt-link.js"></script>
+    <!-- Open graph tags -->
+<meta name="twitter:card" content="JSer.info #298 - Firefox 49がリリースされました。" />
+<meta name="twitter:site" content="@jser_info" />
+
+
+<meta property="og:title" content="2016-09-27のJS: Firefox 49.0、Safari 10.0、TypeScript 2.0、CoffeeScript 1.11.0">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/">
+<meta property="og:image" content="http://jser.info/media/logo.png">
+
+<meta property="og:description" content="JSer.info #298 - Firefox 49がリリースされました。">
+<meta property="og:site_name" content="JSer.info">
+
+
+
+<meta property="article:published_time" content="2016-09-27T08:34:00+09:00">
+
+<meta property="og:see_also" content="http://jser.info/2016/09/20/angularjs-2node-660chrome/">
+
+<meta property="og:see_also" content="http://jser.info/2016/09/12/polymer-20aservice-workerjs/">
+
+<meta property="og:see_also" content="http://jser.info/2016/09/05/babili-atypescript20-rcsass-35-rc/">
+
+
+
+
+
+<meta property="article:tag" content="Firefox">
+
+<meta property="article:tag" content="Safari">
+
+<meta property="article:tag" content="TypeScript">
+
+<meta property="article:tag" content="CoffeeScript">
+
+
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+<script async>
+    window.ga = window.ga || function () {
+                (ga.q = ga.q || []).push(arguments)
+            };
+    ga.l = +new Date;
+    ga('create', 'UA-2184335-9', 'auto');
+    ga('send', 'pageview');
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = Array.prototype.slice.call(document.querySelectorAll("a[href^='http']:not([href*='jser.info'])"));
+        // add _blank and track
+        links.forEach(function (link) {
+            if (!link.target) {
+                link.target = "_blank";
+            }
+            link.addEventListener("click", function (event) {
+                var elementTarget = event.target;
+                var url = elementTarget.href;
+                ga('send', 'event', 'outbound', 'click', url);
+            });
+        });
+    });
+</script>
+
+</head>
+
+
+<body>
+<header>
+    <a href="https://github.com/jser/jser.github.io" class="github-ribbon">
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+             src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+             alt="Fork me on GitHub"
+             data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+    </a>
+    <div class="global-header">
+    <h1 class="site-title"><a href="/"><img alt="JSer.info" src="/public/img/logo.png" /></a></h1>
+    <h2 class="site-description">JavaScriptの最新情報を紹介する週刊ブログ</h2>
+    <nav class="lang-menu">
+        <ul>
+            <li><a href="/" data-alt-href="/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/">日本語</a></li>
+            <li><a href="/ko/" data-alt-href="/ko/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/">한국어</a></li>
+        </ul>
+        
+        <div>
+            <p>リアルタイム版 => <a href="http://realtime.jser.info/" title="Realtime JSer.info">Realtime JSer.info</a></p>
+        </div>
+        
+    </nav>
+</div>
+
+</header>
+<div class="content-wrapper">
+    <article>
+        <div class="page-content">
+            <div class="post">
+    <header>
+        <div class="post-header">
+            <h1><a href="/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/">2016-09-27のJS: Firefox 49.0、Safari 10.0、TypeScript 2.0、CoffeeScript 1.11.0</a></h1>
+
+            <div class="pre-post-toolbar">
+                <span class="post-date">2016年09月27日</span>
+                
+                <span class="svg-icon"><img src="/public/svg/github.svg"/></span>
+                <a class="btn edit-on-github" href="https://github.com/jser/jser.github.io/edit/develop/_i18n/ja/_posts/2016/2016-09-27-firefox-490safari-100typescript-20coffeescript-1110.md"><span class="edit-on-github-label"></span>Edit on GitHub</a>
+                <span class="svg-icon"><img src="/public/svg/git.svg"/></span>
+                <a class="btn revision-on-github" href="https://github.com/jser/jser.github.io/commits/develop/_i18n/ja/_posts/2016/2016-09-27-firefox-490safari-100typescript-20coffeescript-1110.md"><span class="revision-on-github-label"></span>編集履歴を見る</a>
+            </div>
+
+        </div>
+        <div class="social-buttons">
+            <ul>
+    <!-- Feedly -->
+    
+    <li>
+      <a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp://jser.info/rss/'  target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a>
+    </li>
+    <!-- Twitter -->
+    <li class="twitter-button-item">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="jser_info">Tweet</a>
+    </li>
+    <!-- Hatena -->
+    <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button"
+           data-hatena-bookmark-layout="standard-balloon"
+           data-hatena-bookmark-url="http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/">
+            <img src="http://b.st-hatena.com/images/entry-button/button-only.gif"
+                 alt="はてなブックマークに追加" width="20" height="20"
+                 style="border: none">
+        </a>
+    </li>
+    <!-- Pocket -->
+    <li>
+        <a href="https://getpocket.com/save" class="pocket-btn" data-lang="ja"
+           data-save-url="http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/"
+           data-pocket-count="horizontal"
+           data-pocket-align="left">Pocket</a>
+    </li>
+</ul>
+
+        </div>
+    </header>
+    <article class="post-content">
+        <p>JSer.info #298 - <a href="https://www.mozilla.jp/firefox/49.0/releasenotes/" title="Firefox 49">Firefox 49</a>がリリースされました。</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/ja/Firefox/Releases/49" title="Firefox 49 for developers">Firefox 49 for developers</a></li>
+<li><a href="https://www.fxsitecompat.com/ja/versions/49/" title="Firefox 49 サイト互換性情報 | Firefox サイト互換性情報">Firefox 49 サイト互換性情報 | Firefox サイト互換性情報</a></li>
+<li><a href="https://hacks.mozilla.org/2016/09/firefox-49-fixes-sites-designed-with-webkit-in-mind-and-more/" title="Firefox 49 fixes sites designed with WebKit in mind, and more ★ Mozilla Hacks – the Web developer blog">Firefox 49 fixes sites designed with WebKit in mind, and more ★ Mozilla Hacks – the Web developer blog</a></li>
+</ul>
+
+<p>Web Speech APIの音声合成をサポートや<a href="https://developer.mozilla.org/ja/docs/Web/API/Window/isSecureContext" title="Window.isSecureContext">Window.isSecureContext</a>のサポート、<br>
+既存のサイトとの互換性のために<code>-webkit</code> prefixのサポートが追加されています。</p>
+
+<ul>
+<li><a href="http://www.otsukare.info/2016/01/04/webkit-resolved-fixed" title="Webkit! RESOLVED FIXED - otsukare">Webkit! RESOLVED FIXED - otsukare</a></li>
+</ul>
+
+<hr>
+
+<p><a href="https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html" title="Safari 10.0">Safari 10.0</a>がリリースされました。</p>
+
+<p>IndexedDB、CSP 2.0、Shadow DOM v1、ES2015、Font Loading、ECMAScript i18n APIのサポートなどが行われています。<br>
+また、WebDriverや開発者ツールの改善なども行われています。</p>
+
+<hr>
+
+<p><a href="https://blogs.msdn.microsoft.com/typescript/2016/09/22/announcing-typescript-2-0/" title="TypeScript 2.0">TypeScript 2.0</a>がリリースされました。</p>
+
+<p>DefinitelyTypedの型定義ファイルをnpmモジュール(<code>@type</code>)としてインストールできるように、non-nullable、read only modifierのサポートなどが追加されています。</p>
+
+<p>破壊的な変更や具体的な変更はWikiにまとまっているので下記を参照してください。</p>
+
+<ul>
+<li><a href="https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes#typescript-20" title="Breaking Changes · Microsoft/TypeScript Wiki">Breaking Changes · Microsoft/TypeScript Wiki</a></li>
+<li><a href="https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#typescript-20" title="What&amp;#x27;s new in TypeScript · Microsoft/TypeScript Wiki">What&#x27;s new in TypeScript · Microsoft/TypeScript Wiki</a></li>
+</ul>
+
+<hr>
+
+<p>CoffeeScript <a href="http://coffeescript.org/#1.11.0" title="1.11.0">1.11.0</a>がリリースされました。</p>
+
+<ul>
+<li><a href="http://coffeescript.org/#1.11.0">http://coffeescript.org/#1.11.0</a></li>
+</ul>
+
+<p><code>import</code>/<code>export</code>の構文をサポート、<code>--inline-map</code>コマンドラインオプションのサポートなどが行われています。</p>
+
+<p>最近になって<a href="https://github.com/coffeescript6/discuss" title="coffeescript6/discuss: A place to discuss the future of CoffeeScript">coffeescript6/discuss: A place to discuss the future of CoffeeScript</a>というリポジトリで、今後のCoffeeScriptをどうするかという議論が活発化しています。</p>
+
+<p>今回のリリースは、<a href="https://github.com/lydell">アクティブなメンテナー</a>と<a href="https://github.com/GeoffreyBooth">アクティブなコミッター</a>により行われました。</p>
+
+<hr>
+
+<h1 class="site-genre">ヘッドライン</h1>
+
+<hr>
+
+<h2 id="dev.opera-—-what’s-new-in-chromium-53-and-opera-40">Dev.Opera — What’s new in Chromium 53 and Opera 40</h2>
+
+<p><a href="https://dev.opera.com/blog/opera-40/" title="Dev.Opera — What’s new in Chromium 53 and Opera 40">dev.opera.com/blog/opera-40/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">Opera</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>input patternのRegExpが<code>u</code>フラグ扱いに、Shadow DOM v1、MediaStreamTrack Constraints APIの追加など</p>
+
+<hr>
+
+<h2 id="firefox-49.0-リリースノート">Firefox 49.0 リリースノート</h2>
+
+<p><a href="https://www.mozilla.jp/firefox/49.0/releasenotes/" title="Firefox 49.0 リリースノート">www.mozilla.jp/firefox/49.0/releasenotes/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">firefox</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>Firefox 49リリース。<br>
+既存コンテンツの互換性のために<code>-webkit-</code> prefixのプロパティをサポート、<code>&lt;a&gt;</code>要素の<code>referrerpolicy</code>属性のサポート、Web Speech APIの音声合成をサポートなど</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/ja/Firefox/Releases/49" title="Firefox 49 for developers">Firefox 49 for developers</a></li>
+<li><a href="https://www.fxsitecompat.com/ja/versions/49/" title="Firefox 49 サイト互換性情報 | Firefox サイト互換性情報">Firefox 49 サイト互換性情報 | Firefox サイト互換性情報</a></li>
+<li><a href="https://hacks.mozilla.org/2016/09/firefox-49-fixes-sites-designed-with-webkit-in-mind-and-more/" title="Firefox 49 fixes sites designed with WebKit in mind, and more ★ Mozilla Hacks – the Web developer blog">Firefox 49 fixes sites designed with WebKit in mind, and more ★ Mozilla Hacks – the Web developer blog</a></li>
+</ul>
+
+<hr>
+
+<h2 id="safari-10.0">Safari 10.0</h2>
+
+<p><a href="https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html" title="Safari 10.0">developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">apple</span> <span class="jser-tag">safari</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>Safari 10.0リリース。<br>
+IndexedDB、CSP 2.0、Shadow DOM v1、ES2015、Font Loading、ES i18n APIのサポートなど</p>
+
+<hr>
+
+<h2 id="pm2-v2---bradbury">PM2 v2 - Bradbury</h2>
+
+<p><a href="https://keymetrics.io/2016/08/24/pm2-v2-released/" title="PM2 v2 - Bradbury">keymetrics.io/2016/08/24/pm2-v2-released/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">node.js</span> <span class="jser-tag">Docker</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>PM2 V2リリース。<br>
+pm2-docker、transpilerサポートなど</p>
+
+<hr>
+
+<h2 id="typescript-2.0-is-now-available!-|-typescript">TypeScript 2.0 is now available! | TypeScript</h2>
+
+<p><a href="https://blogs.msdn.microsoft.com/typescript/2016/09/22/announcing-typescript-2-0/" title="TypeScript 2.0 is now available! | TypeScript">blogs.msdn.microsoft.com/typescript/2016/09/22/announcing-typescript-2-0/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">TypeScript</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>TypeScript 2.0リリース。<br>
+DefinitelyTypedの型定義ファイルをnpmモジュールとしてインストールできるように、non-nullable、read only modifierなど</p>
+
+<ul>
+<li><a href="https://www.sitepen.com/blog/2016/09/01/typescript-2-0-awesomeness/" title="| TypeScript 2.0 Awesomeness | Blog | SitePen">| TypeScript 2.0 Awesomeness | Blog | SitePen</a></li>
+<li><a href="https://github.com/Microsoft/TypeScript/wiki/Breaking-Changes#typescript-20" title="Breaking Changes · Microsoft/TypeScript Wiki">Breaking Changes · Microsoft/TypeScript Wiki</a></li>
+<li><a href="https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#typescript-20" title="What&amp;#x27;s new in TypeScript · Microsoft/TypeScript Wiki">What&#39;s new in TypeScript · Microsoft/TypeScript Wiki</a></li>
+</ul>
+
+<hr>
+
+<h2 id="coffeescript">CoffeeScript</h2>
+
+<p><a href="http://coffeescript.org/#1.11.0" title="CoffeeScript">coffeescript.org/#1.11.0</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">CoffeeScript</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>CoffeeScript 1.11.0リリース。<br>
+<code>import</code>/<code>export</code>の構文をサポート、<code>--inline-map</code>コマンドラインオプションのサポートなど</p>
+
+<ul>
+<li><a href="https://github.com/jashkenas/coffeescript/issues/4218" title="treat Infinity and NaN as reserved words · Issue #4218 · jashkenas/coffeescript">treat Infinity and NaN as reserved words · Issue #4218 · jashkenas/coffeescript</a></li>
+<li><a href="https://github.com/jashkenas/coffeescript/pull/4300" title="Support import and export of ES2015 modules by GeoffreyBooth · Pull Request #4300 · jashkenas/coffeescript">Support import and export of ES2015 modules by GeoffreyBooth · Pull Request #4300 · jashkenas/coffeescript</a></li>
+<li><a href="https://github.com/coffeescript6/discuss/issues/40" title="Opt-in ESNext features in 1.x · Issue #40 · coffeescript6/discuss">Opt-in ESNext features in 1.x · Issue #40 · coffeescript6/discuss</a></li>
+</ul>
+
+<hr>
+
+<h2 id="eslint-v3.6.0-released---eslint---pluggable-javascript-linter">ESLint v3.6.0 released - ESLint - Pluggable JavaScript linter</h2>
+
+<p><a href="http://eslint.org/blog/2016/09/eslint-v3.6.0-released" title="ESLint v3.6.0 released - ESLint - Pluggable JavaScript linter">eslint.org/blog/2016/09/eslint-v3.6.0-released</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">ESLint</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>ESLint 3.6.0リリース。<br>
+async/awaitの対応と既存ルールの修正、<code>--fix</code>対応ルールの追加など</p>
+
+<ul>
+<li><a href="http://qiita.com/mysticatea/items/9fd48f9ac3faac578c62" title="ESLint v3.6.0 - Qiita">ESLint v3.6.0 - Qiita</a></li>
+</ul>
+
+<hr>
+
+<h2 id="jquery-3.1.1-released!-|-official-jquery-blog">jQuery 3.1.1 Released! | Official jQuery Blog</h2>
+
+<p><a href="http://blog.jquery.com/2016/09/22/jquery-3-1-1-released/" title="jQuery 3.1.1 Released! | Official jQuery Blog">blog.jquery.com/2016/09/22/jquery-3-1-1-released/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">jQuery</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>jQuery 3.1.1リリース<br>
+<code>:disabled</code>セレクタのバグ修正、AMDとして読み込んだときに<code>noConflict</code>を公開するようになるなど</p>
+
+<hr>
+
+<h1 class="site-genre">アーティクル</h1>
+
+<hr>
+
+<h2 id="ahead-of-time-compilation-in-angular-2-–-minko-gechev&#x27;s-blog">Ahead-of-Time Compilation in Angular 2 – Minko Gechev&#x27;s blog</h2>
+
+<p><a href="http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/" title="Ahead-of-Time Compilation in Angular 2 – Minko Gechev&#39;s blog">blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">AngularJS</span></p>
+
+<p>AnguarJS 2のAhead-of-Time (AOT)について</p>
+
+<hr>
+
+<h2 id="welcome-to-html-5.2!telerik-developer-network">Welcome to HTML 5.2!Telerik Developer Network</h2>
+
+<p><a href="http://developer.telerik.com/featured/welcome-to-html-5-2/" title="Welcome to HTML 5.2!Telerik Developer Network">developer.telerik.com/featured/welcome-to-html-5-2/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">W3C</span> <span class="jser-tag">HTML</span></p>
+
+<p>W3C HTML5.2について。<br>
+5.1からの差分について</p>
+
+<hr>
+
+<h2 id="snapshot-testing-in-react-storybook">Snapshot Testing in React Storybook</h2>
+
+<p><a href="https://voice.kadira.io/snapshot-testing-in-react-storybook-43b3b71cec4f" title="Snapshot Testing in React Storybook">voice.kadira.io/snapshot-testing-in-react-storybook-43b3b71cec4f</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">React</span> <span class="jser-tag">testing</span></p>
+
+<p>React Storybookを使ったスナップショットテストについて</p>
+
+<ul>
+<li><a href="https://github.com/kadirahq/storyshots" title="kadirahq/storyshots: Snapshot testing for React Storybook">kadirahq/storyshots: Snapshot testing for React Storybook</a></li>
+<li><a href="https://github.com/kadirahq/react-storybook" title="kadirahq/react-storybook: UI Component Dev Environment for React">kadirahq/react-storybook: UI Component Dev Environment for React</a></li>
+</ul>
+
+<hr>
+
+<h2 id="testing-components-in-angular-2-with-jasmine---semaphore">Testing Components in Angular 2 with Jasmine - Semaphore</h2>
+
+<p><a href="https://semaphoreci.com/community/tutorials/testing-components-in-angular-2-with-jasmine" title="Testing Components in Angular 2 with Jasmine - Semaphore">semaphoreci.com/community/tutorials/testing-components-in-angular-2-with-jasmine</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">AngularJS</span> <span class="jser-tag">testing</span></p>
+
+<p>AngularJS 2のコンポーネントをjasmineでテストする話</p>
+
+<hr>
+
+<h2 id="use-easy-fix-to-run-integration-tests-like-unit-tests-–-walmartlabs-–-medium">Use Easy-Fix to Run Integration Tests Like Unit Tests – WalmartLabs – Medium</h2>
+
+<p><a href="https://medium.com/walmartlabs/use-easy-fix-to-run-integration-tests-like-unit-tests-834288ec446d" title="Use Easy-Fix to Run Integration Tests Like Unit Tests – WalmartLabs – Medium">medium.com/walmartlabs/use-easy-fix-to-run-integration-tests-like-unit-tests-834288ec446d</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">testing</span> <span class="jser-tag">library</span></p>
+
+<p>vcr系のテストライブラリ。<br>
+実行結果を記録/リプレイするライブラリ。<br>
+他のVCR系とは異なり非同期処理を記録することで、HTTPのみ限定していないという話</p>
+
+<ul>
+<li><a href="https://github.com/walmartlabs/easy-fix" title="walmartlabs/easy-fix: easy-fix: run integration tests like unit tests">walmartlabs/easy-fix: easy-fix: run integration tests like unit tests</a></li>
+</ul>
+
+<hr>
+
+<h1 class="site-genre">スライド、動画関係</h1>
+
+<hr>
+
+<h2 id="webassembly:-birth-of-a-virtual-isa-(ben-smith)---full-stack-fest-2016---youtube">WebAssembly: birth of a virtual ISA (Ben Smith) - Full Stack Fest 2016 - YouTube</h2>
+
+<p><a href="https://www.youtube.com/watch?v=vmzz17JGPHI" title="WebAssembly: birth of a virtual ISA (Ben Smith) - Full Stack Fest 2016 - YouTube">www.youtube.com/watch?v=vmzz17JGPHI</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">WebAssembly</span> <span class="jser-tag">video</span></p>
+
+<p>WebAssemblyが何であって、何でないか。<br>
+歴史、asm.jsとの関係、コンパイル結果がどのような構造になってるかについての解説など</p>
+
+<hr>
+
+<h1 class="site-genre">サイト、サービス、ドキュメント</h1>
+
+<hr>
+
+<h2 id="browser-bug-searcher">Browser Bug Searcher</h2>
+
+<p><a href="https://browser-issue-tracker-search.appspot.com/" title="Browser Bug Searcher">browser-issue-tracker-search.appspot.com/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">browser</span> <span class="jser-tag">issue</span> <span class="jser-tag">検索</span></p>
+
+<p>MSEdge、Firefox、Chrome、Opera、WebKitのIssue Trackerをまとめて検索できるサイト。<br>
+ブラウザのバグ検索エンジン</p>
+
+<hr>
+
+<h1 class="site-genre">ソフトウェア、ツール、ライブラリ関係</h1>
+
+<hr>
+
+<h2 id="csp-evaluator">CSP Evaluator</h2>
+
+<p><a href="https://csp-evaluator.withgoogle.com/" title="CSP Evaluator">csp-evaluator.withgoogle.com/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">CSP</span> <span class="jser-tag">Tools</span></p>
+
+<p>CSPのポリシーディレクティブのチェックツール。<br>
+ポリシーの設定の構文エラー、設定の問題などを見つけてくれるツール</p>
+
+<hr>
+
+<h2 id="jumpinjackie/jsdoc-typescript-plugin:-jsdoc-plugin-to-generate-typescript-definition-files-(.d.ts)-from-jsdoc-annotated-source">jumpinjackie/jsdoc-typescript-plugin: JSDoc plugin to generate TypeScript definition files (.d.ts) from JSDoc-annotated source</h2>
+
+<p><a href="https://github.com/jumpinjackie/jsdoc-typescript-plugin" title="jumpinjackie/jsdoc-typescript-plugin: JSDoc plugin to generate TypeScript definition files (.d.ts) from JSDoc-annotated source">github.com/jumpinjackie/jsdoc-typescript-plugin</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JSDoc</span> <span class="jser-tag">TypeScript</span></p>
+
+<p>JSDocからTypeScriptの型定義ファイルを生成するJSDoc plugin</p>
+
+<hr>
+
+<h1 class="site-genre">書籍関係</h1>
+
+<hr>
+
+<h2 id="refactoring-javascript---o&#x27;reilly-media">Refactoring JavaScript - O&#x27;Reilly Media</h2>
+
+<p><a href="http://shop.oreilly.com/product/0636920053262.do" title="Refactoring JavaScript - O&#39;Reilly Media">shop.oreilly.com/product/0636920053262.do</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">book</span></p>
+
+<p>2017年1月発売<br>
+JavaScriptのリファクタリングについての書籍</p>
+
+<hr>
+
+    </article>
+
+    <div class="post-post-toolbar">
+        <span class="svg-icon"><img src="/public/svg/github.svg"/></span>
+        <a class="btn edit-on-github"
+           href="https://github.com/jser/jser.github.io/edit/develop/_i18n/ja/_posts/2016/2016-09-27-firefox-490safari-100typescript-20coffeescript-1110.md"><span
+                class="edit-on-github-label"></span>この記事へ修正リクエストをする</a>
+        
+        <nav>
+            <span class="svg-icon"><img src="/public/svg/favorite.svg"/></span>
+            <span>JSer.infoへ記事を紹介したい場合は<a href="http://jser.info/support/">こちら</a>から</span>
+        </nav>
+        
+        <nav class="tags"
+             id="js-post-tags"
+             data-post-tags='["Firefox","Safari","TypeScript","CoffeeScript"]'>
+            <span><span class="svg-icon"><img src="/public/svg/tag.svg"/></span>タグ:</span>
+            <ul>
+                
+                <li>Firefox</li>
+                
+                <li>Safari</li>
+                
+                <li>TypeScript</li>
+                
+                <li>CoffeeScript</li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="social-buttons post-content">
+    <ul>
+    <!-- Feedly -->
+    
+    <li>
+      <a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp://jser.info/rss/'  target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a>
+    </li>
+    <!-- Twitter -->
+    <li class="twitter-button-item">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="jser_info">Tweet</a>
+    </li>
+    <!-- Hatena -->
+    <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button"
+           data-hatena-bookmark-layout="standard-balloon"
+           data-hatena-bookmark-url="http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/">
+            <img src="http://b.st-hatena.com/images/entry-button/button-only.gif"
+                 alt="はてなブックマークに追加" width="20" height="20"
+                 style="border: none">
+        </a>
+    </li>
+    <!-- Pocket -->
+    <li>
+        <a href="https://getpocket.com/save" class="pocket-btn" data-lang="ja"
+           data-save-url="http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/"
+           data-pocket-count="horizontal"
+           data-pocket-align="left">Pocket</a>
+    </li>
+</ul>
+
+</div>
+<div class="disqus-embed" id="js-disqus-embed">
+    <button class="comment-button" id="js-comment-button">コメントを表示</button>
+</div>
+
+<script async type="text/javascript" src="/public/build/related-item.js"></script>
+
+<script async type="text/javascript" src="/public/js/show-disqus.js"></script>
+<script>
+    (function (w, d) {
+        var s, e = d.getElementsByTagName("script")[0],
+                a = function (u, f) {
+                    if (!d.getElementById(f)) {
+                        s = d.createElement("script");
+                        s.async = true;
+                        s.src = u;
+                        e.parentNode.insertBefore(s, e);
+                    }
+                };
+        a("//b.st-hatena.com/js/bookmark_button_wo_al.js");
+        a("//platform.twitter.com/widgets.js");
+        a("//widgets.getpocket.com/v1/j/btn.js?v=1");
+    })(window, document);
+</script>
+
+        </div>
+    </article>
+    <aside>
+        <div class="page-sidebar">
+    <div class="profile">
+        <a href="http://twitter.com/azu_re"><img src="/public/img/azu.png" alt="Profile"></a>
+
+        <h2><a href="http://twitter.com/azu_re">azu</a></h2>
+    </div>
+    
+    <div class="social-icons">
+        <a class="social-icon__twitter" href="https://twitter.com/jser_info" title="Twitter">
+            <img src="/public/svg/twitter.svg" alt="twitter">
+        </a>
+        <a class="social-icon__github" href="https://github.com/jser" title="GitHub">
+            <img src="/public/svg/github.svg" alt="GitHub">
+        </a>
+        <a class="social-icon__rss" href="http://jser.info/rss/" title="RSS Feed">
+            <img src="/public/svg/feed.svg" alt="RSS">
+        </a>
+        <a class="social-icon__feedly" href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp://jser.info/rss/'
+           target='blank'>
+            <img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-square-flat-green_2x.png'
+                 alt='follow us in feedly' width='28' height='28'></a>
+    </div>
+
+    <nav>
+        <div class="search-bar">
+            <div class="search-and-submit">
+                <form class="search-box" method="get" action="https://www.google.co.jp/search">
+                    <input type="search" name="q" placeholder="Enter Search"/>
+                    <input type="hidden" name="q" value="site:jser.info">
+                    <button type="submit">
+                        <span class="drawic drawic-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="side-menu">
+            <h1>ページ</h1>
+            <ul>
+                <li><a class="page-link" href="http://jser.info/about/">JSer.infoについて</a></li>
+                <li><a class="page-link" href="http://jser.info/support/">Support</a></li>
+            </ul>
+        </div>
+        <div class="side-menu">
+            <h1>最近の投稿</h1>
+            <ul>
+                
+                
+                <li><a class="page-link" href="/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/">2016-09-27のJS: Firefox 49.0、Safari 10.0、TypeScript 2.0、CoffeeScript 1.11.0</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/09/20/angularjs-2node-660chrome/">2016-09-20のJS: AngularJS 2、Node 6.6.0、Chrome 54の開発者ツール</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/09/12/polymer-20aservice-workerjs/">2016-09-12のJS: Polymer 2.0 Preview、Service Worker入門、JSから型定義ファイルの生成</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/09/05/babili-atypescript20-rcsass-35-rc/">2016-09-05のJS: Babili α、TypeScript 2.0 RC、Sass 3.5 RC</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/30/pixijs-babel-jsframwork/">2016-08-30のJS: pixi.js 4.0.0、Babel 6.14.0、JSフレームワークアンケート</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/23/web-audio-apiangularjs-2-rc5ngmoduleproperty-based-testing/">2016-08-23のJS: Web Audio APIの変更点、AngularJS 2 RC5のNgModule、Property-based Testing</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/15/chrome-53-beta60fps-css-animation/">2016-08-15のJS: Chrome 53 Beta、使わなくて良いイディオム、60FPS CSS Animation</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2016/08/09/firefox-480nodewhatwg-streamwebpack/">2016-08-09のJS: Firefox 48.0、Node/WHATWG Stream、webpackチュートリアル</a></li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    </aside>
+</div>
+<footer>
+    <div class="page-footer">
+    <div class="copyright-footer">
+        <div class="copyright">
+            <p>JSer.info is maintained by @<a href="https://twitter.com/azu_re"
+                                              title="azu (azu_re) on Twitter">azu_re</a>.
+            </p>
+        </div>
+        <div class="cc-license">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative commons LISENCE"
+                                                                                     style="border-width:0"
+                                                                                     src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
+        </div>
+    </div>
+</div>
+</footer>
+<script>
+    ((window.gitter = {}).chat = {}).options = {
+        room: 'jser/jser.info'
+    };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+</body>
+</html>
