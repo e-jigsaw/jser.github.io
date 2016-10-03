@@ -3,10 +3,10 @@
   <channel>
     <title>JSer.info</title>
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
-    <link>http://jser.info/ko/</link>
-    <atom:link href="http://jser.info/ko/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Oct 2016 11:23:35 +0900</pubDate>
-    <lastBuildDate>Mon, 03 Oct 2016 11:23:35 +0900</lastBuildDate>
+    <link>https://jser.info/ko/</link>
+    <atom:link href="https://jser.info/ko/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 04 Oct 2016 07:58:03 +0900</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 07:58:03 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -322,8 +322,8 @@ Redux에서 비동기를 처리하는 경우, 연속성이나 취소(Cancel) 등
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 05 Sep 2016 19:41:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/09/05/babili-atypescript20-rcsass-35-rc/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/09/05/babili-atypescript20-rcsass-35-rc/</guid>
+        <link>https://jser.info/ko/2016/09/05/babili-atypescript20-rcsass-35-rc/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/09/05/babili-atypescript20-rcsass-35-rc/</guid>
         
         <category>Sass</category>
         
@@ -652,8 +652,8 @@ Multi texture renderering 지원, GPU GC 관리 기능 추가, WebGL 렌더 개�
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 30 Aug 2016 09:40:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/08/30/pixijs-babel-jsframwork/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/08/30/pixijs-babel-jsframwork/</guid>
+        <link>https://jser.info/ko/2016/08/30/pixijs-babel-jsframwork/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/08/30/pixijs-babel-jsframwork/</guid>
         
         <category>Canvas</category>
         
@@ -947,8 +947,8 @@ Mutable로 사용하고 싶은 경우엔 네이티브 구현체로 조작하고 
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 04 Jul 2016 22:32:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/07/04/d3-400servo-nightlyecmascript-as-a-living-standard/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/07/04/d3-400servo-nightlyecmascript-as-a-living-standard/</guid>
+        <link>https://jser.info/ko/2016/07/04/d3-400servo-nightlyecmascript-as-a-living-standard/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/07/04/d3-400servo-nightlyecmascript-as-a-living-standard/</guid>
         
         <category>D3</category>
         
@@ -1331,8 +1331,8 @@ Adapter를 이용하여 통신 프로토콜을 변경할 수 있도록 구현돼
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 21 Jun 2016 09:26:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/06/21/ecmascript2016-unit2.0/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/06/21/ecmascript2016-unit2.0/</guid>
+        <link>https://jser.info/ko/2016/06/21/ecmascript2016-unit2.0/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/06/21/ecmascript2016-unit2.0/</guid>
         
         <category>ECMAScript</category>
         
@@ -1676,8 +1676,8 @@ Rails 환경에서 사용할 수 있는 방법도 공개돼 있습니다.&lt;/p&
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 13 Jun 2016 15:30:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/06/13/jQuery3-Firefox47-WebAudioAPI/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/06/13/jQuery3-Firefox47-WebAudioAPI/</guid>
+        <link>https://jser.info/ko/2016/06/13/jQuery3-Firefox47-WebAudioAPI/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/06/13/jQuery3-Firefox47-WebAudioAPI/</guid>
         
         <category>Firefox</category>
         
@@ -2053,8 +2053,8 @@ jQuery, ESLint, Connect, gulp, Redux 등 플러그인의 구조를 구현해보�
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 07 Jun 2016 09:40:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/06/07/shadow-dom-v1reactjavascript/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/06/07/shadow-dom-v1reactjavascript/</guid>
+        <link>https://jser.info/ko/2016/06/07/shadow-dom-v1reactjavascript/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/06/07/shadow-dom-v1reactjavascript/</guid>
         
         <category>WebComponent</category>
         
@@ -2378,8 +2378,8 @@ ES.next의 Stage 1 Proposal인 es obvervable을 대응했습니다.&lt;br&gt;
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 26 Apr 2016 20:25:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/04/26/core-js-230addeventlistener3/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/04/26/core-js-230addeventlistener3/</guid>
+        <link>https://jser.info/ko/2016/04/26/core-js-230addeventlistener3/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/04/26/core-js-230addeventlistener3/</guid>
         
         <category>ECMAScript</category>
         
@@ -2699,8 +2699,8 @@ Babel 처럼 확장성이나 사양을 중요시하는 것 보다 변환 속도�
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 18 Apr 2016 19:42:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/04/18/jscs-30eslintsvg/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/04/18/jscs-30eslintsvg/</guid>
+        <link>https://jser.info/ko/2016/04/18/jscs-30eslintsvg/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/04/18/jscs-30eslintsvg/</guid>
         
         <category>JSCS</category>
         
@@ -3042,8 +3042,8 @@ Adpter로 백엔드에 데이터를 보존하는 방법을 변경할 수 있고 
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 11 Apr 2016 20:00:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/04/11/grunt-100react-150javascript/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/04/11/grunt-100react-150javascript/</guid>
+        <link>https://jser.info/ko/2016/04/11/grunt-100react-150javascript/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/04/11/grunt-100react-150javascript/</guid>
         
         <category>Grunt</category>
         
@@ -3380,8 +3380,8 @@ CSS의 설계와 설계 관점 등을 다룹니다.&lt;/p&gt;
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 04 Apr 2016 19:46:00 +0900</pubDate>
-        <link>http://jser.info/ko/2016/04/04/nodejs-5100npm-security-fixsafari-technology-preview/</link>
-        <guid isPermaLink="true">http://jser.info/ko/2016/04/04/nodejs-5100npm-security-fixsafari-technology-preview/</guid>
+        <link>https://jser.info/ko/2016/04/04/nodejs-5100npm-security-fixsafari-technology-preview/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2016/04/04/nodejs-5100npm-security-fixsafari-technology-preview/</guid>
         
         <category>Node.js</category>
         

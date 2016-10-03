@@ -3,10 +3,10 @@
   <channel>
     <title>JSer.info</title>
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
-    <link>http://jser.info/</link>
-    <atom:link href="http://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Oct 2016 11:23:34 +0900</pubDate>
-    <lastBuildDate>Mon, 03 Oct 2016 11:23:34 +0900</lastBuildDate>
+    <link>https://jser.info/</link>
+    <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 04 Oct 2016 07:58:02 +0900</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 07:58:02 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -341,8 +341,8 @@ Environmentを指定できるのでdevelopmentとproductionのファイルサイ
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 03 Oct 2016 09:49:00 +0900</pubDate>
-        <link>http://jser.info/2016/10/03/vuejs-20babel-6170javascript/</link>
-        <guid isPermaLink="true">http://jser.info/2016/10/03/vuejs-20babel-6170javascript/</guid>
+        <link>https://jser.info/2016/10/03/vuejs-20babel-6170javascript/</link>
+        <guid isPermaLink="true">https://jser.info/2016/10/03/vuejs-20babel-6170javascript/</guid>
         
         <category>Vue</category>
         
@@ -664,8 +664,8 @@ JavaScriptのリファクタリングについての書籍&lt;/p&gt;
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 27 Sep 2016 08:34:00 +0900</pubDate>
-        <link>http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/</link>
-        <guid isPermaLink="true">http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/</guid>
+        <link>https://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/</link>
+        <guid isPermaLink="true">https://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/</guid>
         
         <category>Firefox</category>
         
@@ -990,8 +990,8 @@ Fallback、i18n、CSS Custom Propertiesとcalc、JavaScriptからの利用、@su
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 20 Sep 2016 09:48:00 +0900</pubDate>
-        <link>http://jser.info/2016/09/20/angularjs-2node-660chrome/</link>
-        <guid isPermaLink="true">http://jser.info/2016/09/20/angularjs-2node-660chrome/</guid>
+        <link>https://jser.info/2016/09/20/angularjs-2node-660chrome/</link>
+        <guid isPermaLink="true">https://jser.info/2016/09/20/angularjs-2node-660chrome/</guid>
         
         <category>Angular</category>
         
@@ -1313,8 +1313,8 @@ JavaScript本格入門の改訂版&lt;/p&gt;
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 12 Sep 2016 20:19:00 +0900</pubDate>
-        <link>http://jser.info/2016/09/12/polymer-20aservice-workerjs/</link>
-        <guid isPermaLink="true">http://jser.info/2016/09/12/polymer-20aservice-workerjs/</guid>
+        <link>https://jser.info/2016/09/12/polymer-20aservice-workerjs/</link>
+        <guid isPermaLink="true">https://jser.info/2016/09/12/polymer-20aservice-workerjs/</guid>
         
         <category>Polymer</category>
         
@@ -1648,8 +1648,8 @@ Reduxにおいて非同期処理を行う場合に、連続性やCancelなどを
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 05 Sep 2016 19:41:00 +0900</pubDate>
-        <link>http://jser.info/2016/09/05/babili-atypescript20-rcsass-35-rc/</link>
-        <guid isPermaLink="true">http://jser.info/2016/09/05/babili-atypescript20-rcsass-35-rc/</guid>
+        <link>https://jser.info/2016/09/05/babili-atypescript20-rcsass-35-rc/</link>
+        <guid isPermaLink="true">https://jser.info/2016/09/05/babili-atypescript20-rcsass-35-rc/</guid>
         
         <category>Sass</category>
         
@@ -1979,8 +1979,8 @@ Multi texture rendereringのサポート、GPU GC管理、WebGLレンダーの�
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 30 Aug 2016 09:40:00 +0900</pubDate>
-        <link>http://jser.info/2016/08/30/pixijs-babel-jsframwork/</link>
-        <guid isPermaLink="true">http://jser.info/2016/08/30/pixijs-babel-jsframwork/</guid>
+        <link>https://jser.info/2016/08/30/pixijs-babel-jsframwork/</link>
+        <guid isPermaLink="true">https://jser.info/2016/08/30/pixijs-babel-jsframwork/</guid>
         
         <category>Canvas</category>
         
@@ -2266,8 +2266,8 @@ Audio Spriteやbase64、iOSなどの再生にインタラクションが必要�
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 23 Aug 2016 09:38:00 +0900</pubDate>
-        <link>http://jser.info/2016/08/23/web-audio-apiangularjs-2-rc5ngmoduleproperty-based-testing/</link>
-        <guid isPermaLink="true">http://jser.info/2016/08/23/web-audio-apiangularjs-2-rc5ngmoduleproperty-based-testing/</guid>
+        <link>https://jser.info/2016/08/23/web-audio-apiangularjs-2-rc5ngmoduleproperty-based-testing/</link>
+        <guid isPermaLink="true">https://jser.info/2016/08/23/web-audio-apiangularjs-2-rc5ngmoduleproperty-based-testing/</guid>
         
         <category>WebAudioAPI</category>
         
@@ -2596,8 +2596,8 @@ RxJSについての書籍&lt;/p&gt;
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 15 Aug 2016 10:17:00 +0900</pubDate>
-        <link>http://jser.info/2016/08/15/chrome-53-beta60fps-css-animation/</link>
-        <guid isPermaLink="true">http://jser.info/2016/08/15/chrome-53-beta60fps-css-animation/</guid>
+        <link>https://jser.info/2016/08/15/chrome-53-beta60fps-css-animation/</link>
+        <guid isPermaLink="true">https://jser.info/2016/08/15/chrome-53-beta60fps-css-animation/</guid>
         
         <category>Chrome</category>
         
@@ -2901,8 +2901,8 @@ Understanding ECMAScript 6 の書籍版&lt;/p&gt;
 &lt;hr&gt;
 </description>
         <pubDate>Tue, 09 Aug 2016 09:19:00 +0900</pubDate>
-        <link>http://jser.info/2016/08/09/firefox-480nodewhatwg-streamwebpack/</link>
-        <guid isPermaLink="true">http://jser.info/2016/08/09/firefox-480nodewhatwg-streamwebpack/</guid>
+        <link>https://jser.info/2016/08/09/firefox-480nodewhatwg-streamwebpack/</link>
+        <guid isPermaLink="true">https://jser.info/2016/08/09/firefox-480nodewhatwg-streamwebpack/</guid>
         
         <category>Firefo</category>
         
@@ -3244,8 +3244,8 @@ Ember.jsを使ったウェブアプリについての書籍&lt;/p&gt;
 &lt;hr&gt;
 </description>
         <pubDate>Mon, 01 Aug 2016 23:28:00 +0900</pubDate>
-        <link>http://jser.info/2016/08/01/mocha-30react-1530ecmascript-proposal/</link>
-        <guid isPermaLink="true">http://jser.info/2016/08/01/mocha-30react-1530ecmascript-proposal/</guid>
+        <link>https://jser.info/2016/08/01/mocha-30react-1530ecmascript-proposal/</link>
+        <guid isPermaLink="true">https://jser.info/2016/08/01/mocha-30react-1530ecmascript-proposal/</guid>
         
         <category>testing</category>
         
