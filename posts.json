@@ -1,4 +1,11 @@
 [{
+"title":"2016-10-03のJS: Vue.js 2.0、Babel 6.17.0、複雑なJavaScript",
+"url":"http://jser.info/2016/10/03/vuejs-20babel-6170javascript/",
+"date":"2016-10-03T09:49:00+09:00",
+"content":"JSer.info #299 Vue.js 2.0がリリースされました。Vue 2.0 is ...",
+"category":"JSer",
+"tags":["Vue","Babel","JavaScript","DDD"]
+},{
 "title":"2016-09-27のJS: Firefox 49.0、Safari 10.0、TypeScript 2.0、CoffeeScript 1.11.0",
 "url":"http://jser.info/2016/09/27/firefox-490safari-100typescript-20coffeescript-1110/",
 "date":"2016-09-27T08:34:00+09:00",
