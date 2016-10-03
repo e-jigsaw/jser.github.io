@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>http://jser.info/</link>
     <atom:link href="http://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Oct 2016 10:57:07 +0900</pubDate>
-    <lastBuildDate>Mon, 03 Oct 2016 10:57:07 +0900</lastBuildDate>
+    <pubDate>Mon, 03 Oct 2016 11:23:34 +0900</pubDate>
+    <lastBuildDate>Mon, 03 Oct 2016 11:23:34 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -17,7 +17,7 @@
 &lt;li&gt;&lt;a href=&quot;https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8&quot;&gt;Vue 2.0 is Here! – The Vue Point – Medium&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;2.0では&lt;a href=&quot;https://github.com/snabbdom/snabbdom&quot; title=&quot;snabbdom&quot;&gt;snabbdom&lt;/a&gt;をforkしたVirtual DOMを導入しているため、要素の更新ややライフサイクル周りが変更されています。&lt;br&gt;
+&lt;p&gt;2.0では&lt;a href=&quot;https://github.com/snabbdom/snabbdom&quot; title=&quot;snabbdom&quot;&gt;snabbdom&lt;/a&gt;をforkしたVirtual DOMを導入しているため、要素の更新やライフサイクル周りが変更されています。&lt;br&gt;
 (一方、&lt;a href=&quot;https://github.com/snabbdom/snabbdom&quot; title=&quot;snabbdom&quot;&gt;snabbdom&lt;/a&gt;自体は&lt;a href=&quot;https://github.com/snabbdom/snabbdom/issues/164#issuecomment-248549455&quot;&gt;cycle.jsの人達がcollaborator&lt;/a&gt;になりました)&lt;/p&gt;
 
 &lt;ul&gt;
