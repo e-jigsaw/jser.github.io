@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 04 Oct 2016 08:05:08 +0900</pubDate>
-    <lastBuildDate>Tue, 04 Oct 2016 08:05:08 +0900</lastBuildDate>
+    <pubDate>Tue, 04 Oct 2016 13:13:51 +0900</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 13:13:51 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -275,7 +275,7 @@ ProposalのStage変更を反映、async generatorとobject rest-spreadをstage3�
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;webservice&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;CanIUseとStarCounterを使いある機能がどれぐらいのプラットフォームで利用できるかを一覧できるサイト&lt;/p&gt;
+&lt;p&gt;CanIUseとStatCounterを使いある機能がどれぐらいのプラットフォームで利用できるかを一覧できるサイト&lt;/p&gt;
 
 &lt;hr&gt;
 
