@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/ko/</link>
     <atom:link href="https://jser.info/ko/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 05 Oct 2016 12:28:25 +0900</pubDate>
-    <lastBuildDate>Wed, 05 Oct 2016 12:28:25 +0900</lastBuildDate>
+    <pubDate>Wed, 05 Oct 2016 15:06:49 +0900</pubDate>
+    <lastBuildDate>Wed, 05 Oct 2016 15:06:49 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -209,7 +209,7 @@ RE:DOM용 Fake DOM인 NO:DOM도 함께 공개하고 있습니다.&lt;/p&gt;
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;requestAnimationFrame&lt;/code&gt;과 &lt;code&gt;setTimeout&lt;/code&gt;의 비교글 입니다.&lt;br&gt;
-&lt;code&gt;setTimeout&lt;/code&gt;는 새심한 처리에도 영향을 받기 쉽다는 이야기가 작성돼 있습니다.&lt;/p&gt;
+&lt;code&gt;setTimeout&lt;/code&gt;는 세심한 처리에도 영향을 받기 쉽다는 이야기가 작성돼 있습니다.&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -242,7 +242,7 @@ RE:DOM용 Fake DOM인 NO:DOM도 함께 공개하고 있습니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://azu.github.io/slide/2016/react-meetup/large-scale-javascript.html&quot; title=&quot;複雑なJavaScriptアプリケーションを考えながら作る話&quot;&gt;azu.github.io/slide/2016/react-meetup/large-scale-javascript.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;スライド&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CQRS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DDD&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;슬라이드&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CQRS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DDD&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;자바스크립트 환경에서 복잡한 애플리케이션을 만드는 경우에 어떻게 설계하는게 좋을지 고민한 내용이 작성돼 있습니다.&lt;br&gt;
 도메인 모델을 어떻게 염두해 만들어 나갈지, Babel, React, Almin, PostCSS 등을 베이스로 이야기를 풀어갑니다.&lt;/p&gt;
