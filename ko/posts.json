@@ -1,4 +1,11 @@
 [{
+"title":"2016-10-03 JS: Vue.js 2.0, Babel 6.17.0, 복잡한 JavaScript",
+"url":"https://jser.info/ko/2016/10/03/vuejs-20babel-6170javascript/",
+"date":"2016-10-03T09:49:00+09:00",
+"content":"JSer.info #299 Vue.js 2.0이 릴리즈됐습니다.Vue 2.0 is H...",
+"category":"JSer",
+"tags":["Vue","Babel","JavaScript","DDD"]
+},{
 "title":"2016-09-05 JS: Babili α, TypeScript 2.0 RC, Sass 3.5 RC",
 "url":"https://jser.info/ko/2016/09/05/babili-atypescript20-rcsass-35-rc/",
 "date":"2016-09-05T19:41:00+09:00",
