@@ -5,18 +5,19 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 11 Oct 2016 00:21:27 +0900</pubDate>
-    <lastBuildDate>Tue, 11 Oct 2016 00:21:27 +0900</lastBuildDate>
+    <pubDate>Tue, 11 Oct 2016 00:30:23 +0900</pubDate>
+    <lastBuildDate>Tue, 11 Oct 2016 00:30:23 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>JSer.info 300回目 &amp;&amp; https化 &amp;&amp; ユーザー投稿機能</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://jser.info/2016/10/10/2016-10-10-javascriptunicodeweb-componentsnpm-scripts&quot;&gt;前回の投稿&lt;/a&gt;でJSer.infoの記事紹介は300回目になりました。&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://jser.info/2016/10/10/2016-10-10-javascriptunicodeweb-componentsnpm-scripts/&quot;&gt;前回の投稿&lt;/a&gt;でJSer.infoの記事紹介は300回目になりました。&lt;/p&gt;
 
 &lt;p&gt;とりあえず、300週間途切れなく投稿できたので良かったです。&lt;/p&gt;
 
-&lt;p&gt;ついでに最近、JSer.infoに加えた変更を紹介します。&lt;br&gt;
-それ以前の変更とかは以下のスライドにまとまってるので見てみてください。(&lt;a href=&quot;https://jser.info/trends/&quot; title=&quot;JSer.info トレンド&quot;&gt;JSer.info トレンド&lt;/a&gt;とかたまに見ると便利)&lt;/p&gt;
+&lt;p&gt;ついでに、最近JSer.infoに加えた変更を紹介します。&lt;br&gt;
+それ以前の変更とかは以下のスライドにまとまってるので見てみてください。&lt;br&gt;
+(&lt;a href=&quot;https://jser.info/trends/&quot; title=&quot;JSer.info トレンド&quot;&gt;JSer.info トレンド&lt;/a&gt;とかたまに見ると便利)&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://azu.github.io/slide/2016/jser5years/jser.info.html&quot; title=&quot;JSer.info 5周年&quot;&gt;JSer.info 5周年&lt;/a&gt;&lt;/li&gt;
@@ -57,7 +58,7 @@
 
 &lt;h2 id=&quot;おわりに&quot;&gt;おわりに&lt;/h2&gt;
 
-&lt;p&gt;300回記念のイベントとかできなかったので、2017年の1月に6周年と合わせて何かやれるといいです。&lt;/p&gt;
+&lt;p&gt;300回記念のイベントとかできなかったので、2017年の1月に6周年と合わせて何かやれるといいですね。&lt;/p&gt;
 
 &lt;p&gt;それでは、今後ともよろしくお願いします。&lt;/p&gt;
 </description>
@@ -73,6 +74,296 @@
         <category>ja</category>
         
         <category>雑記</category>
+        
+      </item>
+    
+      <item>
+        <title>2016-10-10のJS: JavaScriptとUnicode、Web Components、npm-scripts</title>
+        <description>&lt;p&gt;JSer.info #300 - JSer.info 300回目です。&lt;br&gt;
+次の記事で、JSer.infoに最近追加した機能や変更点などをまとめてあります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/2016/10/10/300posts/&quot;&gt;JSer.info 300回目 &amp;amp;&amp;amp; https化 &amp;amp;&amp;amp; ユーザー投稿機能&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://rainsoft.io/what-every-javascript-developer-should-know-about-unicode/&quot; title=&quot;What every JavaScript developer should know about Unicode&quot;&gt;What every JavaScript developer should know about Unicode&lt;/a&gt;という記事では、JavaScriptとUnicodeに関する網羅的な解説がされています。&lt;/p&gt;
+
+&lt;p&gt;Unicodeにおける用語、Character、Code point、Plane、BMP、Code unit、サロゲートペア、Combing marks、エスケープシーケンス、文字列比較、Normalize、lengthの返す値、正規表現についてなど幅広い内容を扱っています。&lt;br&gt;
+また、ES2015から&lt;code&gt;String#normalize&lt;/code&gt;メソッドや&lt;code&gt;String.fromCodePoint&lt;/code&gt;と&lt;code&gt;String#codePointAt&lt;/code&gt;の追加、IterableなどAPI的にも色々増えているので一度見てみるといいかもしれません。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://1000ch.github.io/slide/webcomponents-2016/&quot; title=&quot;Web Components 2016 &amp;amp;amp; Polymer v2&quot;&gt;Web Components 2016 &amp;amp; Polymer v2&lt;/a&gt;というスライドでは、ChromeやSafariなどに実装されているShadow DOM v1、Custom Elements v1について書かれています。&lt;br&gt;
+Web Componentsのライブラリとして有名なPolymer v2のロードマップや&lt;code&gt;is&lt;/code&gt;属性についてなど最近のWeb Components周りの事情についてまとまっています。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://akabeko.me/blog/2016/10/npm-scripts-web-front-end-development/&quot; title=&quot;npm-scripts で Web フロントエンド開発を管理する – アカベコマイリ&quot;&gt;npm-scripts で Web フロントエンド開発を管理する – アカベコマイリ&lt;/a&gt;という記事では、npm scripts(npm run-scripts)を使ったタスク処理について書かれています。&lt;br&gt;
+gulpなどのTask Runnerで行う処理をnpm run-scriptsで行う方法や利用するCLI、クロスプラットフォームに対応したタスクの書き方など幅広く書かれています。&lt;/p&gt;
+
+&lt;p&gt;また、npm run-scriptsで問題となる変数の扱いについても&lt;a href=&quot;http://akabeko.me/blog/2016/05/cross-conf-env-1-0-release/&quot; title=&quot;cross-conf-env&quot;&gt;cross-conf-env&lt;/a&gt;を使った方法などについても書かれています。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;ヘッドライン&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;ecmascript-proposal-updates-@-2016-10-|-ecmascript-daily&quot;&gt;ECMAScript proposal updates @ 2016-10 | ECMAScript Daily&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ecmascript-daily.github.io/2016/10/02/proposals-updates&quot; title=&quot;ECMAScript proposal updates @ 2016-10 | ECMAScript Daily&quot;&gt;ecmascript-daily.github.io/2016/10/02/proposals-updates&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;proposal&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;2016年10月時点での、ECMAScript Proposalのステータスまとめ。 9月のミーティングで変更されたStageのまとめ&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;jsdom/changelog.md-at-9.6.0-·-tmpvar/jsdom&quot;&gt;jsdom/Changelog.md at 9.6.0 · tmpvar/jsdom&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tmpvar/jsdom/blob/9.6.0/Changelog.md&quot; title=&quot;jsdom/Changelog.md at 9.6.0 · tmpvar/jsdom&quot;&gt;github.com/tmpvar/jsdom/blob/9.6.0/Changelog.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DOM&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;jsdom 9.6.0リリース。&lt;br&gt;
+HTMLCollectionがiterableに対応など&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;アーティクル&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;what-every-javascript-developer-should-know-about-unicode&quot;&gt;What every JavaScript developer should know about Unicode&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://rainsoft.io/what-every-javascript-developer-should-know-about-unicode/&quot; title=&quot;What every JavaScript developer should know about Unicode&quot;&gt;rainsoft.io/what-every-javascript-developer-should-know-about-unicode/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Unicode&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;JavaScriptの文字列とUnicodeについて網羅的な解説。&lt;br&gt;
+Unicodeにおける用語、Character、Code point、Plane、BMP、Code unit、サロゲートペア、Combing marks、エスケープシーケンス、文字列比較、Normalize、length、正規表現について&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;progressive-web-apps-with-react.js:-part-2-—-page-load-performance-–-medium&quot;&gt;Progressive Web Apps with React.js: Part 2 — Page Load Performance – Medium&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@addyosmani/progressive-web-apps-with-react-js-part-2-page-load-performance-33b932d97cf2&quot; title=&quot;Progressive Web Apps with React.js: Part 2 — Page Load Performance – Medium&quot;&gt;medium.com/@addyosmani/progressive-web-apps-with-react-js-part-2-page-load-performance-33b932d97cf2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;webpack&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;初期表示を早くするために、Routingごとにファイルとして分けて動的にロードする話。&lt;br&gt;
+webpackを使っての分割と読み込み、link preloadを使っての先読み、キャッシュについて&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;javascriptライブラリ/プロジェクトのファイルサイズの問題点を見つける方法---qiita&quot;&gt;JavaScriptライブラリ/プロジェクトのファイルサイズの問題点を見つける方法 - Qiita&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qiita.com/azu/items/7b54d614dc816780034a&quot; title=&quot;JavaScriptライブラリ/プロジェクトのファイルサイズの問題点を見つける方法 - Qiita&quot;&gt;qiita.com/azu/items/7b54d614dc816780034a&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browserify&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;webpack&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Browserifyやwebpackなどでbundleしたファイルのサイズや依存モジュールのサイズなどを確認する方法について&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;npm-scripts-で-web-フロントエンド開発を管理する-–-アカベコマイリ&quot;&gt;npm-scripts で Web フロントエンド開発を管理する – アカベコマイリ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://akabeko.me/blog/2016/10/npm-scripts-web-front-end-development/&quot; title=&quot;npm-scripts で Web フロントエンド開発を管理する – アカベコマイリ&quot;&gt;akabeko.me/blog/2016/10/npm-scripts-web-front-end-development/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;console&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;npm run-scriptについて詳しく書かれた記事。&lt;br&gt;
+gulpなどのTask Runnerで行う典型的なユースケースをnpm run-scriptでやった場合にどうなるかや、クロスプラットフォームで動くツールについて書かれている。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;event.offsetx,yの罠...どこが原点の座標値なのかを理解する-(currenttargetとtarget)---qiita&quot;&gt;event.offsetX,Yの罠...どこが原点の座標値なのかを理解する (currentTargetとtarget) - Qiita&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qiita.com/yukiB/items/cc533fbbf3bb8372a924&quot; title=&quot;event.offsetX,Yの罠...どこが原点の座標値なのかを理解する (currentTargetとtarget) - Qiita&quot;&gt;qiita.com/yukiB/items/cc533fbbf3bb8372a924&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DOM&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;targetとcurrentTargetの違い、offsetX/Y、screenX/Y、getBoundingClientRect()などについて&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://qiita.com/yukiB/items/31a9e9e600dfb1f34f76&quot; title=&quot;マウスイベントで取得されるカーソル座標パラメータの整理(offset, page, screen, client) - Qiita&quot;&gt;マウスイベントで取得されるカーソル座標パラメータの整理(offset, page, screen, client) - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;スライド、動画関係&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;proper-error-handling-//-speaker-deck&quot;&gt;Proper Error Handling // Speaker Deck&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/michelebertoli/proper-error-handling&quot; title=&quot;Proper Error Handling // Speaker Deck&quot;&gt;speakerdeck.com/michelebertoli/proper-error-handling&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;スライド&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;エラーハンドリング周りについてスライド。&lt;br&gt;
+何のためにするのか、手法やReactなどにおけるエラーハンドリングについて&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;create-react-app-introduction-//-speaker-deck&quot;&gt;create-react-app-introduction // Speaker Deck&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/adwd/create-react-app-introduction&quot; title=&quot;create-react-app-introduction // Speaker Deck&quot;&gt;speakerdeck.com/adwd/create-react-app-introduction&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;スライド&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;ReactのStarterKit的な&lt;code&gt;create-react-app&lt;/code&gt;についての紹介&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/facebookincubator/create-react-app&quot; title=&quot;facebookincubator/create-react-app: Create React apps with no build configuration.&quot;&gt;facebookincubator/create-react-app: Create React apps with no build configuration.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;web-components-2016-&amp;amp;-polymer-v2&quot;&gt;Web Components 2016 &amp;amp; Polymer v2&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://1000ch.github.io/slide/webcomponents-2016/&quot; title=&quot;Web Components 2016 &amp;amp; Polymer v2&quot;&gt;1000ch.github.io/slide/webcomponents-2016/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;WebComponents&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;スライド&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Web Componentsについてのスライド。&lt;br&gt;
+Shadow DOM v1、Custom Elements v1それぞれの変更点。&lt;br&gt;
+Polymer v2や&lt;code&gt;is&lt;/code&gt;属性についてなど&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;webvr---virtual-reality-in-your-browsers-//-speaker-deck&quot;&gt;WebVR - virtual reality in your browsers // Speaker Deck&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/casarock/webvr-virtual-reality-in-your-browsers&quot; title=&quot;WebVR - virtual reality in your browsers // Speaker Deck&quot;&gt;speakerdeck.com/casarock/webvr-virtual-reality-in-your-browsers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;VR&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;VRの歴史やWebVR APIについてのスライド。&lt;br&gt;
+またWebVR APIを使ったユースケースの紹介&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;サイト、サービス、ドキュメント&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;はてな教科書-javascript-編-·-gitbook&quot;&gt;はてな教科書 JavaScript 編 · GitBook&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hatena.github.io/Hatena-Textbook-JavaScript/&quot; title=&quot;はてな教科書 JavaScript 編 · GitBook&quot;&gt;hatena.github.io/Hatena-Textbook-JavaScript/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ebook&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;JavaScriptの基本文法やDOM、Node.js、jQueryについてをざっと見ていく内容&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://developer.hatenastaff.com/entry/2016/10/05/160000&quot; title=&quot;はてなサマーインターン2016を終え、「はてな教科書」をアップデートしました - Hatena Developer Blog&quot;&gt;はてなサマーインターン2016を終え、「はてな教科書」をアップデートしました - Hatena Developer Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/hatena/Hatena-Textbook-JavaScript&quot; title=&quot;hatena/Hatena-Textbook-JavaScript: はてな研修用JavaScript教科書&quot;&gt;hatena/Hatena-Textbook-JavaScript: はてな研修用JavaScript教科書&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;ソフトウェア、ツール、ライブラリ関係&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;babel/babel-preset-env:-wip:-autoprefixer-for-babel:-target-specific-environments-(browser,-node,-etc)&quot;&gt;babel/babel-preset-env: WIP: Autoprefixer for Babel: target specific environments (browser, node, etc)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/babel/babel-preset-env&quot; title=&quot;babel/babel-preset-env: WIP: Autoprefixer for Babel: target specific environments (browser, node, etc)&quot;&gt;github.com/babel/babel-preset-env&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;babel&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;targetでブラウザやNode.jsのバージョンを指定することで、それに対応した最小限の変換を行うbabel preset&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;denadev/wahid:-a-createjs-compatible-library-for-games&quot;&gt;DeNADev/wahid: A CreateJS-compatible library for games&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/DeNADev/wahid&quot; title=&quot;DeNADev/wahid: A CreateJS-compatible library for games&quot;&gt;github.com/DeNADev/wahid&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;game&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;CreateJS互換の(モバイル)ゲーム向けライブラリ&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://developers.mobage.jp/blog/createjs-wahid&quot; title=&quot;CreateJS 互換ライブラリ wahid の開発 — Mobage Developers Blog&quot;&gt;CreateJS 互換ライブラリ wahid の開発 — Mobage Developers Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;ui-router&quot;&gt;UI-Router&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ui-router.github.io/&quot; title=&quot;UI-Router&quot;&gt;ui-router.github.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;AngularとReactに対応したルータライブラリ&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;office-ui-fabric&quot;&gt;Office UI Fabric&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://dev.office.com/fabric&quot; title=&quot;Office UI Fabric&quot;&gt;dev.office.com/fabric&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;MS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;UI&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Office 365とかのUIコンポーネントを提供するライブラリ。&lt;br&gt;
+Vanilla JS、React、Angular、iOS版がある。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;書籍関係&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;react-components---o&amp;#x27;reilly-media&quot;&gt;React Components - O&amp;#x27;Reilly Media&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://shop.oreilly.com/product/9781785889288.do&quot; title=&quot;React Components - O&amp;#39;Reilly Media&quot;&gt;shop.oreilly.com/product/9781785889288.do&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;React Componentについての書籍&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;manning-|-functional-programming-in-javascript&quot;&gt;Manning | Functional Programming in JavaScript&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.manning.com/books/functional-programming-in-javascript&quot; title=&quot;Manning | Functional Programming in JavaScript&quot;&gt;www.manning.com/books/functional-programming-in-javascript&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;関数型プログラミング&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;関数型プログラミングについての書籍&lt;br&gt;
+サンプルコードがES2015ベースで書かれている。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;javascript-:-functional-programming-for-javascript-developers-|-packt-books&quot;&gt;JavaScript : Functional Programming for JavaScript Developers | PACKT Books&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.packtpub.com/web-development/javascript-functional-programming-javascript-developers&quot; title=&quot;JavaScript : Functional Programming for JavaScript Developers | PACKT Books&quot;&gt;www.packtpub.com/web-development/javascript-functional-programming-javascript-developers&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;関数型プログラミング&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;JavaScriptでの関数型プログラミングのパターン本&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Mon, 10 Oct 2016 23:11:00 +0900</pubDate>
+        <link>https://jser.info/2016/10/10/javascriptunicodeweb-componentsnpm-scripts/</link>
+        <guid isPermaLink="true">https://jser.info/2016/10/10/javascriptunicodeweb-componentsnpm-scripts/</guid>
+        
+        <category>Unicode</category>
+        
+        <category>WebComponents</category>
+        
+        <category>npm</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>ja</category>
+        
+        <category>jser</category>
         
       </item>
     
@@ -2673,311 +2964,6 @@ RxJSについての書籍&lt;/p&gt;
         <category>CSS</category>
         
         <category>animation</category>
-        
-        
-        <category>_i18n</category>
-        
-        <category>ja</category>
-        
-        <category>jser</category>
-        
-      </item>
-    
-      <item>
-        <title>2016-08-09のJS: Firefox 48.0、Node/WHATWG Stream、webpackチュートリアル</title>
-        <description>&lt;p&gt;JSer.info #291 - Firefox 48.0がリリースされました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/48.0/releasenotes/&quot; title=&quot;Firefox — Notes (48.0) — Mozilla&quot;&gt;Firefox — Notes (48.0) — Mozilla&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/Firefox/Releases/48&quot; title=&quot;Firefox 48 for developers - Mozilla | MDN&quot;&gt;Firefox 48 for developers - Mozilla | MDN&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.fxsitecompat.com/ja/versions/48/&quot; title=&quot;Firefox 48 サイト互換性情報 | Firefox サイト互換性情報&quot;&gt;Firefox 48 サイト互換性情報 | Firefox サイト互換性情報&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;Element#animate&lt;/code&gt;がデフォルト有効となり、Web Animation APIが使えるようになっています。&lt;br&gt;
-詳しくは以下の記事で解説されています。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://hacks.mozilla.org/2016/08/animating-like-you-just-dont-care-with-element-animate/&quot; title=&quot;Animating like you just don’t care with Element.animate ★ Mozilla Hacks – the Web developer blog&quot;&gt;Animating like you just don’t care with Element.animate ★ Mozilla Hacks – the Web developer blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/howdy39/items/48d85c430f90a21075cd&quot; title=&quot;step by stepで始めるwebpack - Qiita&quot;&gt;step by stepで始めるwebpack - Qiita&lt;/a&gt;という記事ではwebpackの設定についてステップバイステップで、なぜその設定をするのかというチュートリアル形式でかかれています。&lt;/p&gt;
-
-&lt;p&gt;webpackはBrowserifyなどに比べてビルトインの機能としてできることが豊富ですが、その分設定も必要になります。&lt;br&gt;
-よく分からずにwebpackの設定をコピペして使ってる人も多いと思うので、一度見てみるといいかもしれません。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/jxck/stream-between-nodejs-and-whatwg&quot; title=&quot;stream between nodejs and whatwg // Speaker Deck&quot;&gt;stream between nodejs and whatwg // Speaker Deck&lt;/a&gt;というスライドでは、&lt;a href=&quot;https://nodejs.org/api/stream.html&quot;&gt;Node.js Stream&lt;/a&gt;と&lt;a href=&quot;https://streams.spec.whatwg.org/&quot;&gt;WHATWG Steram&lt;/a&gt;の違いについて書かれています。&lt;/p&gt;
-
-&lt;p&gt;Streamという言葉は同じですが、目的が&lt;del&gt;異なるため&lt;/del&gt;同じだが、そもそもの互換性などがないこと、&lt;br&gt;
-実装方法も異なる点について書かれています。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;ヘッドライン&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;firefox-—-notes-(48.0)-—-mozilla&quot;&gt;Firefox — Notes (48.0) — Mozilla&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/48.0/releasenotes/&quot; title=&quot;Firefox — Notes (48.0) — Mozilla&quot;&gt;www.mozilla.org/en-US/firefox/48.0/releasenotes/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;firefox&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Firefox 48.0リリース。&lt;br&gt;
-WebWorkerでWeb Crypto APIが動くように、CSS &lt;code&gt;calc()&lt;/code&gt;の入れ子をサポート。&lt;br&gt;
-&lt;code&gt;Element.animate()&lt;/code&gt;がデフォルトで有効に、&lt;code&gt;insertAdjacentText()&lt;/code&gt;の実装など&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/Firefox/Releases/48&quot; title=&quot;Firefox 48 for developers - Mozilla | MDN&quot;&gt;Firefox 48 for developers - Mozilla | MDN&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.fxsitecompat.com/ja/versions/48/&quot; title=&quot;Firefox 48 サイト互換性情報 | Firefox サイト互換性情報&quot;&gt;Firefox 48 サイト互換性情報 | Firefox サイト互換性情報&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;release-notes-for-safari-technology-preview-release-10-|-webkit&quot;&gt;Release Notes for Safari Technology Preview Release 10 | WebKit&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://webkit.org/blog/6823/release-notes-for-safari-technology-preview-release-10/&quot; title=&quot;Release Notes for Safari Technology Preview Release 10 | WebKit&quot;&gt;webkit.org/blog/6823/release-notes-for-safari-technology-preview-release-10/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;safari&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Safari Technology Preview 10リリース。&lt;br&gt;
-&lt;code&gt;**&lt;/code&gt;のサポート、&amp;quot;use strict&amp;quot;の挙動を仕様へ追従、DOMTokenListがiterableに、nullを空文字として扱うように色々なAPIを修正など&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://tc39.github.io/ecma262/#sec-arrow-function-definitions-static-semantics-early-errors&quot; title=&quot;ECMAScript® 2017 Language Specification&quot;&gt;ECMAScript® 2017 Language Specification&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;アーティクル&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;flow:-mapping-an-object-—-medium&quot;&gt;Flow: Mapping an object — Medium&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://medium.com/@thejameskyle/flow-mapping-an-object-373d64c44592&quot; title=&quot;Flow: Mapping an object — Medium&quot;&gt;medium.com/@thejameskyle/flow-mapping-an-object-373d64c44592&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;flowtype&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;map-objというライブラリを例に、FlowTypeでどのように型定義をしていくかというチュートリアル&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/sindresorhus/map-obj&quot; title=&quot;sindresorhus/map-obj: Map object keys and values into a new object&quot;&gt;sindresorhus/map-obj: Map object keys and values into a new object&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;step-by-stepで始めるwebpack---qiita&quot;&gt;step by stepで始めるwebpack - Qiita&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/howdy39/items/48d85c430f90a21075cd&quot; title=&quot;step by stepで始めるwebpack - Qiita&quot;&gt;qiita.com/howdy39/items/48d85c430f90a21075cd&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;webpack&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;tutorial&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;webpackの導入方法についてステップバイステップなチュートリアル&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;from-mixins-to-object-composition&quot;&gt;From Mixins to Object Composition&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://raganwald.com/2016/07/20/prefer-composition-to-inheritance.html&quot; title=&quot;From Mixins to Object Composition&quot;&gt;raganwald.com/2016/07/20/prefer-composition-to-inheritance.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;設計&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;mixinではなく、objectのcompositionで機能拡張をする方法について&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;javascript-and-functional-programming-–-beth-allchurch-|-developer&quot;&gt;JavaScript and Functional Programming – Beth Allchurch | Developer&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://bethallchurch.github.io/JavaScript-and-Functional-Programming/&quot; title=&quot;JavaScript and Functional Programming – Beth Allchurch | Developer&quot;&gt;bethallchurch.github.io/JavaScript-and-Functional-Programming/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;関数型プログラミング&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;JavaScriptで関数型プログラミングをする場合に気をつけることやパターンについて。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;package.json-の-browser-field-実践編---qiita&quot;&gt;package.json の browser field 実践編 - Qiita&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/shinout/items/911e024368e2cb29fd3d&quot; title=&quot;package.json の browser field 実践編 - Qiita&quot;&gt;qiita.com/shinout/items/911e024368e2cb29fd3d&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;browserify&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;webpack&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;package.jsonの&amp;quot;browser&amp;quot; fieldの解釈の違いについて。&lt;br&gt;
-Browserify、webpack、React Native Packagerの比較&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;project毎のnpmコマンドをいい感じにするnpmrc-&amp;amp;-config達---qiita&quot;&gt;project毎のnpmコマンドをいい感じにするnpmrc &amp;amp; config達 - Qiita&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/inuscript/items/86dbfd26abe6905756c0&quot; title=&quot;project毎のnpmコマンドをいい感じにするnpmrc &amp;amp; config達 - Qiita&quot;&gt;qiita.com/inuscript/items/86dbfd26abe6905756c0&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;設定&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;npmrc(npm-config)の設定について&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;introducing-edgehtml-14-with-the-windows-10-anniversary-update-|-microsoft-edge-dev-blog&quot;&gt;Introducing EdgeHTML 14 with the Windows 10 Anniversary Update | Microsoft Edge Dev Blog&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml-14/&quot; title=&quot;Introducing EdgeHTML 14 with the Windows 10 Anniversary Update | Microsoft Edge Dev Blog&quot;&gt;blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml-14/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;MSEdge&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Windows 10 Anniversary UpdateのEdgeHTML 14で入った機能のまとめ&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;animating-like-you-just-don’t-care-with-element.animate-★-mozilla-hacks-–-the-web-developer-blog&quot;&gt;Animating like you just don’t care with Element.animate ★ Mozilla Hacks – the Web developer blog&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://hacks.mozilla.org/2016/08/animating-like-you-just-dont-care-with-element-animate/&quot; title=&quot;Animating like you just don’t care with Element.animate ★ Mozilla Hacks – the Web developer blog&quot;&gt;hacks.mozilla.org/2016/08/animating-like-you-just-dont-care-with-element-animate/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;firefox&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;animation&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Firefox 48で実装された&lt;code&gt;Element#animate()&lt;/code&gt; APIについての解説&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;スライド、動画関係&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;introducing-a11ycasts!----a11ycasts-#01---youtube&quot;&gt;Introducing A11ycasts! -- A11ycasts #01 - YouTube&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=HtTyRajRuyY&quot; title=&quot;Introducing A11ycasts! -- A11ycasts #01 - YouTube&quot;&gt;www.youtube.com/watch?v=HtTyRajRuyY&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;accessibility&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;動画&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;アクセシビリティについての動画シリーズ&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://twitter.com/ChromiumDev/status/760555781603360768&quot; title=&quot;Chrome Developers on Twitter: &amp;amp;amp;#34;Just launched ~ A11ycasts! A new series dedicated to teaching web accessibility. Tune in every 2 weeks! https://t.co/yZphrjpGPz&amp;amp;amp;#34;&quot;&gt;Chrome Developers on Twitter: &amp;amp;#34;Just launched ~ A11ycasts! A new series dedicated to teaching web accessibility. Tune in every 2 weeks! https://t.co/yZphrjpGPz&amp;amp;#34;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;stream-between-nodejs-and-whatwg-//-speaker-deck&quot;&gt;stream between nodejs and whatwg // Speaker Deck&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/jxck/stream-between-nodejs-and-whatwg&quot; title=&quot;stream between nodejs and whatwg // Speaker Deck&quot;&gt;speakerdeck.com/jxck/stream-between-nodejs-and-whatwg&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;stream&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;スライド&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Node.js StreamとWHATWG Streamの違いについて。&lt;br&gt;
-目的が異なるため、作りも異なるという話&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;サイト、サービス、ドキュメント&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;is-houdini-ready-yet?&quot;&gt;Is Houdini Ready Yet?&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ishoudinireadyyet.com/&quot; title=&quot;Is Houdini Ready Yet?&quot;&gt;ishoudinireadyyet.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;まとめ&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;CSS Houdiniのそれぞれの仕様とブラウザの実装状況についてまとめられたサイト&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/w3c/css-houdini-drafts&quot; title=&quot;w3c/css-houdini-drafts: Mirror of https://hg.css-houdini.org/drafts&quot;&gt;w3c/css-houdini-drafts: Mirror of https://hg.css-houdini.org/drafts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;ソフトウェア、ツール、ライブラリ関係&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;introduction-·-almin.js&quot;&gt;Introduction · Almin.js&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://almin.js.org/&quot; title=&quot;Introduction · Almin.js&quot;&gt;almin.js.org/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;document&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DDD&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Flux/CQRSなライブラリであるAlminの公式サイト。&lt;br&gt;
-GitBookで書かれたドキュメントが置かれてる。&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;jumpsuit/jumpsuit:-jump-in.-zip-up.-build-great-apps.&quot;&gt;jumpsuit/jumpsuit: Jump in. Zip up. Build great apps.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/jumpsuit/jumpsuit&quot; title=&quot;jumpsuit/jumpsuit: Jump in. Zip up. Build great apps.&quot;&gt;github.com/jumpsuit/jumpsuit&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;View(React)、State管理なライブラリ + CLIなども含んだワンセットなライブラリ&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;how-to-stub-promises-using-sinon.js-–-temple-coding&quot;&gt;How to stub promises using Sinon.JS – Temple Coding&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://templecoding.com/blog/2016/02/29/how-to-stub-promises-using-sinonjs/&quot; title=&quot;How to stub promises using Sinon.JS – Temple Coding&quot;&gt;templecoding.com/blog/2016/02/29/how-to-stub-promises-using-sinonjs/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Promises&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;PromiseのstubをするSinon.jsの拡張ライブラリ&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/substantial/sinon-stub-promise&quot; title=&quot;substantial/sinon-stub-promise: Synchronous Promise stubbing for Sinon.JS&quot;&gt;substantial/sinon-stub-promise: Synchronous Promise stubbing for Sinon.JS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;jvilk/browserfs:-browserfs-is-an-in-browser-filesystem-that-emulates-the-node-js-filesystem-api-and-supports-storing-and-retrieving-files-from-various-backends.&quot;&gt;jvilk/BrowserFS: BrowserFS is an in-browser filesystem that emulates the Node JS filesystem API and supports storing and retrieving files from various backends.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/jvilk/BrowserFS&quot; title=&quot;jvilk/BrowserFS: BrowserFS is an in-browser filesystem that emulates the Node JS filesystem API and supports storing and retrieving files from various backends.&quot;&gt;github.com/jvilk/BrowserFS&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ブラウザ上でfs的なファイルシステムのエミュレートを行うライブラリ。&lt;br&gt;
-memory、localStorage、Dropboxなど色々なバックエンドを持っている&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;書籍関係&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;test-driving-javascript-applications---o&amp;#x27;reilly-media&quot;&gt;Test-Driving JavaScript Applications - O&amp;#x27;Reilly Media&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://shop.oreilly.com/product/9781680501742.do&quot; title=&quot;Test-Driving JavaScript Applications - O&amp;#39;Reilly Media&quot;&gt;shop.oreilly.com/product/9781680501742.do&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;TDDについてのJavaScript本&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;understanding-ecmascript-6---o&amp;#x27;reilly-media&quot;&gt;Understanding ECMAScript 6 - O&amp;#x27;Reilly Media&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://shop.oreilly.com/product/9781593277574.do&quot; title=&quot;Understanding ECMAScript 6 - O&amp;#39;Reilly Media&quot;&gt;shop.oreilly.com/product/9781593277574.do&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ES6について解説している書籍。&lt;br&gt;
-Understanding ECMAScript 6 の書籍版&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://leanpub.com/understandinges6&quot; title=&quot;Understanding… by Nicholas C. Zakas \[Leanpub PDF/iPad/Kindle\]&quot;&gt;Understanding… by Nicholas C. Zakas [Leanpub PDF/iPad/Kindle]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-</description>
-        <pubDate>Tue, 09 Aug 2016 09:19:00 +0900</pubDate>
-        <link>https://jser.info/2016/08/09/firefox-480nodewhatwg-streamwebpack/</link>
-        <guid isPermaLink="true">https://jser.info/2016/08/09/firefox-480nodewhatwg-streamwebpack/</guid>
-        
-        <category>Firefo</category>
-        
-        <category>Node.js</category>
-        
-        <category>Stream</category>
-        
-        <category>webpack</category>
         
         
         <category>_i18n</category>
