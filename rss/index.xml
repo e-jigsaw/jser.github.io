@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 11 Oct 2016 00:30:23 +0900</pubDate>
-    <lastBuildDate>Tue, 11 Oct 2016 00:30:23 +0900</lastBuildDate>
+    <pubDate>Tue, 11 Oct 2016 00:39:59 +0900</pubDate>
+    <lastBuildDate>Tue, 11 Oct 2016 00:39:59 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -46,6 +46,7 @@
 &lt;p&gt;単独のフォームとして&lt;a href=&quot;https://jser.info/ping/&quot; title=&quot;Ping! to JSer.info&quot;&gt;Ping! to JSer.info&lt;/a&gt;からも同様の投稿ができます。&lt;/p&gt;
 
 &lt;p&gt;投稿するとBotが&lt;a href=&quot;https://github.com/jser/ping/issues&quot;&gt;jser/ping&lt;/a&gt;に新しいIssueを作るので、あとで自分とか誰かが見て紹介するかもしれないというゆるい感じのものです。&lt;br&gt;
+紹介されたときにレス(Pong)が欲しい人がアカウントを入れるぐらいなので、基本的になくて問題ありません。&lt;br&gt;
 ( 既存のIssueに &lt;img class=&#39;emoji&#39; title=&#39;:+1:&#39; alt=&#39;:+1:&#39; src=&#39;https://assets.github.com/images/icons/emoji/unicode/1f44d.png&#39; height=&#39;20&#39; width=&#39;20&#39; align=&#39;absmiddle&#39; /&gt; などのリアクションボタンで投票すると参考になるかもしれないです。)&lt;/p&gt;
 
 &lt;p&gt;作った理由としては、&lt;a href=&quot;https://gitter.im/jser/jser.info&quot;&gt;Gitter&lt;/a&gt;とかIssueとかPull Requestを立てるのは&lt;a href=&quot;https://techcrunch.com/2016/09/07/courage/&quot;&gt;勇気&lt;/a&gt;ある人なので、もっと気軽に投げる方法があると良さそうだったので作りました。&lt;/p&gt;
