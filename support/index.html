@@ -163,11 +163,17 @@
 
 <p>みたいなちょっとしたものを投稿して問題ありません。</p>
 
-<p>画面下の<button class="js-gitter-toggle-chat-button" data-gitter-toggle-chat-state="true">Open Chat</button>ボタンから直接Gitterを開くことができます。</p>
-
 <h2 id="紹介して欲しい記事/サイト/ライブラリがある">紹介して欲しい記事/サイト/ライブラリがある</h2>
 
-<p>JSer.infoに載せたい記事は<a href="https://github.com/jser/jser.info">github.com/jser/jser.info</a>へPull Requestしてください。<br>
+<p>画面右下の&quot;<a href="https://jser.info/ping/">記事を紹介する</a>&quot;ボタンから、JSer.infoに紹介したいURLを投稿することができます。<br>
+アカウントなど不要で気軽にURLを投稿することができます。<br>
+(投稿した内容は<a href="https://github.com/jser/ping" title="jser/ping">jser/ping</a>で管理されています。)</p>
+
+<p><a href="https://jser.info/ping/" title="Ping! to JSer.info"><img src="https://jser.info/ping/img/site.gif" alt="ping"></a></p>
+
+<p><a href="https://jser.info/ping/" title="Ping! to JSer.info">Ping! to JSer.info</a>からも同様の投稿ができます。</p>
+
+<p>JSer.infoにPull Requestしたい場合は<a href="https://github.com/jser/jser.info">github.com/jser/jser.info</a>へしてください。<br>
 詳細は<a href="https://github.com/jser/jser.info/blob/gh-pages/CONTRIBUTING.md" title="Pull Requestガイド">Pull Requestガイド</a>に書かれています。</p>
 
 <h2 id="もっと新しい情報を知りたい">もっと新しい情報を知りたい</h2>
@@ -301,11 +307,68 @@
     </div>
 </div>
 </footer>
+<link rel="stylesheet" href="https://unpkg.com/dialog-polyfill@0.4.4/dialog-polyfill.css">
+<script src="https://unpkg.com/dialog-polyfill@0.4.4" async defer></script>
+<style>
+    .ping-show-button {
+        color: #fff;
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        padding: 1em 3em;
+        background-color: #36bc98;
+        border: 0;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        cursor: hand;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .ping-close-button {
+        position: absolute;
+        color: #fff;
+        background-color: #bc3f38;
+        font-size: 14px;
+        padding: 0.2em 0.5em;
+        border-radius: 0 0 0 .5em;
+        border: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .ping-iframe {
+        max-width: 100%;
+    }
+</style>
+<dialog id="js-jser-ping-dialog">
+    <button id="js-jser-ping-close" class="ping-close-button">閉じる✗</button>
+    <iframe width="500"
+            height="500"
+            src="https://jser.info/ping/"
+            scrolling="no"
+            frameborder="no"
+            class="ping-iframe"
+            style="border: 0 none transparent;display: block;"
+    ></iframe>
+</dialog>
+<button id="js-jser-ping-open" class="ping-show-button">記事を紹介する</button>
 <script>
-    ((window.gitter = {}).chat = {}).options = {
-        room: 'jser/jser.info'
-    };
+    window.addEventListener("load", function() {
+        var dialog = document.querySelector("#js-jser-ping-dialog");
+        dialogPolyfill.registerDialog(dialog);
+        document.querySelector('#js-jser-ping-open').onclick = function() {
+            dialog.showModal();
+        };
+        document.querySelector('#js-jser-ping-close').onclick = function() {
+            dialog.close();
+        };
+    });
 </script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 </body>
 </html>
