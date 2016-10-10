@@ -436,6 +436,14 @@ react와 react-dom으로 패키지 분할, refs 사양 변경, 스테이트리�
         dialogPolyfill.registerDialog(dialog);
         document.querySelector('#js-jser-ping-open').onclick = function() {
             dialog.showModal();
+            if (typeof ga === "function") {
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Ping',
+                    eventAction: 'click',
+                    eventLabel: 'OpenDialog'
+                });
+            }
         };
         document.querySelector('#js-jser-ping-close').onclick = function() {
             dialog.close();

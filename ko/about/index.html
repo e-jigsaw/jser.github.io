@@ -344,6 +344,14 @@ JavaScript나 Web 개발 관점에서 흥미롭다고 느낀 정보를 2-3 줄�
         dialogPolyfill.registerDialog(dialog);
         document.querySelector('#js-jser-ping-open').onclick = function() {
             dialog.showModal();
+            if (typeof ga === "function") {
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Ping',
+                    eventAction: 'click',
+                    eventLabel: 'OpenDialog'
+                });
+            }
         };
         document.querySelector('#js-jser-ping-close').onclick = function() {
             dialog.close();

@@ -726,6 +726,14 @@ Babel 처럼 확장성이나 사양을 중요시하는 것 보다 변환 속도�
         dialogPolyfill.registerDialog(dialog);
         document.querySelector('#js-jser-ping-open').onclick = function() {
             dialog.showModal();
+            if (typeof ga === "function") {
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Ping',
+                    eventAction: 'click',
+                    eventLabel: 'OpenDialog'
+                });
+            }
         };
         document.querySelector('#js-jser-ping-close').onclick = function() {
             dialog.close();

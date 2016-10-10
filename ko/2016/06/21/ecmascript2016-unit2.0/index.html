@@ -791,6 +791,14 @@ Adapter를 이용하여 통신 프로토콜을 변경할 수 있도록 구현돼
         dialogPolyfill.registerDialog(dialog);
         document.querySelector('#js-jser-ping-open').onclick = function() {
             dialog.showModal();
+            if (typeof ga === "function") {
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Ping',
+                    eventAction: 'click',
+                    eventLabel: 'OpenDialog'
+                });
+            }
         };
         document.querySelector('#js-jser-ping-close').onclick = function() {
             dialog.close();

@@ -546,6 +546,14 @@ JSer.infoでまだ紹介してなくて、<a href="http://b.hatena.ne.jp/efcl/bo
         dialogPolyfill.registerDialog(dialog);
         document.querySelector('#js-jser-ping-open').onclick = function() {
             dialog.showModal();
+            if (typeof ga === "function") {
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Ping',
+                    eventAction: 'click',
+                    eventLabel: 'OpenDialog'
+                });
+            }
         };
         document.querySelector('#js-jser-ping-close').onclick = function() {
             dialog.close();
