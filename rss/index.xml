@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Oct 2016 10:25:37 +0900</pubDate>
-    <lastBuildDate>Tue, 18 Oct 2016 10:25:37 +0900</lastBuildDate>
+    <pubDate>Tue, 18 Oct 2016 11:11:53 +0900</pubDate>
+    <lastBuildDate>Tue, 18 Oct 2016 11:11:53 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -214,7 +214,7 @@ El Capitan向けの最後のリリース、Fetch APIの改善、&lt;code&gt;down
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;fonts&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;CSSのfont-familyについてのスライド。&lt;br&gt;
-OSやブラウザでfontの情報が異なるため、@font-faceを使い定義するという話&lt;/p&gt;
+OSやブラウザでfontの情報が異なるため、&lt;code&gt;@font-face&lt;/code&gt;を使い定義するという話&lt;/p&gt;
 
 &lt;hr&gt;
 
