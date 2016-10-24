@@ -1,4 +1,11 @@
 [{
+"title":"2016-10-24のJS: npm 4.0.0、Node.js v6.9.0 (LTS)、webpack@2へのマイグレーション",
+"url":"https://jser.info/2016/10/24/npm-4.0.0-node.js-v6.9.0-lts-webpack2/",
+"date":"2016-10-24T09:36:00+09:00",
+"content":"JSer.info #302 - npm 4.0.0がプレリリースされました。Release ...",
+"category":"JSer",
+"tags":["npm","Node.js","webpack"]
+},{
 "title":"2016-10-18のJS: JS Foundation、npmクライアントのyarn",
 "url":"https://jser.info/2016/10/18/js-foundation-npmyarn/",
 "date":"2016-10-18T09:39:00+09:00",
