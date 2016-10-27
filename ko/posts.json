@@ -1,4 +1,11 @@
 [{
+"title":"2016-10-24 JS: npm 4.0.0, Node.js v6.9.0 (LTS), webpack@2 마이그레이션",
+"url":"https://jser.info/ko/2016/10/24/npm-4.0.0-node.js-v6.9.0-lts-webpack2/",
+"date":"2016-10-24T09:36:00+09:00",
+"content":"JSer.info #302 - npm 4.0.0이 프리 릴리즈(PreRelease) ...",
+"category":"JSer",
+"tags":["npm","Node.js","webpack"]
+},{
 "title":"JSer.info 300회째 &amp;&amp; https 적용 &amp;&amp; 사용자 투고 기능",
 "url":"https://jser.info/ko/2016/10/10/300posts/",
 "date":"2016-10-10T23:37:00+09:00",
