@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/ko/</link>
     <atom:link href="https://jser.info/ko/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 27 Oct 2016 14:06:04 +0900</pubDate>
-    <lastBuildDate>Thu, 27 Oct 2016 14:06:04 +0900</lastBuildDate>
+    <pubDate>Fri, 28 Oct 2016 14:33:27 +0900</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 14:33:27 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -25,9 +25,9 @@
 
 &lt;hr&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v6.9.0/&quot; title=&quot;Node v6.9.0 (LTS) | Node.js&quot;&gt;Node.js v6.9.0 (LTS)&lt;/a&gt;가 릴리즈됐습니다&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v6.9.0/&quot; title=&quot;Node v6.9.0 (LTS) | Node.js&quot;&gt;Node.js v6.9.0 (LTS)&lt;/a&gt;이 릴리즈됐습니다&lt;/p&gt;
 
-&lt;p&gt;6.x의 LTS 버전입니다. 자세한 지원 스케쥴을 아래 링크에 잘 설명돼 있습니다&lt;/p&gt;
+&lt;p&gt;6.x의 LTS 버전으로, 자세한 지원 계획은 아래 링크에 잘 설명돼 있습니다&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://medium.com/@nodejs/node-js-v6-transitions-to-lts-be7f18c17159#.c8d2tljbn&quot; title=&quot;Node.js v6 Transitions to LTS – Medium&quot;&gt;Node.js v6 Transitions to LTS – Medium&lt;/a&gt;&lt;/li&gt;
@@ -38,7 +38,7 @@
 
 &lt;hr&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/&quot; title=&quot;Migrating to Webpack 2&quot;&gt;Migrating to Webpack 2&lt;/a&gt;라는 글에서는 webpack@2(베타 버전)으로 마이그레이션 하는 방법에 관해 작성돼 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/&quot; title=&quot;Migrating to Webpack 2&quot;&gt;Migrating to Webpack 2&lt;/a&gt;라는 글에서는 webpack@2(베타 버전)로 마이그레이션 하는 방법에 관해 작성돼 있습니다.&lt;/p&gt;
 
 &lt;p&gt;webpack의 공식 사이트에도 업데이트된 새로운 마이그레이션 가이드가 공개돼 있으니 함께 참고하시길 바랍니다&lt;/p&gt;
 
@@ -46,12 +46,12 @@
 &lt;li&gt;&lt;a href=&quot;https://webpack.js.org/how-to/upgrade-from-webpack-1/&quot; title=&quot;How to Upgrade from Webpack 1?&quot;&gt;How to Upgrade from Webpack 1?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;webpack@2부터는 설정 파일의 벨리데이션이 도입됐기 때문에 잘못된 설정을 하면 에러가 발생합니다.&lt;br&gt;
-마이그레이션 시에 에러가 발생한 경우에 위 가이드를 참고해 수정할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;webpack@2부터는 설정 파일을 벨리데이션하는 단계가 도입됐기 때문에 잘못된 설정을 하면 에러가 발생합니다.&lt;br&gt;
+마이그레이션 시 에러가 발생한 경우 위 가이드를 참고해 수정할 수 있습니다.&lt;/p&gt;
 
 &lt;p&gt;세세하게 기술이 많이 변경됐으며, &lt;code&gt;OccurrenceOrderPlugin&lt;/code&gt;가 기본이 되고, 커멘드라인 인수을 전달하는 방법이 추가되는 등 다양한 변경 사항이 있습니다. &lt;/p&gt;
 
-&lt;p&gt;또, ES modules을 그대로 사용할 수 있도록 변경 됐기 때문에 Babel을 통해 ES modules 변환하지 않도록 설정하는 방법 등에 대해서도 소개하고 있습니다.&lt;/p&gt;
+&lt;p&gt;또, ES modules을 그대로 사용할 수 있도록 변경 됐기 때문에 Babel을 통해 ES modules 변환하지 않도록 설정하는 방법에 대해서도 소개하고 있습니다.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;{
   &amp;quot;presets&amp;quot;: [
     [&amp;quot;es2015&amp;quot;, { &amp;quot;modules&amp;quot;: false }]
@@ -70,7 +70,7 @@
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;npm v4 프리 릴리드됐습니다.&lt;br&gt;
+&lt;p&gt;npm v4 프리 릴리즈됐습니다.&lt;br&gt;
 &lt;code&gt;npm i -g npm@4&lt;/code&gt;으로 설치할 수 있으며 &lt;code&gt;npm search&lt;/code&gt; 속도 개선, &lt;code&gt;publish&lt;/code&gt; 라이프 사이클이 depreated 되는 대신 &lt;code&gt;prepare&lt;/code&gt;나 &lt;code&gt;prepublishOnly&lt;/code&gt;을 사용할 수 있도록 변경됐습니다. 또, &lt;code&gt;npm tag&lt;/code&gt;가 삭제되는 등 다양한 변경 사항이 있습니다.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -86,7 +86,7 @@
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;JSHint 2.9.4이 릴리즈됐습니다.&lt;br&gt;
+&lt;p&gt;JSHint 2.9.4가 릴리즈됐습니다.&lt;br&gt;
 TDZ를 대응하고 에러를 중복해서 리포트하지 않도록 수정됐습니다.&lt;/p&gt;
 
 &lt;hr&gt;
@@ -97,8 +97,8 @@ TDZ를 대응하고 에러를 중복해서 리포트하지 않도록 수정됐�
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;Ember.js 2.8-LTS, 2.9、2.10β가 릴리즈됐습니다.&lt;br&gt;
-2.8-LTS는 2018년 2월까지 보안 패치를 릴리즈 및 지원 합니다.&lt;/p&gt;
+&lt;p&gt;Ember.js 2.8-LTS, 2.9, 2.10β가 릴리즈됐습니다.&lt;br&gt;
+2.8-LTS는 2018년 2월까지 보안 패치가 릴리즈됩니다.&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -121,7 +121,7 @@ TDZ를 대응하고 에러를 중복해서 리포트하지 않도록 수정됐�
 
 &lt;p&gt;Chrome 55 Beta가 릴리즈됐습니다.&lt;br&gt;
 Pointer Events, async/await, CSS &lt;code&gt;hyphens&lt;/code&gt;, Persistent Storage 등을 지원합니다.&lt;br&gt;
-&lt;code&gt;document.write&lt;/code&gt;으로 주입한 cross origin 그리고 parser-blocking 스크립트를 2G 회선에서 로드되지 않도록 변경 되는 등 다양한 변경 사항이 있습니다.&lt;/p&gt;
+&lt;code&gt;document.write&lt;/code&gt;로 주입한 cross origin 그리고 parser-blocking 스크립트를 2G 회선에서 로드되지 않도록 변경 되는 등 다양한 변경 사항이 있습니다.&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -131,8 +131,8 @@ Pointer Events, async/await, CSS &lt;code&gt;hyphens&lt;/code&gt;, Persistent St
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;Node.js v6.9.0 (LTS)가 릴리즈됐습니다.&lt;br&gt;
-Node.js v4.x (LTS)에서의 마이그레이션 가이드도 작성돼 있습니다.&lt;br&gt;
+&lt;p&gt;Node.js v6.9.0(LTS)이 릴리즈됐습니다.&lt;br&gt;
+Node.js v4.x(LTS)에서의 마이그레이션 가이드도 작성돼 있습니다.&lt;br&gt;
 v6.x는 2018년 4월까지 액티브한 LTS가 됩니다.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -151,7 +151,7 @@ v6.x는 2018년 4월까지 액티브한 LTS가 됩니다.&lt;/p&gt;
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;Node.js v6 이후의 LTS 스케쥴에 관해 작성돼 있습니다.&lt;br&gt;
+&lt;p&gt;Node.js v6 이후의 LTS 계획에 관해 작성돼 있습니다.&lt;br&gt;
 Node.js v0.10/v0.12는 2016년 12월 까지가 End of Line입니다.&lt;/p&gt;
 
 &lt;hr&gt;
@@ -213,9 +213,9 @@ async의 동작 방식, await를 깜빡한 경우의 동작, &lt;code&gt;await P
 
 &lt;hr&gt;
 
-&lt;h2 id=&quot;testcafe로-브라우저-자동-테스트(e2eテスト)-|-web-scratch(일본어)&quot;&gt;TestCafe로 브라우저 자동 테스트(E2Eテスト) | Web Scratch(일본어)&lt;/h2&gt;
+&lt;h2 id=&quot;testcafe로-브라우저-자동-테스트(e2e테스트)-|-web-scratch(일본어)&quot;&gt;TestCafe로 브라우저 자동 테스트(E2E테스트) | Web Scratch(일본어)&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://efcl.info/2016/10/23/testcafe/&quot; title=&quot;TestCafeでブラウザの自動テスト(E2Eテスト) | Web Scratch&quot;&gt;efcl.info/2016/10/23/testcafe/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://efcl.info/2016/10/23/testcafe/&quot; title=&quot;TestCafe로 브라우저 자동 테스트(E2E테스트) | Web Scratch&quot;&gt;efcl.info/2016/10/23/testcafe/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;E2E&lt;/span&gt;&lt;/p&gt;
 
@@ -256,7 +256,7 @@ async의 동작 방식, await를 깜빡한 경우의 동작, &lt;code&gt;await P
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ&quot; title=&quot;Polymer Summit 2016 - YouTube&quot;&gt;www.youtube.com/playlist?list=PLNYkxOF6rcICc687SxHQRuo9TVNOJelSZ&lt;/a&gt;&lt;/p&gt;
 
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;WebComponents&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;イベント&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;WebComponents&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;이벤트&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Polymer Summit 2016의 발표 영상이 공개됐습니다.&lt;/p&gt;
 
@@ -303,7 +303,7 @@ Codepen에서 샘플 코드를 실행해볼 수 있도록 기능이 추가됐습
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;JavaScript를 재정리 할 수 있는 도구와 사이트, &lt;code&gt;.jsbeautifyrc&lt;/code&gt;로 설정하고 관리할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;JavaScript를 Beautify 할 수 있는 도구와 사이트, &lt;code&gt;.jsbeautifyrc&lt;/code&gt;로 설정하고 관리할 수 있습니다.&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -359,7 +359,7 @@ Babel을 내장하고 있어 async/await 등의 구문을 사용할 수 있고 �
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;TypeScript, npm과 Bower, webpack, jQuery, Vue.js, Backbone.js, Angular, React, Aurelia 등 JavaScript의 여러가지 도구나 프레임워크에 관해 소개 및 설명하는 책입니다.&lt;/p&gt;
+&lt;p&gt;TypeScript, npm과 Bower, webpack, jQuery, Vue.js, Backbone.js, Angular, React, Aurelia 등 JavaScript의 여러가지 도구와 프레임워크에 관해 소개 및 설명하는 책입니다.&lt;/p&gt;
 
 &lt;hr&gt;
 </description>
