@@ -1,4 +1,11 @@
 [{
+"title":"2016-11-01 JS: Node.js v7, Node.js v0.10 EOL, WebAssembly Browser Preview",
+"url":"https://jser.info/ko/2016/11/01/node.js-v7-node.js-v0.10-eol-webassembly-browser-preview/",
+"date":"2016-11-01T09:57:00+09:00",
+"content":"JSer.info #303　- 지난주 Node.js v6.9.0 (LTS)가 릴리즈됐...",
+"category":"JSer",
+"tags":["Node.js","WebAssembly","Browser"]
+},{
 "title":"2016-10-24 JS: npm 4.0.0, Node.js v6.9.0 (LTS), webpack@2 마이그레이션",
 "url":"https://jser.info/ko/2016/10/24/npm-4.0.0-node.js-v6.9.0-lts-webpack2/",
 "date":"2016-10-24T09:36:00+09:00",
