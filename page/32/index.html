@@ -363,6 +363,12 @@ O&#8217;Reilly MediaがJavaScriptに関する電子書籍やビデオ( Douglas 
 <link rel="stylesheet" href="https://unpkg.com/dialog-polyfill@0.4.4/dialog-polyfill.css">
 <script src="https://unpkg.com/dialog-polyfill@0.4.4" async defer></script>
 <style>
+    @media screen and (max-width: 500px) {
+        .ping-show-button {
+            display: none;
+        }
+    }
+
     .ping-show-button {
         color: #fff;
         z-index: 100;
@@ -378,7 +384,6 @@ O&#8217;Reilly MediaがJavaScriptに関する電子書籍やビデオ( Douglas 
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        cursor: hand;
         -webkit-transition: all .3s ease;
         transition: all .3s ease;
     }
@@ -415,20 +420,20 @@ O&#8217;Reilly MediaがJavaScriptに関する電子書籍やビデオ( Douglas 
     window.addEventListener("load", function() {
         var dialog = document.querySelector("#js-jser-ping-dialog");
         dialogPolyfill.registerDialog(dialog);
-        document.querySelector('#js-jser-ping-open').onclick = function() {
+        document.querySelector("#js-jser-ping-open").addEventListener("click", function() {
             dialog.showModal();
             if (typeof ga === "function") {
-                ga('send', {
-                    hitType: 'event',
-                    eventCategory: 'Ping',
-                    eventAction: 'click',
-                    eventLabel: 'OpenDialog'
+                ga("send", {
+                    hitType: "event",
+                    eventCategory: "Ping",
+                    eventAction: "click",
+                    eventLabel: "OpenDialog"
                 });
             }
-        };
-        document.querySelector('#js-jser-ping-close').onclick = function() {
+        });
+        document.querySelector("#js-jser-ping-close").addEventListener("click", function() {
             dialog.close();
-        };
+        });
     });
 </script>
 </body>

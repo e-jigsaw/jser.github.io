@@ -675,6 +675,12 @@ FlowType과는 다르게 ES5에 초점을 두고 있고 모호함을 최대한 �
 <link rel="stylesheet" href="https://unpkg.com/dialog-polyfill@0.4.4/dialog-polyfill.css">
 <script src="https://unpkg.com/dialog-polyfill@0.4.4" async defer></script>
 <style>
+    @media screen and (max-width: 500px) {
+        .ping-show-button {
+            display: none;
+        }
+    }
+
     .ping-show-button {
         color: #fff;
         z-index: 100;
@@ -690,7 +696,6 @@ FlowType과는 다르게 ES5에 초점을 두고 있고 모호함을 최대한 �
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        cursor: hand;
         -webkit-transition: all .3s ease;
         transition: all .3s ease;
     }
@@ -727,20 +732,20 @@ FlowType과는 다르게 ES5에 초점을 두고 있고 모호함을 최대한 �
     window.addEventListener("load", function() {
         var dialog = document.querySelector("#js-jser-ping-dialog");
         dialogPolyfill.registerDialog(dialog);
-        document.querySelector('#js-jser-ping-open').onclick = function() {
+        document.querySelector("#js-jser-ping-open").addEventListener("click", function() {
             dialog.showModal();
             if (typeof ga === "function") {
-                ga('send', {
-                    hitType: 'event',
-                    eventCategory: 'Ping',
-                    eventAction: 'click',
-                    eventLabel: 'OpenDialog'
+                ga("send", {
+                    hitType: "event",
+                    eventCategory: "Ping",
+                    eventAction: "click",
+                    eventLabel: "OpenDialog"
                 });
             }
-        };
-        document.querySelector('#js-jser-ping-close').onclick = function() {
+        });
+        document.querySelector("#js-jser-ping-close").addEventListener("click", function() {
             dialog.close();
-        };
+        });
     });
 </script>
 </body>
