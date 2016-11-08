@@ -1,4 +1,11 @@
 [{
+"title":"2016-11-08のJS: sitespeed.io 4.0、webpack 2 beta入門、JavaScriptスタックチュートリアル",
+"url":"https://jser.info/2016/11/08/sitespeed.io-4.0-webpack-2-beta-javascript/",
+"date":"2016-11-08T10:44:00+09:00",
+"content":"JSer.info #304 - ウェブサイトのパフォーマンス計測ツールであるsitespee...",
+"category":"JSer",
+"tags":["performance","webpack","JavaScript","framework"]
+},{
 "title":"2016-11-01のJS: Node.js v7、Node.js v0.10 EOL、WebAssembly Browser Preview",
 "url":"https://jser.info/2016/11/01/node.js-v7-node.js-v0.10-eol-webassembly-browser-preview/",
 "date":"2016-11-01T09:57:00+09:00",
