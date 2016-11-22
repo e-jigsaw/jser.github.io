@@ -203,7 +203,7 @@
 </ul>
 
 <p>Firefox 50では、<code>Symbol.hasInstance</code>の実装、コンソールがSource Mapを解釈するようになり、<code>addEventListener</code>が<code>{ once }</code>オプションをサポートしました。<br>
-DOMにおいては、<a href="https://developer.mozilla.org/ja/docs/Web/API/NodeList" title="NodeList">NodeList</a>や<a href="https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList" title="DOMTokenList">DOMTokenList</a>がIterableとなったため、次のように<code>NodeList#querySelectorAll</code>の結果に対して<code>forEach</code>メソッドなどがりようできます。</p>
+DOMにおいては、<a href="https://developer.mozilla.org/ja/docs/Web/API/NodeList" title="NodeList">NodeList</a>や<a href="https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList" title="DOMTokenList">DOMTokenList</a>がIterableとなったため、次のように<code>NodeList#querySelectorAll</code>の結果に対して<code>forEach</code>メソッドなどが利用できます。</p>
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;button&quot;</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">node</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">node</span><span class="p">));</span>
 </code></pre></div>
 <p>また、セキュリティ面では<code>__Secure-</code>などの<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie" title="Cookie prefixes">Cookie prefixes</a>、<code>X-Content-Type-Options: nosniff</code>に対応しています。</p>
@@ -215,8 +215,13 @@ DOMにおいては、<a href="https://developer.mozilla.org/ja/docs/Web/API/Node
 
 <hr>
 
-<p><a href="https://facebook.github.io/react/blog/2016/11/16/react-v15.4.0.html" title="React v15.4.0">React v15.4.0</a>がリリースされました。<br>
-<a href="https://facebook.github.io/react/blog/2015/09/10/react-v0.14-rc1.html#two-packages-react-and-react-dom" title="React v0.14">React v0.14</a>で<code>react</code>と<code>react-dom</code>にパッケージが分割されていましたが、内部的にはReact DOMの実装が<code>react</code>パッケージにも含まれていました。<br>
+<p><a href="https://facebook.github.io/react/blog/2016/11/16/react-v15.4.0.html" title="React v15.4.0">React v15.4.0</a>がリリースされました。</p>
+
+<ul>
+<li><a href="https://facebook.github.io/react/blog/2016/11/16/react-v15.4.0.html" title="React v15.4.0 - React Blog">React v15.4.0 - React Blog</a></li>
+</ul>
+
+<p><a href="https://facebook.github.io/react/blog/2015/09/10/react-v0.14-rc1.html#two-packages-react-and-react-dom" title="React v0.14">React v0.14</a>で<code>react</code>と<code>react-dom</code>にパッケージが分割されていましたが、内部的にはReact DOMの実装が<code>react</code>パッケージにも含まれていました。<br>
 これに起因する<a href="https://github.com/facebook/react/issues/7386">問題</a>があったため、React v15.4.0では内部的に残っていたReact DOMの実装を<code>react</code>パッケージから削除されました。</p>
 
 <p>この変更に影響を受けるのは、<code>require(&quot;react/lib/merge&quot;)</code>のように直接ReactのPrivate APIを利用していた場合のみです。<br>
@@ -230,7 +235,7 @@ DOMにおいては、<a href="https://developer.mozilla.org/ja/docs/Web/API/Node
 </ul>
 
 <p>また、React v15.4.0では<code>?react_perf</code>をURLにつけることにより、User Timing APIでのパフォーマンス計測ができるようになっています。<br>
-<code>performance.mark</code>や<code>performance.measure</code>を使い実現しているので、次の記事を見てみると面白いかもしれません。</p>
+<code>performance.mark</code>や<code>performance.measure</code>を利用し実現しているので、次の記事を見てみると面白いかもしれません。</p>
 
 <ul>
 <li><a href="http://efcl.info/2016/08/15/performance.mark/" title="performance.markでパフォーマンス計測する | Web Scratch">performance.markでパフォーマンス計測する | Web Scratch</a></li>

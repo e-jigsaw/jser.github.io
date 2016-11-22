@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 22 Nov 2016 10:53:22 +0900</pubDate>
-    <lastBuildDate>Tue, 22 Nov 2016 10:53:22 +0900</lastBuildDate>
+    <pubDate>Tue, 22 Nov 2016 11:18:57 +0900</pubDate>
+    <lastBuildDate>Tue, 22 Nov 2016 11:18:57 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -20,7 +20,7 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Firefox 50では、&lt;code&gt;Symbol.hasInstance&lt;/code&gt;の実装、コンソールがSource Mapを解釈するようになり、&lt;code&gt;addEventListener&lt;/code&gt;が&lt;code&gt;{ once }&lt;/code&gt;オプションをサポートしました。&lt;br&gt;
-DOMにおいては、&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/API/NodeList&quot; title=&quot;NodeList&quot;&gt;NodeList&lt;/a&gt;や&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList&quot; title=&quot;DOMTokenList&quot;&gt;DOMTokenList&lt;/a&gt;がIterableとなったため、次のように&lt;code&gt;NodeList#querySelectorAll&lt;/code&gt;の結果に対して&lt;code&gt;forEach&lt;/code&gt;メソッドなどがりようできます。&lt;/p&gt;
+DOMにおいては、&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/API/NodeList&quot; title=&quot;NodeList&quot;&gt;NodeList&lt;/a&gt;や&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/API/DOMTokenList&quot; title=&quot;DOMTokenList&quot;&gt;DOMTokenList&lt;/a&gt;がIterableとなったため、次のように&lt;code&gt;NodeList#querySelectorAll&lt;/code&gt;の結果に対して&lt;code&gt;forEach&lt;/code&gt;メソッドなどが利用できます。&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelectorAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;また、セキュリティ面では&lt;code&gt;__Secure-&lt;/code&gt;などの&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie&quot; title=&quot;Cookie prefixes&quot;&gt;Cookie prefixes&lt;/a&gt;、&lt;code&gt;X-Content-Type-Options: nosniff&lt;/code&gt;に対応しています。&lt;/p&gt;
@@ -32,8 +32,13 @@ DOMにおいては、&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/
 
 &lt;hr&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://facebook.github.io/react/blog/2016/11/16/react-v15.4.0.html&quot; title=&quot;React v15.4.0&quot;&gt;React v15.4.0&lt;/a&gt;がリリースされました。&lt;br&gt;
-&lt;a href=&quot;https://facebook.github.io/react/blog/2015/09/10/react-v0.14-rc1.html#two-packages-react-and-react-dom&quot; title=&quot;React v0.14&quot;&gt;React v0.14&lt;/a&gt;で&lt;code&gt;react&lt;/code&gt;と&lt;code&gt;react-dom&lt;/code&gt;にパッケージが分割されていましたが、内部的にはReact DOMの実装が&lt;code&gt;react&lt;/code&gt;パッケージにも含まれていました。&lt;br&gt;
+&lt;p&gt;&lt;a href=&quot;https://facebook.github.io/react/blog/2016/11/16/react-v15.4.0.html&quot; title=&quot;React v15.4.0&quot;&gt;React v15.4.0&lt;/a&gt;がリリースされました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://facebook.github.io/react/blog/2016/11/16/react-v15.4.0.html&quot; title=&quot;React v15.4.0 - React Blog&quot;&gt;React v15.4.0 - React Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://facebook.github.io/react/blog/2015/09/10/react-v0.14-rc1.html#two-packages-react-and-react-dom&quot; title=&quot;React v0.14&quot;&gt;React v0.14&lt;/a&gt;で&lt;code&gt;react&lt;/code&gt;と&lt;code&gt;react-dom&lt;/code&gt;にパッケージが分割されていましたが、内部的にはReact DOMの実装が&lt;code&gt;react&lt;/code&gt;パッケージにも含まれていました。&lt;br&gt;
 これに起因する&lt;a href=&quot;https://github.com/facebook/react/issues/7386&quot;&gt;問題&lt;/a&gt;があったため、React v15.4.0では内部的に残っていたReact DOMの実装を&lt;code&gt;react&lt;/code&gt;パッケージから削除されました。&lt;/p&gt;
 
 &lt;p&gt;この変更に影響を受けるのは、&lt;code&gt;require(&amp;quot;react/lib/merge&amp;quot;)&lt;/code&gt;のように直接ReactのPrivate APIを利用していた場合のみです。&lt;br&gt;
@@ -47,7 +52,7 @@ DOMにおいては、&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/
 &lt;/ul&gt;
 
 &lt;p&gt;また、React v15.4.0では&lt;code&gt;?react_perf&lt;/code&gt;をURLにつけることにより、User Timing APIでのパフォーマンス計測ができるようになっています。&lt;br&gt;
-&lt;code&gt;performance.mark&lt;/code&gt;や&lt;code&gt;performance.measure&lt;/code&gt;を使い実現しているので、次の記事を見てみると面白いかもしれません。&lt;/p&gt;
+&lt;code&gt;performance.mark&lt;/code&gt;や&lt;code&gt;performance.measure&lt;/code&gt;を利用し実現しているので、次の記事を見てみると面白いかもしれません。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://efcl.info/2016/08/15/performance.mark/&quot; title=&quot;performance.markでパフォーマンス計測する | Web Scratch&quot;&gt;performance.markでパフォーマンス計測する | Web Scratch&lt;/a&gt;&lt;/li&gt;
