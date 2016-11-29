@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 29 Nov 2016 10:27:04 +0900</pubDate>
-    <lastBuildDate>Tue, 29 Nov 2016 10:27:04 +0900</lastBuildDate>
+    <pubDate>Tue, 29 Nov 2016 10:51:20 +0900</pubDate>
+    <lastBuildDate>Tue, 29 Nov 2016 10:51:20 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -57,10 +57,10 @@ Windows 10ユーザー向けにはセキュリティ修正も含まれていま�
 
 &lt;p&gt;是非こういうことをやりたいということがあればIssueなどに書き込んでください。&lt;/p&gt;
 
-&lt;p&gt;例) 死にゆくFlashを祝いたいなど&lt;/p&gt;
+&lt;p&gt;例) 死にゆくFlashに関する話をしたい など&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;https://github.com/jser/jser.info/issues/89&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jser/jser.info/issues/89&quot;&gt;https://github.com/jser/jser.info/issues/89&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;こういう発表したい事前予告もありです&lt;/li&gt;
 &lt;/ul&gt;
 
