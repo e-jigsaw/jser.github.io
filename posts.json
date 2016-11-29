@@ -1,4 +1,11 @@
 [{
+"title":"2016-11-29のJS: Node.js v7.2.0、Yarnでオフラインインストール",
+"url":"https://jser.info/2016/11/29/node.js-v7.2.0-yarn/",
+"date":"2016-11-29T09:37:00+09:00",
+"content":"JSer.info #307 - Node v7.2.0がリリースされました。Windows ...",
+"category":"JSer",
+"tags":["Node","Yarn"]
+},{
 "title":"2016-11-22のJS: Firefox 50、React v15.4.0、Custom Element v1",
 "url":"https://jser.info/2016/11/22/firefox-50-react-v15.4.0-custom-element-v1/",
 "date":"2016-11-22T10:06:00+09:00",
