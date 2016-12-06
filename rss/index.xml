@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Dec 2016 11:24:44 +0900</pubDate>
-    <lastBuildDate>Tue, 06 Dec 2016 11:24:44 +0900</lastBuildDate>
+    <pubDate>Tue, 06 Dec 2016 11:51:26 +0900</pubDate>
+    <lastBuildDate>Tue, 06 Dec 2016 11:51:26 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -128,7 +128,7 @@ ES2015のパフォーマンス改善、&lt;code&gt;String#padStart&lt;/code&gt;�
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Chrome&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Chrome 55リリース。&lt;br&gt;
-Pointer Event、async/await、Presistent Storageなど。&lt;br&gt;
+Pointer Event、async/await、Persistent Storageなど。&lt;br&gt;
 HTML5 by Default(Flashのデフォルトブロック)はChrome 56に延期した。&lt;/p&gt;
 
 &lt;ul&gt;
