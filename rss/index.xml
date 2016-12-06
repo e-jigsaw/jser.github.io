@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Dec 2016 11:51:26 +0900</pubDate>
-    <lastBuildDate>Tue, 06 Dec 2016 11:51:26 +0900</lastBuildDate>
+    <pubDate>Tue, 06 Dec 2016 11:52:23 +0900</pubDate>
+    <lastBuildDate>Tue, 06 Dec 2016 11:52:23 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -68,7 +68,7 @@
 
 &lt;hr&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://svelte.technology/&quot; title=&quot;Svelte&quot;&gt;Svelte&lt;/a&gt;というUIフレームワーク/ツールが公開されいます。&lt;br&gt;
+&lt;p&gt;&lt;a href=&quot;https://svelte.technology/&quot; title=&quot;Svelte&quot;&gt;Svelte&lt;/a&gt;というUIフレームワーク/ツールが公開されています。&lt;br&gt;
 作者は&lt;a href=&quot;http://www.ractivejs.org/&quot; title=&quot;Ractive.js&quot;&gt;Ractive.js&lt;/a&gt;や&lt;a href=&quot;https://github.com/rollup/rollup&quot; title=&quot;rollup&quot;&gt;rollup&lt;/a&gt;の @&lt;a href=&quot;https://github.com/Rich-Harris&quot; title=&quot;Rich-Harris&quot;&gt;Rich-Harris&lt;/a&gt; さんです。&lt;/p&gt;
 
 &lt;p&gt;よくあるコンポーネント志向のフレームワークですが、特徴として&lt;a href=&quot;https://github.com/sveltejs/svelte-cli&quot; title=&quot;svelte-cli&quot;&gt;svelte-cli&lt;/a&gt;で変換すると、ただのDOM APIを使った単体のJavaScriptコードとなります。&lt;br&gt;
