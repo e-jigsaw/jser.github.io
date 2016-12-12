@@ -1,4 +1,11 @@
 [{
+"title":"2016-12-12のJS: Chrome 56β、Babelの過去と現在と未来",
+"url":"https://jser.info/2016/12/12/chrome-56b-babel/",
+"date":"2016-12-12T10:14:00+09:00",
+"content":"JSer.info #309 - Chrome 56βがリリースされました。Chromium ...",
+"category":"JSer",
+"tags":["Chrome","Firefox","Babel"]
+},{
 "title":"2016-12-06のJS: Ember.js 2.10、Front-End Tooling 2016アンケート、Svelte",
 "url":"https://jser.info/2016/12/06/ember.js-2.10-front-end-tooling-2016-svelte/",
 "date":"2016-12-06T09:55:00+09:00",
