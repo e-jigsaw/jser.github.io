@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Dec 2016 20:19:59 +0900</pubDate>
-    <lastBuildDate>Tue, 13 Dec 2016 20:19:59 +0900</lastBuildDate>
+    <pubDate>Tue, 13 Dec 2016 20:21:48 +0900</pubDate>
+    <lastBuildDate>Tue, 13 Dec 2016 20:21:48 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -94,6 +94,11 @@ JavaScript Discussion後に懇談会を行う予定です。&lt;br&gt;
 &lt;p&gt;&lt;a href=&quot;https://app.sli.do/event/0egbwyxz/ask&quot;&gt;&lt;img src=&quot;https://monosnap.com/file/z2VC0MmCQKox5DjQXlvOpNaYQjVhum.png&quot; alt=&quot;JavaScript Discussion(JavaScriptの良い所/悪い所/気になる事)&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;他にも、この人と話しあいたいとかあったらお知らせください。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.connpass.com/event/46997/&quot; title=&quot;JSer.info 6周年と300回記念イベント - connpass&quot;&gt;JSer.info 6周年と300回記念イベント - connpass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jser/jser.info/issues/89&quot; title=&quot;JSer.info 6周年 &amp;amp;amp;&amp;amp;amp; 300回目記念イベント @ 1月15日(日) · Issue #89 · jser/jser.info&quot;&gt;JSer.info 6周年 &amp;amp;&amp;amp; 300回目記念イベント @ 1月15日(日) · Issue #89 · jser/jser.info&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Tue, 13 Dec 2016 09:26:00 +0900</pubDate>
         <link>https://jser.info/2016/12/13/announcement-jser-info-6years-event/</link>
