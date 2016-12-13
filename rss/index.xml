@@ -5,9 +5,112 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 12 Dec 2016 20:25:48 +0900</pubDate>
-    <lastBuildDate>Mon, 12 Dec 2016 20:25:48 +0900</lastBuildDate>
+    <pubDate>Tue, 13 Dec 2016 20:14:00 +0900</pubDate>
+    <lastBuildDate>Tue, 13 Dec 2016 20:14:00 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>2017年1月15日(日)に JSer.info 6周年 &amp;&amp; 300回目記念イベント を開催します</title>
+        <description>&lt;p&gt;2017年1月15日(日)にJSer.infoの6周年記念イベントをやります。&lt;br&gt;
+(&lt;a href=&quot;https://jser.info/2016/10/10/300posts/&quot; title=&quot;300回目&quot;&gt;300回目&lt;/a&gt;記念はやってなかったのでついでです)&lt;/p&gt;
+
+&lt;p&gt;次のイベントページから参加を申し込むことができます。&lt;br&gt;
+申し込み開始は、2016/12/15(木) 21:00からです(抽選)。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.connpass.com/event/46997/&quot; title=&quot;JSer.info 6周年と300回記念イベント - connpass&quot;&gt;JSer.info 6周年と300回記念イベント - connpass&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;発表枠&quot;&gt;発表枠&lt;/h3&gt;
+
+&lt;p&gt;5-20分程度の発表をしてくれる人を募集しています。&lt;br&gt;
+テーマはJavaScriptであれば問題ありません。&lt;/p&gt;
+
+&lt;p&gt;発表枠で申し込んだ方は、発表時間やテーマなどを次のIssueなどで伝えてください。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jser/jser.info/issues/89&quot;&gt;JSer.info 6周年 &amp;amp;&amp;amp; 300回目記念イベント @ 1月15日(日) · Issue #89 · jser/jser.info&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Q&amp;amp;A&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Q. 30分以上の発表がしたい&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jser/jser.info/issues/89&quot;&gt;応相談&lt;/a&gt;。他の発表枠次第ですが可能です。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Q. どのくらいのレベルの参加者を想定した内容にすればいいの?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;基本的に全力でやってもらえればいいです。&lt;br&gt;
+自分が勝手に補足を入れるので遠慮は不要です。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Q. 初心者向けの内容でもいいの?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;問題ありません。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Q. 商業的な宣伝をメインにしたトーク&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ダメ&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Q. LTしたい&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ご自由にどうぞ。&lt;br&gt;
+JavaScript Discussion後に懇談会を行う予定です。&lt;br&gt;
+そのタイミングで自由にできます。&lt;/p&gt;
+
+&lt;h3 id=&quot;書記枠&quot;&gt;書記枠&lt;/h3&gt;
+
+&lt;p&gt;「書記枠」という変な枠もあります。&lt;/p&gt;
+
+&lt;p&gt;自分がいつもやっているような&lt;a href=&quot;http://efcl.info/tags/?q=%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&quot;&gt;アウトラインメモ&lt;/a&gt;を&lt;a href=&quot;http://etherpad.org/&quot; title=&quot;Etherpad&quot;&gt;Etherpad&lt;/a&gt;などを使って書くのを手伝ってくれる人の枠です。&lt;br&gt;
+(司会業やってないときは自分もやります)&lt;/p&gt;
+
+&lt;p&gt;当日リアルタイムで見れるようにして、文書ベースのデータがあると議論/質疑がしやすくなるかを試したいので、「書記枠」を用意しました。&lt;/p&gt;
+
+&lt;p&gt;「書記枠」で申し込んでも、ずっと書いてないといけないわけでもないので、基本的にイベントの参加を優先していいです。&lt;/p&gt;
+
+&lt;h3 id=&quot;javascript-discussion&quot;&gt;JavaScript Discussion&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.info/2016/01/16/jser-5years/&quot; title=&quot;JSer.info 5周年記念イベント&quot;&gt;JSer.info 5周年記念イベント&lt;/a&gt;に来たことがある人はわかると思いますが、質問を集めたDiscussionボードを見ながら議論するコーナーです。&lt;/p&gt;
+
+&lt;p&gt;次の場所に質問、聞きたいこと、話したいこと、主張を書き込むことができます。&lt;br&gt;
+当日も時間を取りますが、事前に書いてもらっても問題ありません。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://app.sli.do/event/bkry5ojl/ask&quot; title=&quot;JSer.info 6周年 - JavaScript Discussion&quot;&gt;JSer.info 6周年 - JavaScript Discussion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;去年のDiscussionボードの様子:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://app.sli.do/event/0egbwyxz/ask&quot;&gt;&lt;img src=&quot;https://monosnap.com/file/z2VC0MmCQKox5DjQXlvOpNaYQjVhum.png&quot; alt=&quot;JavaScript Discussion(JavaScriptの良い所/悪い所/気になる事)&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;他にも、この人と話しあいたいとかあったらお知らせください。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Dec 2016 09:26:00 +0900</pubDate>
+        <link>https://jser.info/2016/12/13/announcement-jser-info-6years-event/</link>
+        <guid isPermaLink="true">https://jser.info/2016/12/13/announcement-jser-info-6years-event/</guid>
+        
+        <category>イベント</category>
+        
+        <category>JSer</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>ja</category>
+        
+        <category>雑記</category>
+        
+      </item>
     
       <item>
         <title>2016-12-12のJS: Chrome 56β、Babelの過去と現在と未来</title>
@@ -3009,75 +3112,6 @@ jsperf.com と似たような感じのサイト。&lt;br&gt;
         <category>ja</category>
         
         <category>jser</category>
-        
-      </item>
-    
-      <item>
-        <title>JSer.info 300回目 &amp;&amp; https化 &amp;&amp; ユーザー投稿機能</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://jser.info/2016/10/10/javascriptunicodeweb-componentsnpm-scripts/&quot;&gt;前回の投稿&lt;/a&gt;でJSer.infoの記事紹介は300回目になりました。&lt;/p&gt;
-
-&lt;p&gt;とりあえず、300週間途切れなく投稿できたので良かったです。&lt;/p&gt;
-
-&lt;p&gt;ついでに、最近JSer.infoに加えた変更を紹介します。&lt;br&gt;
-それ以前の変更とかは以下のスライドにまとまってるので見てみてください。&lt;br&gt;
-(&lt;a href=&quot;https://jser.info/trends/&quot; title=&quot;JSer.info トレンド&quot;&gt;JSer.info トレンド&lt;/a&gt;とかたまに見ると便利)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://azu.github.io/slide/2016/jser5years/jser.info.html&quot; title=&quot;JSer.info 5周年&quot;&gt;JSer.info 5周年&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;https化&quot;&gt;https化&lt;/h2&gt;
-
-&lt;p&gt;JSer.infoはすべて https になりました。(逆にhttpはhttpsにリダイレクトされます)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://jser.info/&quot;&gt;https://jser.info/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot; title=&quot;Cloudflare&quot;&gt;Cloudflare&lt;/a&gt;を使っているだけなので大した手間ではないですが、欠点は外部の&lt;a href=&quot;https://iwb.jp/hatenabookmark-toolbar-ssl-title-bug/&quot;&gt;一部サイト&lt;/a&gt;が変な挙動をしたりするぐらいです。(埋め込みコンテンツはhttpsのサイトしかなかったので特に問題なし)&lt;/p&gt;
-
-&lt;h2 id=&quot;ユーザー投稿機能&quot;&gt;ユーザー投稿機能&lt;/h2&gt;
-
-&lt;p&gt;タイトルに語弊がありますが、JSer.infoに紹介して欲しい記事/サイト/ライブラリなどのURLを投げつけることができる機能です。&lt;/p&gt;
-
-&lt;p&gt;画面右下の&amp;quot;&lt;a href=&quot;https://jser.info/ping/&quot;&gt;記事を紹介する&lt;/a&gt;&amp;quot;ボタンから、JSer.infoに紹介したいURLを投稿することができます。アカウントなど不要なので、気軽にURLを投稿することができます。&lt;/p&gt;
-
-&lt;p&gt;投稿した内容はオープンに&lt;a href=&quot;https://github.com/jser/ping&quot; title=&quot;jser/ping&quot;&gt;jser/ping&lt;/a&gt;で管理されています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://jser.info/ping/&quot; title=&quot;Ping! to JSer.info&quot;&gt;&lt;img src=&quot;https://jser.info/ping/img/site.gif&quot; alt=&quot;ping&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;単独のフォームとして&lt;a href=&quot;https://jser.info/ping/&quot; title=&quot;Ping! to JSer.info&quot;&gt;Ping! to JSer.info&lt;/a&gt;からも同様の投稿ができます。&lt;/p&gt;
-
-&lt;p&gt;投稿するとBotが&lt;a href=&quot;https://github.com/jser/ping/issues&quot;&gt;jser/ping&lt;/a&gt;に新しいIssueを作るので、あとで自分とか誰かが見て紹介するかもしれないというゆるい感じのものです。&lt;br&gt;
-紹介されたときにレス(Pong)が欲しい人がアカウントを入れるぐらいなので、基本的になくて問題ありません。&lt;br&gt;
-( 既存のIssueに &lt;img class=&#39;emoji&#39; title=&#39;:+1:&#39; alt=&#39;:+1:&#39; src=&#39;https://assets.github.com/images/icons/emoji/unicode/1f44d.png&#39; height=&#39;20&#39; width=&#39;20&#39; align=&#39;absmiddle&#39; /&gt; などのリアクションボタンで投票すると参考になるかもしれないです。)&lt;/p&gt;
-
-&lt;p&gt;作った理由としては、&lt;a href=&quot;https://gitter.im/jser/jser.info&quot;&gt;Gitter&lt;/a&gt;とかIssueとかPull Requestを立てるのは&lt;a href=&quot;https://techcrunch.com/2016/09/07/courage/&quot;&gt;勇気&lt;/a&gt;ある人なので、もっと気軽に投げる方法があると良さそうだったので作りました。&lt;/p&gt;
-
-&lt;p&gt;匿名(botが代わりにする)でIssueを立てるために、&lt;a href=&quot;https://github.com/jser/serverless&quot;&gt;lambdaとAPI GatewayでAPI&lt;/a&gt;を作って動かしています。&lt;/p&gt;
-
-&lt;p&gt;もちろん今まで通りGitterなどに書いても問題ないです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://gitter.im/jser/jser.info&quot;&gt;&lt;img src=&quot;https://badges.gitter.im/jser/jser.info.svg&quot; alt=&quot;Gitter&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;おわりに&quot;&gt;おわりに&lt;/h2&gt;
-
-&lt;p&gt;300回記念のイベントとかできなかったので、2017年の1月に6周年と合わせて何かやれるといいですね。&lt;/p&gt;
-
-&lt;p&gt;それでは、今後ともよろしくお願いします。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 10 Oct 2016 23:37:00 +0900</pubDate>
-        <link>https://jser.info/2016/10/10/300posts/</link>
-        <guid isPermaLink="true">https://jser.info/2016/10/10/300posts/</guid>
-        
-        <category>JSer.info</category>
-        
-        
-        <category>_i18n</category>
-        
-        <category>ja</category>
-        
-        <category>雑記</category>
         
       </item>
     
