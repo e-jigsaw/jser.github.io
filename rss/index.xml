@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Dec 2016 20:21:48 +0900</pubDate>
-    <lastBuildDate>Tue, 13 Dec 2016 20:21:48 +0900</lastBuildDate>
+    <pubDate>Wed, 14 Dec 2016 14:17:53 +0900</pubDate>
+    <lastBuildDate>Wed, 14 Dec 2016 14:17:53 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -389,7 +389,7 @@ babel-preset-env、babili、コードカバレッジやプラグインエコシ�
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Promises&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;Promise.all&lt;/code&gt;と&lt;code&gt;Promise.race&lt;/code&gt;を使った待ちわせのパターンについて&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Promise.all&lt;/code&gt;と&lt;code&gt;Promise.race&lt;/code&gt;を使った待ち合わせのパターンについて&lt;/p&gt;
 
 &lt;hr&gt;
 
