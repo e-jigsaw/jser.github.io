@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 14 Dec 2016 14:17:53 +0900</pubDate>
-    <lastBuildDate>Wed, 14 Dec 2016 14:17:53 +0900</lastBuildDate>
+    <pubDate>Wed, 14 Dec 2016 14:37:39 +0900</pubDate>
+    <lastBuildDate>Wed, 14 Dec 2016 14:37:39 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -267,7 +267,7 @@ IDEなどと連携する向けにAngular Language Serviceをリリース、zone.
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;TestCafe v0.11.0リリース。&lt;br&gt;
-Seletorの仕組みを変更、built-in assertionの追加、ブラウザに起動引数をわたせるように&lt;/p&gt;
+Selectorの仕組みを変更、built-in assertionの追加、ブラウザに起動引数をわたせるように&lt;/p&gt;
 
 &lt;hr&gt;
 
