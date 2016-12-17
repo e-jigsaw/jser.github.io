@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 15 Dec 2016 23:39:55 +0900</pubDate>
-    <lastBuildDate>Thu, 15 Dec 2016 23:39:55 +0900</lastBuildDate>
+    <pubDate>Sat, 17 Dec 2016 15:37:37 +0900</pubDate>
+    <lastBuildDate>Sat, 17 Dec 2016 15:37:37 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -58,6 +58,8 @@
 &lt;li&gt;&lt;a href=&quot;https://jser.info/2016/01/16/jser-5years/&quot;&gt;JSer.info 5周年記念イベントを開催しました - JSer.info&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jser.info/2014/11/02/jser200/&quot;&gt;JSer.info 200回記念イベントを開催しました - JSer.info&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;JSer.infoに載っていそうなテーマ(JavaScriptやウェブ)からかけ離れてなければ良いです&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Q. 初心者向けの内容でもいいの?&lt;/p&gt;
