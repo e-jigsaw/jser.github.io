@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 20 Dec 2016 12:08:50 +0900</pubDate>
-    <lastBuildDate>Tue, 20 Dec 2016 12:08:50 +0900</lastBuildDate>
+    <pubDate>Tue, 20 Dec 2016 12:12:38 +0900</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2016 12:12:38 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -40,7 +40,7 @@ Microsoftがメンテナンスしていた&lt;a href=&quot;https://github.com/Re
 
 &lt;p&gt;詳しい変更点は&lt;a href=&quot;https://github.com/angular/angular.js/blob/master/CHANGELOG.md#160-rainbow-tsunami-2016-12-08&quot;&gt;CHANGELOG&lt;/a&gt;にかかれています。&lt;br&gt;
 jqLiteをjQuery 3の挙動に合わせるように変更、&lt;a href=&quot;http://angularjs.blogspot.jp/2016/09/angular-16-expression-sandbox-removal.html&quot;&gt;Expression Sandboxを削除&lt;/a&gt;。&lt;br&gt;
-また、JSONPリクエストはホワイトリストがデフォルトになるなど多數のBreaking Changeが含まれています。&lt;/p&gt;
+また、JSONPリクエストはホワイトリストがデフォルトになるなど多数のBreaking Changeが含まれています。&lt;/p&gt;
 
 &lt;p&gt;AngularJS 1.xはsemverではありませんが、2.0からはsemverに沿う方針へ変更されています。&lt;br&gt;
 加えて2.0はタイムラインベースのアップデートも行うため、Angaular 2からは半年ごとのmajorアップデートを行います。&lt;br&gt;
