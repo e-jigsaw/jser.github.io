@@ -5,9 +5,373 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 17 Dec 2016 15:40:41 +0900</pubDate>
-    <lastBuildDate>Sat, 17 Dec 2016 15:40:41 +0900</lastBuildDate>
+    <pubDate>Tue, 20 Dec 2016 12:08:50 +0900</pubDate>
+    <lastBuildDate>Tue, 20 Dec 2016 12:08:50 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>2016-12-20のJS: RxJS v5、Angular、date-fns</title>
+        <description>&lt;p&gt;JSer.info #310 - &lt;a href=&quot;https://github.com/ReactiveX/rxjs&quot; title=&quot;RxJS 5&quot;&gt;RxJS 5&lt;/a&gt;がリリースされました。&lt;br&gt;
+Microsoftがメンテナンスしていた&lt;a href=&quot;https://github.com/Reactive-Extensions/RxJS&quot; title=&quot;Reactive-Extensions/RxJS&quot;&gt;Reactive-Extensions/RxJS&lt;/a&gt;(RxJS 4)を書き直したバージョンで、互換性がある部分はありますがAPIも色々変更されています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md#500-2016-12-13&quot; title=&quot;rxjs/CHANGELOG.md at master · ReactiveX/rxjs&quot;&gt;rxjs/CHANGELOG.md at master · ReactiveX/rxjs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;v4からv5へのマイグレーションは次のドキュメントにまとめられています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ReactiveX/rxjs/blob/master/MIGRATION.md&quot; title=&quot;Migrating from RxJS 4 to 5&quot;&gt;Migrating from RxJS 4 to 5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;RxJS v5は現在Stage 1の&lt;a href=&quot;https://github.com/tc39/proposal-observable&quot; title=&quot;ECMAScript Observable&quot;&gt;ECMAScript Observable&lt;/a&gt; Proposalに準拠した実装です。&lt;br&gt;
+(&lt;a href=&quot;https://thefeedbackloop.xyz/tc39-a-process-sketch-stages-0-and-1/&quot; title=&quot;Stage 1&quot;&gt;Stage 1&lt;/a&gt;なので仕様自体が変わる可能性はあります)&lt;/p&gt;
+
+&lt;p&gt;また、デバッグのしやすさやパフォーマンスなどが改善され、Rxの特徴と言えるOperatorが整理されています。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;AngularJS 1.xの最新版である&lt;a href=&quot;http://angularjs.blogspot.jp/2016/12/angular-160-released.html&quot; title=&quot;AngularJS 1.6.0&quot;&gt;AngularJS 1.6.0&lt;/a&gt;がリリースされました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://angularjs.blogspot.jp/2016/12/angular-160-released.html&quot; title=&quot;Angular: Angular 1.6.0 released&quot;&gt;Angular: Angular 1.6.0 released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/angular/angular.js/blob/master/CHANGELOG.md#160-rainbow-tsunami-2016-12-08&quot; title=&quot;1.6.0 rainbow-tsunami (2016-12-08)&quot;&gt;1.6.0 rainbow-tsunami (2016-12-08)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;詳しい変更点は&lt;a href=&quot;https://github.com/angular/angular.js/blob/master/CHANGELOG.md#160-rainbow-tsunami-2016-12-08&quot;&gt;CHANGELOG&lt;/a&gt;にかかれています。&lt;br&gt;
+jqLiteをjQuery 3の挙動に合わせるように変更、&lt;a href=&quot;http://angularjs.blogspot.jp/2016/09/angular-16-expression-sandbox-removal.html&quot;&gt;Expression Sandboxを削除&lt;/a&gt;。&lt;br&gt;
+また、JSONPリクエストはホワイトリストがデフォルトになるなど多數のBreaking Changeが含まれています。&lt;/p&gt;
+
+&lt;p&gt;AngularJS 1.xはsemverではありませんが、2.0からはsemverに沿う方針へ変更されています。&lt;br&gt;
+加えて2.0はタイムラインベースのアップデートも行うため、Angaular 2からは半年ごとのmajorアップデートを行います。&lt;br&gt;
+また、3.xは&lt;code&gt;@angular/router&lt;/code&gt;がすでにv3を使っていて、バージョンがずれてしまうため、次のメジャーバージョンはv4となるそうです。&lt;/p&gt;
+
+&lt;p&gt;詳しくは、次の記事で解説されています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://angularjs.blogspot.jp/2016/12/ok-let-me-explain-its-going-to-be.html&quot; title=&quot;Angular: Ok... let me explain: it&amp;amp;#39;s going to be Angular 4.0, or just Angular&quot;&gt;Angular: Ok... let me explain: it&amp;#39;s going to be Angular 4.0, or just Angular&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.publickey1.jp/blog/16/angularangular_420173angular.html&quot; title=&quot;Angularの次バージョンは「Angular 4」に、2017年3月リリース。今後は単に「Angular」と呼んでほしいと － Publickey&quot;&gt;Angularの次バージョンは「Angular 4」に、2017年3月リリース。今後は単に「Angular」と呼んでほしいと － Publickey&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;AngularのLTSについては特に決まっていないようです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/angular/angular/issues/12331&quot; title=&quot;Angular LTS version · Issue #12331 · angular/angular&quot;&gt;Angular LTS version · Issue #12331 · angular/angular&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://date-fns.org/&quot; title=&quot;date-fns - modern JavaScript date utility library&quot;&gt;date-fns - modern JavaScript date utility library&lt;/a&gt;というライブラリは&lt;a href=&quot;http://momentjs.com/&quot; title=&quot;Moment.js&quot;&gt;Moment.js&lt;/a&gt;のように日付周りを扱うutility集ライブラリです。&lt;br&gt;
+&lt;a href=&quot;https://lodash.com/&quot; title=&quot;Lodash&quot;&gt;Lodash&lt;/a&gt;のように、それぞれの操作を独立した関数として扱うことが目的の一つとなっています。&lt;br&gt;
+そのため、必要なものだけを読み込んで使うことができます。&lt;/p&gt;
+
+&lt;p&gt;また、Moment.jsは基本的にMutableなAPIとなっていますが、date-fnsはImmutableなAPIとなっています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Moment.jsでもImmutableに扱うAPIの提案がでています&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/moment/moment-rfcs/pull/2&quot; title=&quot;Support a pseudo-immutable API (first-party Frozen Moment) by butterflyhug · Pull Request #2 · moment/moment-rfcs&quot;&gt;Support a pseudo-immutable API (first-party Frozen Moment) by butterflyhug · Pull Request #2 · moment/moment-rfcs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;まだ開発中の部分もありますが、現在の状況は次にまとめられています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/date-fns/date-fns/issues/275#issuecomment-264934189&quot; title=&quot;Add a brief comparison with Moment.js? · Issue #275 · date-fns/date-fns&quot;&gt;Add a brief comparison with Moment.js? · Issue #275 · date-fns/date-fns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;お知らせ&quot;&gt;お知らせ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.connpass.com/event/46997/&quot; title=&quot;JSer.info 6周年と300回記念イベント - connpass&quot;&gt;JSer.info 6周年と300回記念イベント - connpass&lt;/a&gt;の抽選結果が発表されています。&lt;br&gt;
+まだ、発表枠があるので何か話したい事がある人は申し込んで見てください。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/2016/12/13/announcement-jser-info-6years-event/&quot; title=&quot;2017年1月15日(日)に JSer.info 6周年 &amp;amp;amp;&amp;amp;amp; 300回目記念イベント を開催します - JSer.info&quot;&gt;2017年1月15日(日)に JSer.info 6周年 &amp;amp;&amp;amp; 300回目記念イベント を開催します - JSer.info&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;また、当日JavaScript Discussionというコーナーで次の質問ボードを元に議論する時間が設けています。&lt;br&gt;
+質問、聞きたいこと、話したいこと、主張を書き込むことができます。&lt;br&gt;
+当日も時間を取りますが、事前に書いてもらっても問題ありません。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://app.sli.do/event/bkry5ojl/ask&quot; title=&quot;JSer.info 6周年 - JavaScript Discussion&quot;&gt;JSer.info 6周年 - JavaScript Discussion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;気になる質問は &lt;img class=&#39;emoji&#39; title=&#39;:+1:&#39; alt=&#39;:+1:&#39; src=&#39;https://assets.github.com/images/icons/emoji/unicode/1f44d.png&#39; height=&#39;20&#39; width=&#39;20&#39; align=&#39;absmiddle&#39; /&gt; で投票すると上に来るのでテーマとして取り上げやすくなります。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;ヘッドライン&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;rxjs/changelog.md-at-master-·-reactivex/rxjs&quot;&gt;rxjs/CHANGELOG.md at master · ReactiveX/rxjs&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&quot; title=&quot;rxjs/CHANGELOG.md at master · ReactiveX/rxjs&quot;&gt;github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;RxJS 5.0.0リリース&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;jsdom/changelog.md-at-9.9.0-·-tmpvar/jsdom&quot;&gt;jsdom/Changelog.md at 9.9.0 · tmpvar/jsdom&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tmpvar/jsdom/blob/9.9.0/Changelog.md&quot; title=&quot;jsdom/Changelog.md at 9.9.0 · tmpvar/jsdom&quot;&gt;github.com/tmpvar/jsdom/blob/9.9.0/Changelog.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DOM&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;jsdom 9.9.0リリース。&lt;br&gt;
+&lt;code&gt;document.createCDATASection&lt;/code&gt;、&lt;code&gt;node.wholeText&lt;/code&gt;のサポート、バグ修正など&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v5.0.0-·-reactjs/react-redux&quot;&gt;Release v5.0.0 · reactjs/react-redux&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/reactjs/react-redux/releases/tag/v5.0.0&quot; title=&quot;Release v5.0.0 · reactjs/react-redux&quot;&gt;github.com/reactjs/react-redux/releases/tag/v5.0.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;redux&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;React-Redux v5.0.0リリース。&lt;br&gt;
+後方互換性はあるけどメジャーアップデート、&lt;code&gt;connect()&lt;/code&gt;のオプションを追加、&lt;code&gt;connectAdvanced()&lt;/code&gt;を追加など&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;webpack-2.2:-the-release-candidate-–-webpack-–-medium&quot;&gt;webpack 2.2: The Release Candidate – webpack – Medium&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/webpack/webpack-2-2-the-release-candidate-2e614d05d75f&quot; title=&quot;webpack 2.2: The Release Candidate – webpack – Medium&quot;&gt;medium.com/webpack/webpack-2-2-the-release-candidate-2e614d05d75f&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;webpack&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;webpack 2.2.0 RCリリース。&lt;br&gt;
+2.x系初のRCリリースとなってる&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/webpack/webpack/releases/tag/v2.2.0-rc.0&quot; title=&quot;Release v2.2.0-rc.0 · webpack/webpack&quot;&gt;Release v2.2.0-rc.0 · webpack/webpack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v0.37.0-·-facebook/flow&quot;&gt;Release v0.37.0 · facebook/flow&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/flow/releases/tag/v0.37.0&quot; title=&quot;Release v0.37.0 · facebook/flow&quot;&gt;github.com/facebook/flow/releases/tag/v0.37.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;flowtype&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Flow v0.37.0 リリース。&lt;br&gt;
+built-in libの定義を更新、&lt;code&gt;declare module&lt;/code&gt;内で&lt;code&gt;import type&lt;/code&gt;と&lt;code&gt;import typeof&lt;/code&gt;を使えるようになるなど&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;angular:-angular-1.6.0-released&quot;&gt;Angular: Angular 1.6.0 released&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://angularjs.blogspot.com/2016/12/angular-160-released.html&quot; title=&quot;Angular: Angular 1.6.0 released&quot;&gt;angularjs.blogspot.com/2016/12/angular-160-released.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;AngularJS 1.6.0リリース。&lt;br&gt;
+jqLiteをjQuery 3の挙動に合わせるように、expression sandboxを削除。&lt;br&gt;
+また、JSONPリクエストはホワイトリストがデフォルトになるなど多數のBreaking Changeが含まれている&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/angular/angular.js/blob/master/CHANGELOG.md#160-rainbow-tsunami-2016-12-08&quot; title=&quot;angular.js/CHANGELOG.md at master · angular/angular.js&quot;&gt;angular.js/CHANGELOG.md at master · angular/angular.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.angularjs.org/guide/migration#migrating-from-1-5-to-1-6&quot; title=&quot;AngularJS: Developer Guide: Migrating from Previous Versions&quot;&gt;AngularJS: Developer Guide: Migrating from Previous Versions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://angularjs.blogspot.jp/2016/09/angular-16-expression-sandbox-removal.html&quot; title=&quot;Angular: Angular 1.6 - Expression Sandbox Removal&quot;&gt;Angular: Angular 1.6 - Expression Sandbox Removal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;アーティクル&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;angular:-ok...-let-me-explain:-it&amp;#x27;s-going-to-be-angular-4.0,-or-just-angular&quot;&gt;Angular: Ok... let me explain: it&amp;#x27;s going to be Angular 4.0, or just Angular&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://angularjs.blogspot.com/2016/12/ok-let-me-explain-its-going-to-be.html&quot; title=&quot;Angular: Ok... let me explain: it&amp;#39;s going to be Angular 4.0, or just Angular&quot;&gt;angularjs.blogspot.com/2016/12/ok-let-me-explain-its-going-to-be.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;AngularJSの次のメジャーバージョンは4を予定している話。&lt;br&gt;
+既に&lt;code&gt;@angular/router&lt;/code&gt;がv3であるため、合わせるためにv4へあげる。&lt;br&gt;
+2017年3月にリリースする予定&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;performance-calendar-»-prefer-defer-over-async&quot;&gt;Performance Calendar » Prefer DEFER Over ASYNC&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://calendar.perfplanet.com/2016/prefer-defer-over-async/&quot; title=&quot;Performance Calendar » Prefer DEFER Over ASYNC&quot;&gt;calendar.perfplanet.com/2016/prefer-defer-over-async/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;deferとasync属性について。 どちらもHTMLパースのブロックはしないが、レンダリングのブロックは発生する。&lt;br&gt;
+deferは常にdomInteractiveが起きてから実行するため一定、しかしasyncはダウンロード速度によってはメインと被ることもある。&lt;br&gt;
+メインコンテンツに関係ないレンダリングを行うスクリプトはdefer属性を試すことで、メインのレンダリングが邪魔されずに進むかを確認した方が良いという話。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;javascript-clean-coding-best-practices-|-@risingstack&quot;&gt;JavaScript Clean Coding Best Practices | @RisingStack&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.risingstack.com/javascript-clean-coding-best-practices-node-js-at-scale/&quot; title=&quot;JavaScript Clean Coding Best Practices | @RisingStack&quot;&gt;blog.risingstack.com/javascript-clean-coding-best-practices-node-js-at-scale/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;読みやすいJavaScriptのコードを書くためのプラクティス&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;writing-declaration-files-for-@types-|-typescript&quot;&gt;Writing Declaration Files for @types | TypeScript&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/typescript/2016/12/14/writing-dts-files-for-types/&quot; title=&quot;Writing Declaration Files for @types | TypeScript&quot;&gt;blogs.msdn.microsoft.com/typescript/2016/12/14/writing-dts-files-for-types/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;TypeSriptのDefinitelyTyped向けに型定義ファイルを書く方法について&lt;br&gt;
+手で書く方法とdts-genを使う方法について&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;実況中継シリーズ-vue.jsで実現するmvvmパターン-fluxアーキテクチャとの距離---re.ra.ku-アドベントカレンダー-day-13---re.ra.ku-tech-blog&quot;&gt;実況中継シリーズ Vue.jsで実現するMVVMパターン Fluxアーキテクチャとの距離 - Re.Ra.Ku アドベントカレンダー day 13 - Re.Ra.Ku tech blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://techblog.reraku.co.jp/entry/2016/12/13/080000&quot; title=&quot;実況中継シリーズ Vue.jsで実現するMVVMパターン Fluxアーキテクチャとの距離 - Re.Ra.Ku アドベントカレンダー day 13 - Re.Ra.Ku tech blog&quot;&gt;techblog.reraku.co.jp/entry/2016/12/13/080000&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;MVC&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Flux&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;MVVMとFluxのアーキテクチャに似ている部分と異なる部分について&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;survivejs---inferno---blazing-fast,-react-like-ui-library---interview-with-dominic-gannaway&quot;&gt;SurviveJS - Inferno - Blazing fast, React-like UI library - Interview with Dominic Gannaway&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://survivejs.com/blog/inferno-interview/&quot; title=&quot;SurviveJS - Inferno - Blazing fast, React-like UI library - Interview with Dominic Gannaway&quot;&gt;survivejs.com/blog/inferno-interview/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;ReactライクなVirtual DOMを使ったUIライブラリであるInfernoの特徴について。&lt;br&gt;
+どのような仕組みで動いているのか、Reactなどとの違いについて&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;the-inner-workings-of-virtual-dom-–-medium&quot;&gt;The Inner Workings Of Virtual DOM – Medium&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@rajaraodv/the-inner-workings-of-virtual-dom-666ee7ad47cf&quot; title=&quot;The Inner Workings Of Virtual DOM – Medium&quot;&gt;medium.com/@rajaraodv/the-inner-workings-of-virtual-dom-666ee7ad47cf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;VirtualDOM&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;(Preactの)Virtual DOMがどのような処理を経てレンダリングされているのかを追った記事。&lt;br&gt;
+Virtual DOMの最適化処理についてなど&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;cross-browser-html5-form-validation-is-finally-here!-now-what?--telerik-developer-network&quot;&gt;Cross-Browser HTML5 Form Validation is Finally Here! Now What? -Telerik Developer Network&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://developer.telerik.com/topics/web-development/cross-browser-html5-form-validation-finally-now/&quot; title=&quot;Cross-Browser HTML5 Form Validation is Finally Here! Now What? -Telerik Developer Network&quot;&gt;developer.telerik.com/topics/web-development/cross-browser-html5-form-validation-finally-now/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;HTML5&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;HTML5 Form Validation APIについて。&lt;br&gt;
+WebKitもサポートしたので、すべてのブラウザで利用できるようになった&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;スライド、動画関係&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;professor-frisby-introduces-composable-functional-javascript---course-by-@drboolean-@eggheadio&quot;&gt;Professor Frisby Introduces Composable Functional JavaScript - Course by @drboolean @eggheadio&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://egghead.io/courses/professor-frisby-introduces-function-composition&quot; title=&quot;Professor Frisby Introduces Composable Functional JavaScript - Course by @drboolean @eggheadio&quot;&gt;egghead.io/courses/professor-frisby-introduces-function-composition&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;関数型プログラミング&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;JavaScriptでのFunctionalプログラミングについてのスクリーンキャスト。&lt;br&gt;
+Either的な実装やカリー化などについて解説してる&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;vue.js-fundamentals---youtube&quot;&gt;Vue.js Fundamentals - YouTube&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLwAKR305CRO_1yAao-8aZiQnBqJeyng4O&quot; title=&quot;Vue.js Fundamentals - YouTube&quot;&gt;www.youtube.com/playlist?list=PLwAKR305CRO_1yAao-8aZiQnBqJeyng4O&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;video&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Vue.js 2.0のチュートリアル動画&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;ecmascript:-latest-and-upcoming-features-//-speaker-deck&quot;&gt;ECMAScript: latest and upcoming features // Speaker Deck&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/rauschma/ecmascript-latest-and-upcoming-features&quot; title=&quot;ECMAScript: latest and upcoming features // Speaker Deck&quot;&gt;speakerdeck.com/rauschma/ecmascript-latest-and-upcoming-features&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;slide&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;ES2016/ES2017と今Stage 3であるProposalについての紹介スライド&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;ソフトウェア、ツール、ライブラリ関係&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;npm-desktop-manager&quot;&gt;Npm Desktop Manager&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://720kb.github.io/ndm/&quot; title=&quot;Npm Desktop Manager&quot;&gt;720kb.github.io/ndm/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;GUI&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;npmのパッケージを管理するGUIアプリケーション&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;date-fns/date-fns:-⏳-modern-javascript-date-utility-library-⌛️&quot;&gt;date-fns/date-fns: ⏳ Modern JavaScript date utility library ⌛️&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/date-fns/date-fns&quot; title=&quot;date-fns/date-fns: ⏳ Modern JavaScript date utility library ⌛️&quot;&gt;github.com/date-fns/date-fns&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Date周りの操作を提供するライブラリ。&lt;br&gt;
+lodashのように利用する関数だけを取り出して使えるようにするのが目的となってる&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/date-fns/date-fns/issues/275#issuecomment-264934189&quot; title=&quot;Add a brief comparison with Moment.js? · Issue #275 · date-fns/date-fns&quot;&gt;Add a brief comparison with Moment.js? · Issue #275 · date-fns/date-fns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;simple-statistics/simple-statistics:-simple-statistics-for-node-&amp;amp;-browser-javascript&quot;&gt;simple-statistics/simple-statistics: simple statistics for node &amp;amp; browser javascript&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/simple-statistics/simple-statistics&quot; title=&quot;simple-statistics/simple-statistics: simple statistics for node &amp;amp; browser javascript&quot;&gt;github.com/simple-statistics/simple-statistics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;統計&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;統計的な関数のコレクションライブラリ。&lt;br&gt;
+Pythonのsimplestatisticsのport。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/sheriferson/simplestatistics&quot; title=&quot;sheriferson/simplestatistics: Simple statistical functions implemented in readable Python.&quot;&gt;sheriferson/simplestatistics: Simple statistical functions implemented in readable Python.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Tue, 20 Dec 2016 10:38:00 +0900</pubDate>
+        <link>https://jser.info/2016/12/20/rxjs-v5-angular-date-fns/</link>
+        <guid isPermaLink="true">https://jser.info/2016/12/20/rxjs-v5-angular-date-fns/</guid>
+        
+        <category>Rx</category>
+        
+        <category>Angular</category>
+        
+        <category>Date</category>
+        
+        <category>library</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>ja</category>
+        
+        <category>jser</category>
+        
+      </item>
     
       <item>
         <title>2017年1月15日(日)に JSer.info 6周年 &amp;&amp; 300回目記念イベント を開催します</title>
@@ -2802,328 +3166,6 @@ Babelを内蔵しasync/awaitなどを扱え、自動的に一定時間待つな�
         <category>Node.js</category>
         
         <category>webpack</category>
-        
-        
-        <category>_i18n</category>
-        
-        <category>ja</category>
-        
-        <category>jser</category>
-        
-      </item>
-    
-      <item>
-        <title>2016-10-18のJS: JS Foundation、npmクライアントのyarn</title>
-        <description>&lt;p&gt;JSer.info #301 - Linux Foundationの一つとして&lt;a href=&quot;https://js.foundation/&quot; title=&quot;JS Foundation&quot;&gt;JS Foundation&lt;/a&gt;ができたそうです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://js.foundation/announcements/2016/10/17/Linux-Foundation-Unites-JavaScript-Community-Open-Web-Development/&quot; title=&quot;The Linux Foundation Unites JavaScript Community for Open Web Development | The JS Foundation&quot;&gt;The Linux Foundation Unites JavaScript Community for Open Web Development | The JS Foundation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;元は&lt;a href=&quot;https://jquery.org/&quot; title=&quot;jQuery Foundation&quot;&gt;jQuery Foundation&lt;/a&gt;なので、JavaScriptのオープンソースプロジェクトの開発支援などが目的で設立されたようです。&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;The jQuery Foundation is now the JS Foundation, you can follow the Foundation on &lt;a href=&quot;https://twitter.com/the_jsf&quot;&gt;@the_jsf&lt;/a&gt; and the jQuery project here on &lt;a href=&quot;https://twitter.com/jquery&quot;&gt;@jquery&lt;/a&gt;!&lt;/p&gt;&amp;mdash; jquery (@jquery) &lt;a href=&quot;https://twitter.com/jquery/status/788012682494423040&quot;&gt;October 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://yarnpkg.com/&quot; title=&quot;Yarn&quot;&gt;Yarn&lt;/a&gt;というnpmクライアントがリリースされました。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://code.facebook.com/posts/1840075619545360&quot; title=&quot;Yarn: A new package manager for JavaScript | Engineering Blog | Facebook Code&quot;&gt;Yarn: A new package manager for JavaScript | Engineering Blog | Facebook Code&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/&quot; title=&quot;npm&quot;&gt;npm&lt;/a&gt;のモジュールを管理するコマンドラインツールとして同名の&lt;a href=&quot;https://www.npmjs.com/package/npm&quot; title=&quot;npm&quot;&gt;npm&lt;/a&gt;がありますが、yarnは後者のコマンドラインツールの実装です。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;package.json&lt;/code&gt;の扱いは既存のnpmと&lt;a href=&quot;https://github.com/yarnpkg/yarn/labels/compatibility&quot; title=&quot;compatibility discussion&quot;&gt;互換性&lt;/a&gt;を持つためJavaScriptのエコシステム自体は同様です。(Bowerはこれを分割してしまった)&lt;br&gt;
-特徴としてキャッシュや並列処理を行い高速なインストール、また&lt;code&gt;yarn.lock&lt;/code&gt;を使った依存バージョン固定をデフォルトで行います。&lt;/p&gt;
-
-&lt;p&gt;コマンドラインのインタフェースの互換性は目的ではないですが、以下にコマンドの比較がまとめられています。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://shift.infinite.red/npm-vs-yarn-cheat-sheet-8755b092e5cc&quot; title=&quot;NPM vs Yarn Cheat Sheet&quot;&gt;NPM vs Yarn Cheat Sheet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://yarnpkg.com/en/docs/migrating-from-npm&quot; title=&quot;Migrating from npm | Yarn&quot;&gt;Migrating from npm | Yarn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;ヘッドライン&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;jsdom/changelog.md-at-9.7.1-·-tmpvar/jsdom&quot;&gt;jsdom/Changelog.md at 9.7.1 · tmpvar/jsdom&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/tmpvar/jsdom/blob/9.7.1/Changelog.md&quot; title=&quot;jsdom/Changelog.md at 9.7.1 · tmpvar/jsdom&quot;&gt;github.com/tmpvar/jsdom/blob/9.7.1/Changelog.md&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DOM&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;jsdom 9.7.0リリース。&lt;br&gt;
-EventListenerOptionsのサポート、&lt;code&gt;document.hasFocus()&lt;/code&gt;のサポートなど&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;eslint-v3.8.0-released---eslint---pluggable-javascript-linter&quot;&gt;ESLint v3.8.0 released - ESLint - Pluggable JavaScript linter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://eslint.org/blog/2016/10/eslint-v3.8.0-released&quot; title=&quot;ESLint v3.8.0 released - ESLint - Pluggable JavaScript linter&quot;&gt;eslint.org/blog/2016/10/eslint-v3.8.0-released&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ESLint&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ESLint 3.8.0リリース。&lt;br&gt;
-&lt;code&gt;executeOnFiles()&lt;/code&gt;の結果の&lt;code&gt;source&lt;/code&gt;プロパティにソースコードを含められるように、新しいルールの追加や修正など&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://qiita.com/mysticatea/items/6f037c15057c57982453&quot; title=&quot;ESLint v3.8.0 - Qiita&quot;&gt;ESLint v3.8.0 - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;angular-2.1.0-now-available&quot;&gt;Angular 2.1.0 Now Available&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://angularjs.blogspot.com/2016/10/angular-210-now-available.html&quot; title=&quot;Angular 2.1.0 Now Available&quot;&gt;angularjs.blogspot.com/2016/10/angular-210-now-available.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Angular 2.1.0リリース。&lt;br&gt;
-Routerがpreloadingのサポートなど&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;release-notes-for-safari-technology-preview-15-|-webkit&quot;&gt;Release Notes for Safari Technology Preview 15 | WebKit&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://webkit.org/blog/6987/release-notes-for-safari-technology-preview-15/&quot; title=&quot;Release Notes for Safari Technology Preview 15 | WebKit&quot;&gt;webkit.org/blog/6987/release-notes-for-safari-technology-preview-15/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;safari&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Safari Technology Preview Release 15リリース。&lt;br&gt;
-El Capitan向けの最後のリリース、Fetch APIの改善、&lt;code&gt;download&lt;/code&gt;属性のサポート、&lt;code&gt;DOMTokenList.prototype.supports()&lt;/code&gt;のサポートなど&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;the-linux-foundation-unites-javascript-community-for-open-web-development-|-the-js-foundation&quot;&gt;The Linux Foundation Unites JavaScript Community for Open Web Development | The JS Foundation&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://js.foundation/announcements/2016/10/17/Linux-Foundation-Unites-JavaScript-Community-Open-Web-Development/&quot; title=&quot;The Linux Foundation Unites JavaScript Community for Open Web Development | The JS Foundation&quot;&gt;js.foundation/announcements/2016/10/17/Linux-Foundation-Unites-JavaScript-Community-Open-Web-Development/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;jQuery&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;jQuery FoundationはJS Foundationになった。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://twitter.com/the_jsf&quot; title=&quot;JS Foundation (@the\_jsf) | Twitter&quot;&gt;JS Foundation (@the_jsf) | Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://twitter.com/jquery/status/788012682494423040&quot; title=&quot;jquery on Twitter: &amp;amp;amp;#34;The jQuery Foundation is now the JS Foundation, you can follow the Foundation on @the\_jsf and the jQuery project here on @jquery!&amp;amp;amp;#34;&quot;&gt;jquery on Twitter: The jQuery Foundation is now the JS Foundation, you can follow the Foundation on @the_jsf and the jQuery project here on @jquery!&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;node-v6.8.0-(current)-|-node.js&quot;&gt;Node v6.8.0 (Current) | Node.js&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v6.8.0/&quot; title=&quot;Node v6.8.0 (Current) | Node.js&quot;&gt;nodejs.org/en/blog/release/v6.8.0/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Node v6.8.0リリース。&lt;br&gt;
-&lt;code&gt;fs.existsSync&lt;/code&gt;がdeprecatedではなくなった。&lt;code&gt;http.request&lt;/code&gt;が&lt;code&gt;timeout&lt;/code&gt;オプションを受け取れるようになるなど&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;アーティクル&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;exploring-javascript:-typed-arrays&quot;&gt;Exploring JavaScript: Typed Arrays&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://codingbox.io/exploring-javascript-typed-arrays-c8fd4f8bd24f&quot; title=&quot;Exploring JavaScript: Typed Arrays&quot;&gt;codingbox.io/exploring-javascript-typed-arrays-c8fd4f8bd24f&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Typed Arraysについての入門的な解説&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;introduction-to-http/2-|-web-|-google-developers&quot;&gt;Introduction to HTTP/2  |  Web  |  Google Developers&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/http2/&quot; title=&quot;Introduction to HTTP/2  |  Web  |  Google Developers&quot;&gt;developers.google.com/web/fundamentals/performance/http2/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;HTTP2&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;tutorial&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;HTTP/2入門記事。 HTTP/2の概要が簡潔にまとまっている&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;javascriptの配列のパターン-|-web-scratch&quot;&gt;JavaScriptの配列のパターン | Web Scratch&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://efcl.info/2016/10/11/array-patterns/&quot; title=&quot;JavaScriptの配列のパターン | Web Scratch&quot;&gt;efcl.info/2016/10/11/array-patterns/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ES2015+をベースにした配列のパターンについて。 &lt;code&gt;indexOf(x) === -1&lt;/code&gt;とか使わなくていいパターンや代替となる方法などについてサンプルコードを中心にかかれている&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;abematv-の番組表リニューアルに伴うパフォーマンス改善---qiita&quot;&gt;AbemaTV の番組表リニューアルに伴うパフォーマンス改善 - Qiita&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/keyi8773/items/f435f062afa7c5dc8e13&quot; title=&quot;AbemaTV の番組表リニューアルに伴うパフォーマンス改善 - Qiita&quot;&gt;qiita.com/keyi8773/items/f435f062afa7c5dc8e13&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DOM&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;無限スクロール系のUIパフォーマンスの改善について。&lt;br&gt;
-レンダリングの改善、&lt;code&gt;position: relative&lt;/code&gt;による意図しないレイヤーが作成される問題、スロットリングなどの低減策についてなど&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://havelog.ayumusato.com/develop/performance/e556-compositing_border_and_layer.html&quot; title=&quot;GPUアクセラレーションとposition: relativeによるレイヤー生成について ::ハブろぐ&quot;&gt;GPUアクセラレーションとposition: relativeによるレイヤー生成について ::ハブろぐ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;アメブロ2016-~-react/reduxでつくるisomorphic-web-app-~-|-cyberagent-developers-blog-|-サイバーエージェント-デベロッパーズブログ&quot;&gt;アメブロ2016 ~ React/ReduxでつくるIsomorphic web app ~ | CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.cyberagent.co.jp/blog/archives/636/&quot; title=&quot;アメブロ2016 ~ React/ReduxでつくるIsomorphic web app ~ | CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ&quot;&gt;developers.cyberagent.co.jp/blog/archives/636/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;redux&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;アメブロをReact/Reduxでサーバサイドレンダリングの構造に移行するまでの話。&lt;br&gt;
-ツール環境、CSS、アクセシビリティ、レンダリングについてなど&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;undo-functionality-with-the-command-pattern-in-javascript-—-pyred&quot;&gt;Undo Functionality with the Command Pattern in JavaScript — Pyred&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://pyred.net/coding/2016/10/12/undo-functionality-with-the-command-pattern-in-javascript&quot; title=&quot;Undo Functionality with the Command Pattern in JavaScript — Pyred&quot;&gt;pyred.net/coding/2016/10/12/undo-functionality-with-the-command-pattern-in-javascript&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;デザインパターン&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;JavaScriptでのコマンドパターンについて&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;vue.js入門-―最速で作るシンプルなwebアプリケーション：連載｜gihyo.jp-…-技術評論社&quot;&gt;Vue.js入門 ―最速で作るシンプルなWebアプリケーション：連載｜gihyo.jp … 技術評論社&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://gihyo.jp/dev/serial/01/vuejs&quot; title=&quot;Vue.js入門 ―最速で作るシンプルなWebアプリケーション：連載｜gihyo.jp … 技術評論社&quot;&gt;gihyo.jp/dev/serial/01/vuejs&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Vue.jsについての連載&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;スライド、動画関係&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;モダン日本語フォント指定-//-speaker-deck&quot;&gt;モダン日本語フォント指定 // Speaker Deck&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/tacamy/modanri-ben-yu-huontozhi-ding&quot; title=&quot;モダン日本語フォント指定 // Speaker Deck&quot;&gt;speakerdeck.com/tacamy/modanri-ben-yu-huontozhi-ding&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;fonts&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;CSSのfont-familyについてのスライド。&lt;br&gt;
-OSやブラウザでfontの情報が異なるため、&lt;code&gt;@font-face&lt;/code&gt;を使い定義するという話&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;サイト、サービス、ドキュメント&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;jsperf---community-driven-javascript-performance-benchmarks&quot;&gt;JSPerf - Community Driven JavaScript Performance Benchmarks&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jsperf.co/&quot; title=&quot;JSPerf - Community Driven JavaScript Performance Benchmarks&quot;&gt;jsperf.co/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;JavaScriptのコードのパフォーマンス計測サイト。&lt;br&gt;
-jsperf.com と似たような感じのサイト。&lt;br&gt;
-データはGitHubへ自動的にコミットされ、Jekyllを使った静的サイトとして配信されてる。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/hasharray/jsperf&quot; title=&quot;hasharray/jsperf: JavaScript Performance Benchmarks&quot;&gt;hasharray/jsperf: JavaScript Performance Benchmarks&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;emartech/angular2-phonecat:-angular-2-port-of-the-original-angular-phonecat-application-with-webpack&quot;&gt;emartech/angular2-phonecat: Angular 2 port of the original Angular Phonecat application with Webpack&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/emartech/angular2-phonecat&quot; title=&quot;emartech/angular2-phonecat: Angular 2 port of the original Angular Phonecat application with Webpack&quot;&gt;github.com/emartech/angular2-phonecat&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;AngularJS 2にPhonecatを移植したもの&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;pauliusuza/node-v7-async-await-demo:-node.js-7.x-async-/-await-support-demonstration&quot;&gt;pauliusuza/node-v7-async-await-demo: Node.js 7.x async / await support demonstration&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/pauliusuza/node-v7-async-await-demo&quot; title=&quot;pauliusuza/node-v7-async-await-demo: Node.js 7.x async / await support demonstration&quot;&gt;github.com/pauliusuza/node-v7-async-await-demo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Node.js 7.xでasync/awaitを有効にするデモ&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;ソフトウェア、ツール、ライブラリ関係&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;yarn&quot;&gt;Yarn&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://yarnpkg.com/&quot; title=&quot;Yarn&quot;&gt;yarnpkg.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;npmクライアントツール。&lt;br&gt;
-&lt;code&gt;package.json&lt;/code&gt;の扱いは既存のnpmと互換を持つ。&lt;br&gt;
-キャッシュや並列処理を行い高速なインストール、&lt;code&gt;yarn.lock&lt;/code&gt;を使った依存バージョン固定を正確に行える。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://code.facebook.com/posts/1840075619545360&quot; title=&quot;Yarn: A new package manager for JavaScript | Engineering Blog | Facebook Code&quot;&gt;Yarn: A new package manager for JavaScript | Engineering Blog | Facebook Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.npmjs.org/post/151660845210/hello-yarn&quot; title=&quot;The npm Blog — Hello, Yarn!&quot;&gt;The npm Blog — Hello, Yarn!&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://yarnpkg.com/en/docs/migrating-from-npm&quot; title=&quot;Migrating from npm | Yarn&quot;&gt;Migrating from npm | Yarn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;naptha/tesseract.js:-pure-javascript-ocr-for-62-languages&quot;&gt;naptha/tesseract.js: Pure Javascript OCR for 62 Languages&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/naptha/tesseract.js&quot; title=&quot;naptha/tesseract.js: Pure Javascript OCR for 62 Languages&quot;&gt;github.com/naptha/tesseract.js&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;OCR&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;tesseract OCRのJavaScript port。&lt;br&gt;
-ブラウザやNodeでOCRできるライブラリ&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/tesseract-ocr/tesseract/issues/75&quot; title=&quot;Compile to EMScripten/asm.js · Issue #75 · tesseract-ocr/tesseract&quot;&gt;Compile to EMScripten/asm.js · Issue #75 · tesseract-ocr/tesseract&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/tesseract-ocr/tesseract&quot; title=&quot;tesseract-ocr/tesseract: Tesseract Open Source OCR Engine (main repository)&quot;&gt;tesseract-ocr/tesseract: Tesseract Open Source OCR Engine (main repository)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;書籍関係&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;getify/functional-light-js:-a-book-about-functional-programming-in-javascript.&quot;&gt;getify/Functional-Light-JS: A book about functional programming in JavaScript.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/getify/Functional-Light-JS&quot; title=&quot;getify/Functional-Light-JS: A book about functional programming in JavaScript.&quot;&gt;github.com/getify/Functional-Light-JS&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;関数型プログラミング&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ebook&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;関数型JavaScriptについての無料の書籍&lt;/p&gt;
-
-&lt;hr&gt;
-</description>
-        <pubDate>Tue, 18 Oct 2016 09:39:00 +0900</pubDate>
-        <link>https://jser.info/2016/10/18/js-foundation-npmyarn/</link>
-        <guid isPermaLink="true">https://jser.info/2016/10/18/js-foundation-npmyarn/</guid>
-        
-        <category>jQuery</category>
-        
-        <category>JS</category>
-        
-        <category>Yarn</category>
-        
-        <category>npm</category>
         
         
         <category>_i18n</category>
