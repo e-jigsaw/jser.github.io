@@ -1,4 +1,11 @@
 [{
+"title":"2016-12-27のJS: SharedArrayBufferとAtomics API、Node.js Stream、JavaScript obfuscator",
+"url":"https://jser.info/2016/12/27/sharedarraybuffer-javascript-obfuscator-node.js-stream/",
+"date":"2016-12-27T09:58:00+09:00",
+"content":"JSer.info #311 - Safari Technology Preview Rele...",
+"category":"JSer",
+"tags":["browser","ECMAScript","Node.js","Stream","Tools"]
+},{
 "title":"2016-12-20のJS: RxJS v5、Angular、date-fns",
 "url":"https://jser.info/2016/12/20/rxjs-v5-angular-date-fns/",
 "date":"2016-12-20T10:38:00+09:00",
