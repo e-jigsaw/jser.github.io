@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 27 Dec 2016 11:28:20 +0900</pubDate>
-    <lastBuildDate>Tue, 27 Dec 2016 11:28:20 +0900</lastBuildDate>
+    <pubDate>Wed, 28 Dec 2016 13:07:48 +0900</pubDate>
+    <lastBuildDate>Wed, 28 Dec 2016 13:07:48 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -225,7 +225,7 @@ CSS Components層、Web Components層、フレームワークバインディン�
 
 &lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ServiceWorker&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;express-serviceがどのようにして実際のNode.jsで動くExpressのコードをServideWorkerの中でも擬似的に動かしているのかについての解説&lt;/p&gt;
+&lt;p&gt;express-serviceがどのようにして実際のNode.jsで動くExpressのコードをServiceWorkerの中でも擬似的に動かしているのかについての解説&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/express-service&quot; title=&quot;express-service&quot;&gt;express-service&lt;/a&gt;&lt;/li&gt;
