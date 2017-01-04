@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 04 Jan 2017 18:09:25 +0900</pubDate>
-    <lastBuildDate>Wed, 04 Jan 2017 18:09:25 +0900</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 18:17:00 +0900</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 18:17:00 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -45,6 +45,20 @@ webpackなどが近いツールで、プラグインで変換レイヤーを追�
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/fuse-box/fuse-box&quot; title=&quot;fuse-box/fuse-box&quot;&gt;fuse-box/fuse-box&lt;/a&gt;のソースコードはTypeScriptで書かれていて、&lt;br&gt;
 まだでたばかりなのでソースコードを見てみるのも面白いかもしれません。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;お知らせ&quot;&gt;お知らせ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jser/ping&quot; title=&quot;jser/ping&quot;&gt;jser/ping&lt;/a&gt;にPingのIssueを立てると&lt;a href=&quot;https://twitter.com/jser_info&quot; title=&quot;@jser_info&quot;&gt;@jser_info&lt;/a&gt;のTwitterに流れるようになりました&lt;/li&gt;
+&lt;li&gt;データ分析用に&lt;a href=&quot;https://jser.info/data-dashboard/&quot; title=&quot;JSer.info Data Dashboard&quot;&gt;JSer.info Data Dashboard&lt;/a&gt;を作りました
+
+&lt;ul&gt;
+&lt;li&gt;JSer.infoの記事や紹介URLに関するデータを色々な形でみることを目的にしたページです&lt;/li&gt;
+&lt;li&gt;面白そうなデータの読み方があるなら&lt;a href=&quot;https://github.com/jser/data-dashboard&quot; title=&quot;jser/data-dashboard: JSer.info Data Dashboard.&quot;&gt;jser/data-dashboard: JSer.info Data Dashboard.&lt;/a&gt;にIssue/PRを立てると良さそうです。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr&gt;
 
