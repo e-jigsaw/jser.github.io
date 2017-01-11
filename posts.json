@@ -1,4 +1,11 @@
 [{
+"title":"2017-01-11のJS: Node.js v7.4.0とnpm v4、PhantomJS 2.5.0 Beta、クリーンコード",
+"url":"https://jser.info/2017/01/11/Node.js-v7.4.0-npm-v4-PhantomJS-2.5.0-Beta-clean-code/",
+"date":"2017-01-11T09:36:00+09:00",
+"content":"JSer.info #313 - Node v7.4.0がリリースされました。BufferやE...",
+"category":"JSer",
+"tags":["Node.js","npm","webkit","PhantomJS"]
+},{
 "title":"2017-01-04のJS: PostCSS概要、Chrome開発者ツール、FuseBox",
 "url":"https://jser.info/2017/01/04/postcss-chrome-fusebox/",
 "date":"2017-01-04T17:28:00+09:00",
