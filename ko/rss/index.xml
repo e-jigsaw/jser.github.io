@@ -5,9 +5,287 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/ko/</link>
     <atom:link href="https://jser.info/ko/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 11 Jan 2017 11:24:46 +0900</pubDate>
-    <lastBuildDate>Wed, 11 Jan 2017 11:24:46 +0900</lastBuildDate>
+    <pubDate>Wed, 11 Jan 2017 12:42:41 +0900</pubDate>
+    <lastBuildDate>Wed, 11 Jan 2017 12:42:41 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>2017-01-04 JS: PostCSS 개요, Chrome 개발자 도구, FuseBox</title>
+        <description>&lt;p&gt;JSer.info #312 - &lt;a href=&quot;http://qiita.com/morishitter/items/4a04eb144abf49f41d7d&quot; title=&quot;PostCSS 정리 - Qiita&quot;&gt;PostCSS 정리 - Qiita&lt;/a&gt;(일본어)에는 &lt;a href=&quot;https://github.com/postcss/postcss&quot; title=&quot;PostCSS&quot;&gt;PostCSS&lt;/a&gt;란 무엇인지에 관해 작성돼 있습니다.&lt;/p&gt;
+
+&lt;p&gt;PostCSS는 CSS의 기반 도구 또는 일종의 프레임워크로 CSS 파서나 제너레이터 등을 플러그인으로서 추가해 CSS 관련 여러가지 처리를 할 수 있는 기능을 제공합니다(파서 자체도 플러그인으로 확장할 수 있으므로 Sass도 포함할 수 있습니다).&lt;/p&gt;
+
+&lt;p&gt;이 글에서는 PostCSS의 정의 뿐 아니라 PostCSS 환경에서 사용할 수 있는 프리프로세스와 Linter 관련 도구 등도 함께 소개합니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://umaar.github.io/devtools-optimise-your-web-development-workflow-2016/#/&quot; title=&quot;Optimise your web development workflow 2016&quot;&gt;Optimise your web development workflow 2016&lt;/a&gt;에는 Chrome 개발자 도구의 다양한 기능을 GIF 사진과 함께 자세히 소개돼 있습니다.&lt;/p&gt;
+
+&lt;p&gt;Elements, Timeline, Networks, Audits 패널에 있는 기능과 이와 관련된 사양 및 도구 등도 함께 소개합니다.&lt;br&gt;
+한번 살펴보면 재미있을 것 같습니다.&lt;/p&gt;
+
+&lt;p&gt;또, 아래 사이트에서는 1Tips/1Page 형식으로 개발자 도구 관련 팁을 소개하고 있으므로 앞서 소개드린 슬라이드와 함께 읽으면 좋을 것 같습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://umaar.com/dev-tips/&quot; title=&quot;Dev Tips - Developer Tips by Umar Hansa&quot;&gt;Dev Tips - Developer Tips by Umar Hansa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;bundler/module loader 도구 &lt;a href=&quot;http://fuse-box.org/&quot; title=&quot;Fusebox&quot;&gt;Fusebox&lt;/a&gt;가 공개됐습니다.&lt;br&gt;
+webpack 등과 같은 도구로 플러그인으로 변환 레이어를 추가할 수 있고, 그 결과를 단일 파일로 묶어주는 bundler 입니다.&lt;br&gt;
+또, webpack이나 SystemJS 등과 비슷한 기능을 제공하는 &lt;code&gt;FuseBox.import&lt;/code&gt; 라는 Loader API도 함께 이용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;빠른 변환 속도가 장점 중 하나로 모듈의 의존 관계와 변환 후의 파일을 캐시하여 재변환 시의 처리 시간을 줄이도록 설계 돼 있습니다.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-partner=&quot;tweetdeck&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;FuseBox cache and deps.json &lt;a href=&quot;https://t.co/4EjS62HY28&quot;&gt;pic.twitter.com/4EjS62HY28&lt;/a&gt;&lt;/p&gt;&amp;mdash; azu (@azu_re) &lt;a href=&quot;https://twitter.com/azu_re/status/816568272736788480&quot;&gt;January 4, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;이제 막 공개된 도구이므로 소스 코드를 살펴보는 것도 재미있을 것 같습니다. 소스 코드는 TypeScript로 작성돼 있습니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;공지사항&quot;&gt;공지사항&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jser/ping&quot; title=&quot;jser/ping&quot;&gt;jser/ping&lt;/a&gt;에 Ping의 Issue를 등록하면 &lt;a href=&quot;https://twitter.com/jser_info&quot; title=&quot;@jser_info&quot;&gt;@jser_info&lt;/a&gt;의 Twitter에 전달되도록 했습니다.&lt;/li&gt;
+&lt;li&gt;데이터 분석 용으로 &lt;a href=&quot;https://jser.info/data-dashboard/&quot; title=&quot;JSer.info Data Dashboard&quot;&gt;JSer.info Data Dashboard&lt;/a&gt;를 만들었습니다.
+
+&lt;ul&gt;
+&lt;li&gt;JSer.info에서 소개한 글이나 URL 등에 관한 데이터를 여러가지 분류로 살펴볼 목적으로 생성한 페이지입니다.&lt;/li&gt;
+&lt;li&gt;데이터를 읽는 재미있는 분류 방법이 있다면 &lt;a href=&quot;https://github.com/jser/data-dashboard&quot; title=&quot;jser/data-dashboard: JSer.info Data Dashboard.&quot;&gt;jser/data-dashboard: JSer.info Data Dashboard.&lt;/a&gt;에 Issue 또는 PR을 생성해 주시면 좋을 것 같습니다.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;stealjs-1.0-release&quot;&gt;StealJS 1.0 Release&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.bitovi.com/blog/stealjs-1.0-release&quot; title=&quot;StealJS 1.0 Release&quot;&gt;www.bitovi.com/blog/stealjs-1.0-release&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;개발 시엔 동적인 모듈 로더로 개발하고 배포 시엔 steal-tool를 이용해 production build 가능한 StealJS 1.0이 릴리즈됐습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=VKydmxRm6w8&quot; title=&quot;Easy ES6 with StealJS - YouTube&quot;&gt;Easy ES6 with StealJS - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;아티클&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;optimizing-page-speeds-with-lazyloading-|-jscrambler-blog&quot;&gt;Optimizing Page Speeds With Lazyloading | Jscrambler Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.jscrambler.com/optimizing-page-speeds-with-lazyloading/&quot; title=&quot;Optimizing Page Speeds With Lazyloading | Jscrambler Blog&quot;&gt;blog.jscrambler.com/optimizing-page-speeds-with-lazyloading/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Angular의 라우팅과 컴포넌트를 LazyLoad할 수 있는 방법 관해 작성돼 있습니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;lazy-loading---react&quot;&gt;Lazy Loading - React&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://webpack.js.org/guides/lazy-load-react/&quot; title=&quot;Lazy Loading - React&quot;&gt;webpack.js.org/guides/lazy-load-react/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;webpack&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;webpack2를 사용해 React 컴포넌트를 LazyLoad 하는 방법에 관해 소개하고 있는 문서입니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;flowtype으로-flux-아키텍처에-타입-시스템을-적용하는-것에-관해-발표했다---please-drive-faster(일본어)&quot;&gt;Flowtype으로 Flux 아키텍처에 타입 시스템을 적용하는 것에 관해 발표했다 - Please Drive Faster(일본어)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://joe-re.hatenablog.com/entry/2016/12/29/204917&quot; title=&quot;Flowtype으로 Flux 아키텍처에 타입 시스템을 적용하는 것에 관해 발표했다 - Please Drive Faster&quot;&gt;joe-re.hatenablog.com/entry/2016/12/29/204917&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;flowtype&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Flux&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;FlowType를 사용해 타입 시스템을 적용한 Flux 아키텍처 패턴에 관해 이야기합니다&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://qiita.com/joe-re/items/d6fd262a8c6017f41e22&quot; title=&quot;flowtype으로 Flux에서의 타입 안전성을 손에 넣는다 - Qiita&quot;&gt;flowtype으로 Flux에서의 타입 안전성을 손에 넣는다 - Qiita&lt;/a&gt;(일본어)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;node.js-interview-questions-and-answers-(2017-edition)-|-@risingstack&quot;&gt;Node.js Interview Questions and Answers (2017 Edition) | @RisingStack&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.risingstack.com/node-js-interview-questions-and-answers-2017/&quot; title=&quot;Node.js Interview Questions and Answers (2017 Edition) | @RisingStack&quot;&gt;blog.risingstack.com/node-js-interview-questions-and-answers-2017/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;security&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js 관해 자주 있는 질문과 답변을 Q&amp;amp;A 형식으로 풀어낸 글입니다.&lt;br&gt;
+코딩 스타일, 자주하게 되는 작성 실수, 보안, 타이밍 공격 등에 관해 작성돼 있습니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;react-interview-questions&quot;&gt;React Interview Questions&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tylermcginnis.com/react-interview-questions/&quot; title=&quot;React Interview Questions&quot;&gt;tylermcginnis.com/react-interview-questions/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;React에 관한 여러가지 의문을 Q&amp;amp;A 형식으로 풀어 작성한 글입니다.&lt;br&gt;
+Class로 작성한 컴포넌트와 함수로 작성한 컴포넌트의 차이, &lt;code&gt;refs&lt;/code&gt;란 무엇인지, &lt;code&gt;key&lt;/code&gt; 속성은 왜 중요한지 등 컴포넌트와 관련된 패턴에 관해 이야기합니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;writing-html-with-accessibility-in-mind-–-medium&quot;&gt;Writing HTML with accessibility in mind – Medium&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@matuzo/writing-html-with-accessibility-in-mind-a62026493412&quot; title=&quot;Writing HTML with accessibility in mind – Medium&quot;&gt;medium.com/@matuzo/writing-html-with-accessibility-in-mind-a62026493412&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;accessibility&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;HTML와 접근성(스크린리더)에 관해 작성된 글입니다.&lt;br&gt;
+&lt;code&gt;lang&lt;/code&gt; 속성, &lt;code&gt;alt&lt;/code&gt; 속성, &lt;code&gt;&amp;lt;buton&amp;gt;&lt;/code&gt; 속성, landmarks 등을 이야기합니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;postcss-정리---qiita(일본어)&quot;&gt;PostCSS 정리 - Qiita(일본어)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qiita.com/morishitter/items/4a04eb144abf49f41d7d&quot; title=&quot;PostCSS まとめ - Qiita&quot;&gt;qiita.com/morishitter/items/4a04eb144abf49f41d7d&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;PostCSS&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;PostCSS의 개요와 특징 그리고 만든 동기 등을 소개합니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;front-end-performance-checklist-2017-(pdf,-apple-pages)-–-smashing-magazine&quot;&gt;Front-End Performance Checklist 2017 (PDF, Apple Pages) – Smashing Magazine&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/&quot; title=&quot;Front-End Performance Checklist 2017 (PDF, Apple Pages) – Smashing Magazine&quot;&gt;www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;웹 프론트엔드의 성능과 관련된 체크 리스트가 정리돼 있습니다.&lt;br&gt;
+파일 사이즈, 전송 방법, 렌더링, 모니터링, 테스트 방법 등을 소개합니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;the-reflect-api-of-es6-–-zsolt-nagy&quot;&gt;The Reflect API of ES6 – Zsolt Nagy&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.zsoltnagy.eu/the-reflect-api-of-es6/&quot; title=&quot;The Reflect API of ES6 – Zsolt Nagy&quot;&gt;www.zsoltnagy.eu/the-reflect-api-of-es6/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Reflect API를 소개하는 글입니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;mozanime-in-2016-|-nothing-new&quot;&gt;MozAnime in 2016 | Nothing new&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://birtles.wordpress.com/2016/12/27/mozanime-in-2016/&quot; title=&quot;MozAnime in 2016 | Nothing new&quot;&gt;birtles.wordpress.com/2016/12/27/mozanime-in-2016/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;firefox&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;animation&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;2016년 시점에서 Firefox의 Web Animations 대응 수준과 새롭게 바뀐 디버깅 기능에 관해 소개합니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;슬라이드, 영상&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;optimise-your-web-development-workflow-2016&quot;&gt;Optimise your web development workflow 2016&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://umaar.github.io/devtools-optimise-your-web-development-workflow-2016/&quot; title=&quot;Optimise your web development workflow 2016&quot;&gt;umaar.github.io/devtools-optimise-your-web-development-workflow-2016/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Chrome&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;debug&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;slide&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;accessibility&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Chrome 개발자 도구의 기능과 활용법을 소개하는 슬라이드입니다.&lt;br&gt;
+주로 CSS, 접근성, 성능과 관련된 기능과 활용법을 GIF 애니메이션과 함께 소개하고 있습니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;fuse-box-bundler-/-api-reference&quot;&gt;Fuse-Box bundler / API Reference&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://fuse-box.org/&quot; title=&quot;Fuse-Box bundler / API Reference&quot;&gt;fuse-box.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;webpack/Browserify와 같은 bundler 기능과 JSPM/SystemJS와 같은 loader 기능을 가지고 있는 도구입니다.&lt;br&gt;
+모듈의 의존 관계와 변환 후의 파일을 캐시하여 빠르게 변환됩니다.&lt;br&gt;
+플러그인으로 변환 방법을 확장할 수 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/@ivanorlov/fusebox-bundle-your-project-within-a-fraction-of-a-second-f2360ba95727&quot; title=&quot;FuseBox — bundle your project within a fraction of a second&quot;&gt;FuseBox — bundle your project within a fraction of a second&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;gothdo/range:-a-javascript-implementation-of-the-python&amp;#x27;s-range()-function.&quot;&gt;Gothdo/range: A JavaScript implementation of the Python&amp;#x27;s range() function.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Gothdo/range&quot; title=&quot;Gothdo/range: A JavaScript implementation of the Python&amp;#39;s range() function.&quot;&gt;github.com/Gothdo/range&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Python의 &lt;code&gt;range()&lt;/code&gt;를 JavaScript 구현한 라이브러리입니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;andywer/leakage:-🐛-memory-leak-testing-for-node.&quot;&gt;andywer/leakage: 🐛 Memory leak testing for node.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/andywer/leakage&quot; title=&quot;andywer/leakage: 🐛 Memory leak testing for node.&quot;&gt;github.com/andywer/leakage&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;libn&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js에서 메모리 누수와 관련된 테스트 코드를 작성할 수 있는 라이브러리입니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;nolanlawson/marky:-high-resolution-javascript-timer-based-on-performance.mark()-and-measure()&quot;&gt;nolanlawson/marky: High-resolution JavaScript timer based on performance.mark() and measure()&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/nolanlawson/marky&quot; title=&quot;nolanlawson/marky: High-resolution JavaScript timer based on performance.mark() and measure()&quot;&gt;github.com/nolanlawson/marky&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;libn&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;User Timing API(&lt;code&gt;performance.mark&lt;/code&gt;와 &lt;code&gt;performance.measure&lt;/code&gt;) 기반으로 구현한 처리 시간 측정 라이브러리입니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;maniart/diffyjs:-a-dependency-free-motion-detection-library-for-the-browser&quot;&gt;maniart/diffyjs: A dependency-free motion detection library for the browser&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/maniart/diffyjs&quot; title=&quot;maniart/diffyjs: A dependency-free motion detection library for the browser&quot;&gt;github.com/maniart/diffyjs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;画像&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;MediaDevices.getUserMedia()&lt;/code&gt;를 사용해 얻은 사진 이용해 프레임별 움직임을 diif하여 취득할 수 있는 라이브러리입니다.&lt;br&gt;
+motion detection 라이브러리로 불립니다.&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Wed, 04 Jan 2017 17:28:00 +0900</pubDate>
+        <link>https://jser.info/ko/2017/01/04/postcss-chrome-fusebox/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2017/01/04/postcss-chrome-fusebox/</guid>
+        
+        <category>bundler</category>
+        
+        <category>Tools</category>
+        
+        <category>Chrome</category>
+        
+        <category>PostCSS</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>ko</category>
+        
+        <category>jser</category>
+        
+      </item>
     
       <item>
         <title>2016-11-29 JS: Node.js v7.2.0, Yarn으로 오프라인 인스톨</title>
@@ -2716,388 +2994,6 @@ Mutable로 사용하고 싶은 경우엔 네이티브 구현체로 조작하고 
         <category>browser</category>
         
         <category>ECMAScript</category>
-        
-        
-        <category>_i18n</category>
-        
-        <category>ko</category>
-        
-        <category>jser</category>
-        
-      </item>
-    
-      <item>
-        <title>2016-06-21 JS: ECMAScript 2016 릴리즈, QUnit 2.0</title>
-        <description>&lt;p&gt;JSer.info #284 - ECMAScript 2016이 정식으로 릴리즈됐습니다. &lt;img class=&#39;emoji&#39; title=&#39;:tada:&#39; alt=&#39;:tada:&#39; src=&#39;https://assets.github.com/images/icons/emoji/unicode/1f389.png&#39; height=&#39;20&#39; width=&#39;20&#39; align=&#39;absmiddle&#39; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ecma-international.org/ecma-262/7.0/&quot; title=&quot;ECMAScript® 2016 Language Specification&quot;&gt;ECMAScript® 2016 Language Specification&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ECMAScript 2016의 변경 사항은 예전에 간단히 소개해드린적이 있습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://jser.info/ko/2016/02/01/es2016/&quot; title=&quot;ECMAScript 2016 features &amp;amp;amp; changes - JSer.info&quot;&gt;ECMAScript 2016 features &amp;amp; changes - JSer.info&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://gist.github.com/azu/3dc9295e97aee9a2706068caf65f0348&quot; title=&quot;ECMAScript 2015 - 2016 diff points&quot;&gt;ECMAScript 2015 - 2016 diff points&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;추가된 기능은 &lt;code&gt;Array.prototype.includes&lt;/code&gt;와 &lt;a href=&quot;https://github.com/rwaldron/exponentiation-operator&quot;&gt;&lt;code&gt;**&lt;/code&gt; 연산자&lt;/a&gt; 정도로 큰 변경사항은 없습니다.&lt;br&gt;
-(Proxy의 &lt;code&gt;[[enumerate]]&lt;/code&gt; trap과 &lt;code&gt;Reflect.enumerate&lt;/code&gt;가 삭제되기도 했습니다.)&lt;/p&gt;
-
-&lt;p&gt;ECMAScript의 사양 책정 프로세스는 스냅샷을 찍듯이 매년 릴리즈하는 방법으로 진행되고 있습니다. &lt;br&gt;
-조금 예전에 작성한 글이지만 아래 문서에 해당 프로세스에 관해 소개한 글이 있으니 참고하시길 바랍니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://efcl.info/2015/10/18/ecmascript-paper/&quot; title=&quot;ECMAScript의 사양 책정에 관한 컨닝페이퍼 | Web Scratch&quot;&gt;ECMAScript의 사양 책정에 관한 컨닝페이퍼 | Web Scratch&lt;/a&gt;(일본어)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;HTML의 사양과 마찬가지로 ECMAScript의 사양을 읽으려한다면 &lt;a href=&quot;http://www.ecma-international.org/publications/standards/Ecma-262.htm&quot;&gt;스냅샷&lt;/a&gt;보다는 Living Standard스러운 아래 문서를 참조하는 편이 더 좋다고 생각합니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://tc39.github.io/ecma262/&quot; title=&quot;ECMAScript® 2017 Language Specification&quot;&gt;ECMAScript® 2017 Language Specification&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;또, ECMAScript 2016과 동시에 &lt;a href=&quot;http://www.ecma-international.org/ecma-402/3.0/&quot; title=&quot;ECMAScript® 2016 Internationalization API Specification&quot;&gt;ECMAScript® 2016 Internationalization API Specification&lt;/a&gt;도 함께 릴리즈됐습니다.&lt;br&gt;
-&lt;code&gt;Intl&lt;/code&gt; 오브젝트 등 &lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Intl&quot; title=&quot;ECMAScript의 국제화 API&quot;&gt;ECMAScript의 국제화 API&lt;/a&gt;를 책정하는 사양입니다.&lt;br&gt;
-이 사양도 매년 릴리즈하는 책정 프로세스로 운영됩니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/tc39/ecma402/releases/tag/3.0-rc-1&quot; title=&quot;Release 3rd Edition - Release Candidate · tc39/ecma402&quot;&gt;Release 3rd Edition - Release Candidate · tc39/ecma402&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ECMAScript의 최신 정보는 &lt;a href=&quot;https://ecmascript-daily.github.io/&quot; title=&quot;ECMAScript Daily&quot;&gt;ECMAScript Daily&lt;/a&gt;(일본어)에 작성 및 소개하고 있으니 관심이 있는 분은 참고하시길 바랍니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://ecmascript-daily.github.io/&quot; title=&quot;ECMAScript Daily&quot;&gt;ecmascript-daily.github.io&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;JavaScript의 프레임워크 Qunit 2.0이 릴리즈됐습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/jquery/qunit/releases/tag/2.0.0&quot; title=&quot;Release 2.0.0 · jquery/qunit&quot;&gt;Release 2.0.0 · jquery/qunit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;비권장이었던 글로벌 함수를 삭제하고, 메서드의 이름을 변경하는 등 비호환적인 변경 사항이 주로 이뤄졌습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;module()&lt;/code&gt;, &lt;code&gt;test()&lt;/code&gt;는 각각 &lt;code&gt;QUnit.*&lt;/code&gt; 하위로 이동&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;start()&lt;/code&gt;, &lt;code&gt;stop()&lt;/code&gt; 대신 &lt;code&gt;assert.async()&lt;/code&gt; 이용&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;setup&lt;/code&gt;/&lt;code&gt;teardown&lt;/code&gt;은 &lt;code&gt;beforeEach&lt;/code&gt;/&lt;code&gt;afterEach&lt;/code&gt;로 이름 변경&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;QUnit.init&lt;/code&gt;과 &lt;code&gt;QUnit.reset&lt;/code&gt; 삭제&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;업그레이드 가이드와 마이그레이션 도구가 공개돼 있으니 함께 살펴보시길 바랍니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://qunitjs.com/upgrade-guide-2.x/&quot; title=&quot;QUnit 2.x Upgrade Guide | QUnit&quot;&gt;QUnit 2.x Upgrade Guide | QUnit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/apsdehal/qunit-migrate&quot; title=&quot;apsdehal/qunit-migrate: Migrate old QUnit tests to 2.x&quot;&gt;apsdehal/qunit-migrate: Migrate old QUnit tests to 2.x&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;ecmascript®-2016-language-specification&quot;&gt;ECMAScript® 2016 Language Specification&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.ecma-international.org/ecma-262/7.0/&quot; title=&quot;ECMAScript® 2016 Language Specification&quot;&gt;www.ecma-international.org/ecma-262/7.0/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;spec&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ECMAScript 2016이 릴리즈됐습니다.&lt;br&gt;
-매년 릴리즈하는 형식으로 변경된 후의 첫 릴리즈입니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ecma-international.org/publications/standards/Ecma-262.htm&quot; title=&quot;Standard ECMA-262&quot;&gt;Standard ECMA-262&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/tc39/ecma262&quot; title=&quot;tc39/ecma262: Status, process, and documents for ECMA262&quot;&gt;tc39/ecma262: Status, process, and documents for ECMA262&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://jser.info/2016/02/01/es2016/&quot; title=&quot;ECMAScript 2016 features &amp;amp;amp;amp; changes - JSer.info&quot;&gt;ECMAScript 2016 features &amp;amp;amp; changes - JSer.info&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;ecmascript®-2016-internationalization-api-specification&quot;&gt;ECMAScript® 2016 Internationalization API Specification&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.ecma-international.org/ecma-402/3.0/&quot; title=&quot;ECMAScript® 2016 Internationalization API Specification&quot;&gt;www.ecma-international.org/ecma-402/3.0/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;i18n&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;spec&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ECMAScript 2016 Internationalization API 사양이 릴리즈됐습니다.&lt;br&gt;
-Unicode 8.0을 필요로 하게 됐고, &lt;code&gt;Intl.getCanonicalLocales()&lt;/code&gt;이 추가됐습니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;release-v1.9.0-·-testem/testem&quot;&gt;Release v1.9.0 · testem/testem&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/testem/testem/releases/tag/v1.9.0&quot; title=&quot;Release v1.9.0 · testem/testem&quot;&gt;github.com/testem/testem/releases/tag/v1.9.0&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;testem 1.9.0이 릴리즈됐습니다.&lt;br&gt;
-커스텀 리포터가 meta 태그를 전달받을 수 있도록 변경됐습니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;release-2.0.0-·-jquery/qunit&quot;&gt;Release 2.0.0 · jquery/qunit&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/jquery/qunit/releases/tag/2.0.0&quot; title=&quot;Release 2.0.0 · jquery/qunit&quot;&gt;github.com/jquery/qunit/releases/tag/2.0.0&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;QUnit 2.0.0이 릴리즈됐습니다.&lt;br&gt;
-비권장이었던 글로벌 함수를 삭제하고, 메서드의 이름을 변경하는 등 비호환적인 변경이 이뤄졌습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;module()&lt;/code&gt;, &lt;code&gt;test()&lt;/code&gt;는 각각 &lt;code&gt;QUnit.*&lt;/code&gt; 하위로 이동&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;start()&lt;/code&gt;, &lt;code&gt;stop()&lt;/code&gt; 대신 &lt;code&gt;assert.async()&lt;/code&gt; 이용&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;setup&lt;/code&gt;/&lt;code&gt;teardown&lt;/code&gt;은 &lt;code&gt;beforeEach&lt;/code&gt;/&lt;code&gt;afterEach&lt;/code&gt;로 이름 변경&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;QUnit.init&lt;/code&gt;과 &lt;code&gt;QUnit.reset&lt;/code&gt; 삭제&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;아래 업그레이드 가이드를 참고하세요.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://qunitjs.com/upgrade-guide-2.x/&quot; title=&quot;QUnit 2.x Upgrade Guide | QUnit&quot;&gt;QUnit 2.x Upgrade Guide | QUnit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;eslint-v2.13.0-released---eslint---pluggable-javascript-linter&quot;&gt;ESLint v2.13.0 released - ESLint - Pluggable JavaScript linter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://eslint.org/blog/2016/06/eslint-v2.13.0-released&quot; title=&quot;ESLint v2.13.0 released - ESLint - Pluggable JavaScript linter&quot;&gt;eslint.org/blog/2016/06/eslint-v2.13.0-released&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ESLint&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;ESLint v2.13.0이 릴리즈됐습니다.&lt;br&gt;
-2.x 계열의 마지막 버전이며, 다음 버전으로는 3.0.0이 예정돼 있습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/eslint/eslint/issues/6356&quot; title=&quot;Proposal for 3.0.0 · Issue #6356 · eslint/eslint&quot;&gt;Proposal for 3.0.0 · Issue #6356 · eslint/eslint&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;rc2-now-available&quot;&gt;RC2 Now Available&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://angularjs.blogspot.com/2016/06/rc2-now-available.html&quot; title=&quot;RC2 Now Available&quot;&gt;angularjs.blogspot.com/2016/06/rc2-now-available.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Angular2 RC2가 릴리즈됐습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://ng2-info.github.io/2016/06/16/angular-2-rc-2/&quot; title=&quot;Angular 2 RC.2가 릴리즈됐습니다. | Angular2 Info&quot;&gt;Angular 2 RC.2가 릴리즈됐습니다. | Angular2 Info&lt;/a&gt;(일본어)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;safari-10.0&quot;&gt;Safari 10.0&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html&quot; title=&quot;Safari 10.0&quot;&gt;developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_0.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;safari&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Safari 10의 릴리즈 노트가 공개됐습니다.&lt;br&gt;
-IndexedDB, CSP, Shadow DOM v1, ES6, ECMA i18n API 등을 지원합니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;아티클&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;react에서-tdd(테스트주도개발)을-시작해보다-:-환경-구축에서-테스트-작성,-기능-구현까지-소개하는-가이드-|-프로그래밍-|-postd(일본어)&quot;&gt;React에서 TDD(테스트주도개발)을 시작해보다 : 환경 구축에서 테스트 작성, 기능 구현까지 소개하는 가이드 | 프로그래밍 | POSTD(일본어)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://postd.cc/getting-started-with-tdd-in-react/&quot; title=&quot;React에서 TDD(테스트주도개발)을 시작해보다 : 환경 구축에서 테스트 작성, 기능 구현까지 소개하는 가이드 | 프로그래밍 | POSTD&quot;&gt;postd.cc/getting-started-with-tdd-in-react/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;번역&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;React Component를 TDD로 개발하는 이야기입니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;a-quick-introduction-to-polymer-—-webcomponents.org&quot;&gt;A Quick Introduction To Polymer — WebComponents.org&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://webcomponents.org/articles/a-quick-polymer-introduction/&quot; title=&quot;A Quick Introduction To Polymer — WebComponents.org&quot;&gt;webcomponents.org/articles/a-quick-polymer-introduction/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;WebComponents&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;tutorial&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Polymer 입문을 위한 개괄적인 개요를 설명한 글입니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;실사례로-학습하는-ecmascript-2015-〜generator〜-–-net-biz-div.-tech-blog(일본어)&quot;&gt;실사례로 학습하는 ECMAScript 2015 〜Generator〜 – NET BIZ DIV. TECH BLOG(일본어)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://tech.recruit-mp.co.jp/front-end/post-10358/&quot; title=&quot;実例とともに学ぶECMAScript 2015 〜Generator〜 – NET BIZ DIV. TECH BLOG&quot;&gt;tech.recruit-mp.co.jp/front-end/post-10358/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Generator, Iterator 에 관해 소개합니다.&lt;br&gt;
-Iterable를 다루는 for of, &lt;code&gt;Array.from&lt;/code&gt;, spread operator 관해 이야기합니다.&lt;br&gt;
-「Generator는 Iterator를 반환하는 함수」등 관련된 특징이나 원리를 친절하게 설명하는 글입니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;the-soundcloud-client-in-react-+-redux---rwieruch&quot;&gt;The SoundCloud Client in React + Redux - RWieruch&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.robinwieruch.de/the-soundcloud-client-in-react-redux/&quot; title=&quot;The SoundCloud Client in React + Redux - RWieruch&quot;&gt;www.robinwieruch.de/the-soundcloud-client-in-react-redux/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;redux&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;tutorial&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;React + Redux로 Soundcloud의 클라이언트 부분을 만드는 튜토리얼입니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;the-future-of-declaration-files-|-typescript&quot;&gt;The Future of Declaration Files | TypeScript&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/typescript/2016/06/15/the-future-of-declaration-files/&quot; title=&quot;The Future of Declaration Files | TypeScript&quot;&gt;blogs.msdn.microsoft.com/typescript/2016/06/15/the-future-of-declaration-files/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;npm에서 TypeScript의 타입 정의 파일을 추가할 수 있게 된다고 합니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;npm install --save @types/lodash&lt;/code&gt; 와 같은 형태로 별도의 도구없이 설치할 수 있습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://microsoft.github.io/TypeSearch/&quot; title=&quot;TypeScript Types Search&quot;&gt;TypeScript Types Search&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;슬라이드, 영상&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;tips-&amp;amp;-tricks-in-front-end-development-//-speaker-deck&quot;&gt;Tips &amp;amp; Tricks in Front-End Development // Speaker Deck&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/forloop/tips-and-tricks-in-front-end-development&quot; title=&quot;Tips &amp;amp; Tricks in Front-End Development // Speaker Deck&quot;&gt;speakerdeck.com/forloop/tips-and-tricks-in-front-end-development&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;슬라이드&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tips&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;object-fit&lt;/code&gt;, Viewport unit, 읽은 링크를 다루는 법, 깨진 &lt;code&gt;&amp;lt;img /&amp;gt;&lt;/code&gt;를 표현하는 법, 요소 내에 빈공간이 생길때 출력 방법, postMessage, SVG 등의 프론트엔드 관련 팁을 소개합니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;css-animations,-orchestrated-by-david-khourshid&quot;&gt;CSS Animations, Orchestrated by David Khourshid&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://slides.com/davidkhourshid/deck-17#/&quot; title=&quot;CSS Animations, Orchestrated by David Khourshid&quot;&gt;slides.com/davidkhourshid/deck-17#/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;슬라이드&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;복잡한 CSS 애니메이션을 다루는 방법에 관한 슬라이드입니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;resource-(pre)loading&quot;&gt;Resource (pre)loading&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://yoavweiss.github.io/link_htmlspecial_16/&quot; title=&quot;Resource (pre)loading&quot;&gt;yoavweiss.github.io/link_htmlspecial_16/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;슬라이드&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;link rel&amp;gt;&lt;/code&gt;를 소개하는 슬라이드입니다.&lt;br&gt;
-prefetch, resource loading, feature detection 등에 관해 이야기합니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;사이트, 서비스, 문서&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;mgiuca/web-share:-web-api-proposal-for-sharing-data-from-a-web-page&quot;&gt;mgiuca/web-share: Web API proposal for sharing data from a web page&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mgiuca/web-share&quot; title=&quot;mgiuca/web-share: Web API proposal for sharing data from a web page&quot;&gt;github.com/mgiuca/web-share&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;WebPlatformAPI&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;spec&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;navigator.share&lt;/code&gt; API에 관한 문서입니다.&lt;br&gt;
-Web Share API는 Android의 intents, iOS의 UIActivityViewController 처럼 공유를 위한 API입니다.&lt;br&gt;
-Chrome에서 구현을 검토하고 있습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.chromestatus.com/feature/5668769141620736&quot; title=&quot;Web Share - Chrome Platform Status&quot;&gt;Web Share - Chrome Platform Status&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://discourse.wicg.io/t/web-share-api-for-sharing-content-to-arbitrary-destination/1561/4&quot; title=&quot;Web Share API for sharing content to arbitrary destination - APIs - WICG&quot;&gt;Web Share API for sharing content to arbitrary destination - APIs - WICG&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;fed135/kalm:-node-socket-wrapper-and-optimizer&quot;&gt;fed135/Kalm: Node socket wrapper and optimizer&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/fed135/Kalm&quot; title=&quot;fed135/Kalm: Node socket wrapper and optimizer&quot;&gt;github.com/fed135/Kalm&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;WebSocket&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;WebRTC&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Kalm은 양방향 통신(WebSocket, WebRTC)을 위한 라이브러리입니다.&lt;br&gt;
-Nagle 알고리즘을 구현하는 등 효율적으로 패킷을 전송하는 구조를 갖고 있습니다.&lt;br&gt;
-Adapter를 이용하여 통신 프로토콜을 변경할 수 있도록 구현돼 있습니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;af/envalid:-environment-variable-validation-for-node.js&quot;&gt;af/envalid: Environment variable validation for Node.js&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/af/envalid&quot; title=&quot;af/envalid: Environment variable validation for Node.js&quot;&gt;github.com/af/envalid&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;node.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Node.js &lt;code&gt;process.env&lt;/code&gt;의 값을 검사하는 라이브러리입니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;headless---chromium/src---git-at-google&quot;&gt;headless - chromium/src - Git at Google&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://chromium.googlesource.com/chromium/src/+/master/headless/&quot; title=&quot;headless - chromium/src - Git at Google&quot;&gt;chromium.googlesource.com/chromium/src/+/master/headless/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Chrome&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Chromium 헤드리스 브라우저 저장소입니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;alexreardon/raf-stub:-accurate-and-predictable-testing-of-requestanimationframe-and-cancelanimationframe&quot;&gt;alexreardon/raf-stub: Accurate and predictable testing of requestAnimationFrame and cancelAnimationFrame&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/alexreardon/raf-stub&quot; title=&quot;alexreardon/raf-stub: Accurate and predictable testing of requestAnimationFrame and cancelAnimationFrame&quot;&gt;github.com/alexreardon/raf-stub&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;animation&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;requestAnimationFrame&lt;/code&gt;의 stub 라이브러리입니다.&lt;br&gt;
-단계별로 프레임을 진행할 수 있습니다.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;h1 class=&quot;site-genre&quot;&gt;도서&lt;/h1&gt;
-
-&lt;hr&gt;
-
-&lt;h2 id=&quot;manning-|-angular-2-in-action&quot;&gt;Manning | Angular 2 in Action&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.manning.com/books/angular-2-in-action&quot; title=&quot;Manning | Angular 2 in Action&quot;&gt;www.manning.com/books/angular-2-in-action&lt;/a&gt;&lt;/p&gt;
-
-&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;AngularJS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Angular 2를 소개하는 도서입니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/angular-in-action/&quot; title=&quot;Angular 2 in Action&quot;&gt;Angular 2 in Action&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-</description>
-        <pubDate>Tue, 21 Jun 2016 09:26:00 +0900</pubDate>
-        <link>https://jser.info/ko/2016/06/21/ecmascript2016-unit2.0/</link>
-        <guid isPermaLink="true">https://jser.info/ko/2016/06/21/ecmascript2016-unit2.0/</guid>
-        
-        <category>ECMAScript</category>
-        
-        <category>Spec</category>
-        
-        <category>i18n</category>
-        
-        <category>QUnit</category>
         
         
         <category>_i18n</category>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2017-01-04 JS: PostCSS 개요, Chrome 개발자 도구, FuseBox - JSer.info</title>
+    <meta name="description" content="JSer.info #312 - PostCSS 정리 - Qiita(일본어)에는 PostCSS란 무엇인지에 관해 작성돼 있습니다.">
+    
+    <meta name="keywords" content="bundler,Tools,Chrome,PostCSS" />
+    
+    <meta name="author" content="azu">
+    
+      <meta content="2017-01-04T17:28:00+09:00" property="article:published_time">
+      <meta content="https://jser.info/about/" property="article:author">
+    
+    
+      
+      <meta content="_i18n" property="article:section">
+      
+    
+    
+      
+      <meta content="bundler" property="article:tag">
+      
+      <meta content="Tools" property="article:tag">
+      
+      <meta content="Chrome" property="article:tag">
+      
+      <meta content="PostCSS" property="article:tag">
+      
+    
+
+    
+    <link rel="canonical" href="https://jser.info/ko/2017/01/04/postcss-chrome-fusebox/">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://jser.info/ko/rss/">
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/public/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/public/img/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/index.css">
+    <!-- JavaScript -->
+    <script src="/public/js/switch-alt-link.js"></script>
+    <!-- Open graph tags -->
+<meta name="twitter:card" content="JSer.info #312 - PostCSS 정리 - Qiita(일본어)에는 PostCSS란 무엇인지에 관해 작성돼 있습니다." />
+<meta name="twitter:site" content="@jser_info" />
+
+
+<meta property="og:title" content="2017-01-04 JS: PostCSS 개요, Chrome 개발자 도구, FuseBox">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jser.info/ko/2017/01/04/postcss-chrome-fusebox/">
+<meta property="og:image" content="https://jser.info/media/logo.png">
+
+<meta property="og:description" content="JSer.info #312 - PostCSS 정리 - Qiita(일본어)에는 PostCSS란 무엇인지에 관해 작성돼 있습니다.">
+<meta property="og:site_name" content="JSer.info">
+
+
+
+<meta property="article:published_time" content="2017-01-04T17:28:00+09:00">
+
+<meta property="og:see_also" content="https://jser.info/ko/2016/11/29/node.js-v7.2.0-yarn/">
+
+<meta property="og:see_also" content="https://jser.info/ko/2016/11/01/node.js-v7-node.js-v0.10-eol-webassembly-browser-preview/">
+
+<meta property="og:see_also" content="https://jser.info/ko/2016/10/24/npm-4.0.0-node.js-v6.9.0-lts-webpack2/">
+
+
+
+
+
+<meta property="article:tag" content="bundler">
+
+<meta property="article:tag" content="Tools">
+
+<meta property="article:tag" content="Chrome">
+
+<meta property="article:tag" content="PostCSS">
+
+
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+<script async>
+    window.ga = window.ga || function () {
+                (ga.q = ga.q || []).push(arguments)
+            };
+    ga.l = +new Date;
+    ga('create', 'UA-2184335-9', 'auto');
+    ga('send', 'pageview');
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = Array.prototype.slice.call(document.querySelectorAll("a[href^='http']:not([href*='jser.info'])"));
+        // add _blank and track
+        links.forEach(function (link) {
+            if (!link.target) {
+                link.target = "_blank";
+            }
+            link.addEventListener("click", function (event) {
+                var elementTarget = event.target;
+                var url = elementTarget.href;
+                ga('send', 'event', 'outbound', 'click', url);
+            });
+        });
+    });
+</script>
+
+</head>
+
+
+<body>
+<header>
+    <a href="https://github.com/jser/jser.github.io" class="github-ribbon">
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+             src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+             alt="Fork me on GitHub"
+             data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+    </a>
+    <div class="global-header">
+    <h1 class="site-title"><a href="/ko/"><img alt="JSer.info" src="/public/img/logo.png" /></a></h1>
+    <h2 class="site-description">JavaScript의 최신 소식을 소개하는 주간 블로그</h2>
+    <nav class="lang-menu">
+        <ul>
+            <li><a href="/" data-alt-href="/2017/01/04/postcss-chrome-fusebox/">日本語</a></li>
+            <li><a href="/ko/" data-alt-href="/ko/2017/01/04/postcss-chrome-fusebox/">한국어</a></li>
+        </ul>
+        
+    </nav>
+</div>
+
+</header>
+<div class="content-wrapper">
+    <article>
+        <div class="page-content">
+            <div class="post">
+    <header>
+        <div class="post-header">
+            <h1><a href="/2017/01/04/postcss-chrome-fusebox/">2017-01-04 JS: PostCSS 개요, Chrome 개발자 도구, FuseBox</a></h1>
+
+            <div class="pre-post-toolbar">
+                <span class="post-date">2017年01月04日</span>
+                
+                <span class="post-translator">Translator: U-Yeong Ju</span>
+                
+                <span class="svg-icon"><img src="/public/svg/github.svg"/></span>
+                <a class="btn edit-on-github" href="https://github.com/jser/jser.github.io/edit/develop/_i18n/ko/_posts/2017/2017-01-04-postcss-chrome-fusebox.md"><span class="edit-on-github-label"></span>Edit on GitHub</a>
+                <span class="svg-icon"><img src="/public/svg/git.svg"/></span>
+                <a class="btn revision-on-github" href="https://github.com/jser/jser.github.io/commits/develop/_i18n/ko/_posts/2017/2017-01-04-postcss-chrome-fusebox.md"><span class="revision-on-github-label"></span>See Revisions</a>
+            </div>
+
+        </div>
+        <div class="social-buttons">
+            <ul>
+    <!-- Feedly -->
+    
+    <li>
+      <a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttps://jser.info/ko/rss/'  target='blank'><img id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a>
+    </li>
+    <!-- Twitter -->
+    <li class="twitter-button-item">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="jser_info">Tweet</a>
+    </li>
+    <!-- Hatena -->
+    <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button"
+           data-hatena-bookmark-layout="standard-balloon"
+           data-hatena-bookmark-url="https://jser.info/ko/2017/01/04/postcss-chrome-fusebox/">
+            <img src="https://b.st-hatena.com/images/entry-button/button-only.gif"
+                 alt="はてなブックマークに追加" width="20" height="20"
+                 style="border: none">
+        </a>
+    </li>
+    <!-- Pocket -->
+    <li>
+        <a href="https://getpocket.com/save" class="pocket-btn" data-lang="ja"
+           data-save-url="https://jser.info/ko/2017/01/04/postcss-chrome-fusebox/"
+           data-pocket-count="horizontal"
+           data-pocket-align="left">Pocket</a>
+    </li>
+</ul>
+
+        </div>
+    </header>
+    <article class="post-content">
+        <p>JSer.info #312 - <a href="http://qiita.com/morishitter/items/4a04eb144abf49f41d7d" title="PostCSS 정리 - Qiita">PostCSS 정리 - Qiita</a>(일본어)에는 <a href="https://github.com/postcss/postcss" title="PostCSS">PostCSS</a>란 무엇인지에 관해 작성돼 있습니다.</p>
+
+<p>PostCSS는 CSS의 기반 도구 또는 일종의 프레임워크로 CSS 파서나 제너레이터 등을 플러그인으로서 추가해 CSS 관련 여러가지 처리를 할 수 있는 기능을 제공합니다(파서 자체도 플러그인으로 확장할 수 있으므로 Sass도 포함할 수 있습니다).</p>
+
+<p>이 글에서는 PostCSS의 정의 뿐 아니라 PostCSS 환경에서 사용할 수 있는 프리프로세스와 Linter 관련 도구 등도 함께 소개합니다.</p>
+
+<hr>
+
+<p><a href="https://umaar.github.io/devtools-optimise-your-web-development-workflow-2016/#/" title="Optimise your web development workflow 2016">Optimise your web development workflow 2016</a>에는 Chrome 개발자 도구의 다양한 기능을 GIF 사진과 함께 자세히 소개돼 있습니다.</p>
+
+<p>Elements, Timeline, Networks, Audits 패널에 있는 기능과 이와 관련된 사양 및 도구 등도 함께 소개합니다.<br>
+한번 살펴보면 재미있을 것 같습니다.</p>
+
+<p>또, 아래 사이트에서는 1Tips/1Page 형식으로 개발자 도구 관련 팁을 소개하고 있으므로 앞서 소개드린 슬라이드와 함께 읽으면 좋을 것 같습니다.</p>
+
+<ul>
+<li><a href="https://umaar.com/dev-tips/" title="Dev Tips - Developer Tips by Umar Hansa">Dev Tips - Developer Tips by Umar Hansa</a></li>
+</ul>
+
+<hr>
+
+<p>bundler/module loader 도구 <a href="http://fuse-box.org/" title="Fusebox">Fusebox</a>가 공개됐습니다.<br>
+webpack 등과 같은 도구로 플러그인으로 변환 레이어를 추가할 수 있고, 그 결과를 단일 파일로 묶어주는 bundler 입니다.<br>
+또, webpack이나 SystemJS 등과 비슷한 기능을 제공하는 <code>FuseBox.import</code> 라는 Loader API도 함께 이용할 수 있습니다.</p>
+
+<p>빠른 변환 속도가 장점 중 하나로 모듈의 의존 관계와 변환 후의 파일을 캐시하여 재변환 시의 처리 시간을 줄이도록 설계 돼 있습니다.</p>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">FuseBox cache and deps.json <a href="https://t.co/4EjS62HY28">pic.twitter.com/4EjS62HY28</a></p>&mdash; azu (@azu_re) <a href="https://twitter.com/azu_re/status/816568272736788480">January 4, 2017</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>이제 막 공개된 도구이므로 소스 코드를 살펴보는 것도 재미있을 것 같습니다. 소스 코드는 TypeScript로 작성돼 있습니다.</p>
+
+<hr>
+
+<h2 id="공지사항">공지사항</h2>
+
+<ul>
+<li><a href="https://github.com/jser/ping" title="jser/ping">jser/ping</a>에 Ping의 Issue를 등록하면 <a href="https://twitter.com/jser_info" title="@jser_info">@jser_info</a>의 Twitter에 전달되도록 했습니다.</li>
+<li>데이터 분석 용으로 <a href="https://jser.info/data-dashboard/" title="JSer.info Data Dashboard">JSer.info Data Dashboard</a>를 만들었습니다.
+
+<ul>
+<li>JSer.info에서 소개한 글이나 URL 등에 관한 데이터를 여러가지 분류로 살펴볼 목적으로 생성한 페이지입니다.</li>
+<li>데이터를 읽는 재미있는 분류 방법이 있다면 <a href="https://github.com/jser/data-dashboard" title="jser/data-dashboard: JSer.info Data Dashboard.">jser/data-dashboard: JSer.info Data Dashboard.</a>에 Issue 또는 PR을 생성해 주시면 좋을 것 같습니다.</li>
+</ul></li>
+</ul>
+
+<hr>
+
+<h1 class="site-genre">헤드라인</h1>
+
+<hr>
+
+<h2 id="stealjs-1.0-release">StealJS 1.0 Release</h2>
+
+<p><a href="https://www.bitovi.com/blog/stealjs-1.0-release" title="StealJS 1.0 Release">www.bitovi.com/blog/stealjs-1.0-release</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">Tools</span> <span class="jser-tag">library</span> <span class="jser-tag">ReleaseNote</span></p>
+
+<p>개발 시엔 동적인 모듈 로더로 개발하고 배포 시엔 steal-tool를 이용해 production build 가능한 StealJS 1.0이 릴리즈됐습니다.</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=VKydmxRm6w8" title="Easy ES6 with StealJS - YouTube">Easy ES6 with StealJS - YouTube</a></li>
+</ul>
+
+<hr>
+
+<h1 class="site-genre">아티클</h1>
+
+<hr>
+
+<h2 id="optimizing-page-speeds-with-lazyloading-|-jscrambler-blog">Optimizing Page Speeds With Lazyloading | Jscrambler Blog</h2>
+
+<p><a href="https://blog.jscrambler.com/optimizing-page-speeds-with-lazyloading/" title="Optimizing Page Speeds With Lazyloading | Jscrambler Blog">blog.jscrambler.com/optimizing-page-speeds-with-lazyloading/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">AngularJS</span></p>
+
+<p>Angular의 라우팅과 컴포넌트를 LazyLoad할 수 있는 방법 관해 작성돼 있습니다.</p>
+
+<hr>
+
+<h2 id="lazy-loading---react">Lazy Loading - React</h2>
+
+<p><a href="https://webpack.js.org/guides/lazy-load-react/" title="Lazy Loading - React">webpack.js.org/guides/lazy-load-react/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">webpack</span> <span class="jser-tag">React</span></p>
+
+<p>webpack2를 사용해 React 컴포넌트를 LazyLoad 하는 방법에 관해 소개하고 있는 문서입니다.</p>
+
+<hr>
+
+<h2 id="flowtype으로-flux-아키텍처에-타입-시스템을-적용하는-것에-관해-발표했다---please-drive-faster(일본어)">Flowtype으로 Flux 아키텍처에 타입 시스템을 적용하는 것에 관해 발표했다 - Please Drive Faster(일본어)</h2>
+
+<p><a href="http://joe-re.hatenablog.com/entry/2016/12/29/204917" title="Flowtype으로 Flux 아키텍처에 타입 시스템을 적용하는 것에 관해 발표했다 - Please Drive Faster">joe-re.hatenablog.com/entry/2016/12/29/204917</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">flowtype</span> <span class="jser-tag">Flux</span></p>
+
+<p>FlowType를 사용해 타입 시스템을 적용한 Flux 아키텍처 패턴에 관해 이야기합니다</p>
+
+<ul>
+<li><a href="http://qiita.com/joe-re/items/d6fd262a8c6017f41e22" title="flowtype으로 Flux에서의 타입 안전성을 손에 넣는다 - Qiita">flowtype으로 Flux에서의 타입 안전성을 손에 넣는다 - Qiita</a>(일본어)</li>
+</ul>
+
+<hr>
+
+<h2 id="node.js-interview-questions-and-answers-(2017-edition)-|-@risingstack">Node.js Interview Questions and Answers (2017 Edition) | @RisingStack</h2>
+
+<p><a href="http://blog.risingstack.com/node-js-interview-questions-and-answers-2017/" title="Node.js Interview Questions and Answers (2017 Edition) | @RisingStack">blog.risingstack.com/node-js-interview-questions-and-answers-2017/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">node.js</span> <span class="jser-tag">security</span></p>
+
+<p>Node.js 관해 자주 있는 질문과 답변을 Q&amp;A 형식으로 풀어낸 글입니다.<br>
+코딩 스타일, 자주하게 되는 작성 실수, 보안, 타이밍 공격 등에 관해 작성돼 있습니다.</p>
+
+<hr>
+
+<h2 id="react-interview-questions">React Interview Questions</h2>
+
+<p><a href="https://tylermcginnis.com/react-interview-questions/" title="React Interview Questions">tylermcginnis.com/react-interview-questions/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">React</span> <span class="jser-tag">JavaScript</span></p>
+
+<p>React에 관한 여러가지 의문을 Q&amp;A 형식으로 풀어 작성한 글입니다.<br>
+Class로 작성한 컴포넌트와 함수로 작성한 컴포넌트의 차이, <code>refs</code>란 무엇인지, <code>key</code> 속성은 왜 중요한지 등 컴포넌트와 관련된 패턴에 관해 이야기합니다.</p>
+
+<hr>
+
+<h2 id="writing-html-with-accessibility-in-mind-–-medium">Writing HTML with accessibility in mind – Medium</h2>
+
+<p><a href="https://medium.com/@matuzo/writing-html-with-accessibility-in-mind-a62026493412" title="Writing HTML with accessibility in mind – Medium">medium.com/@matuzo/writing-html-with-accessibility-in-mind-a62026493412</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">HTML</span> <span class="jser-tag">accessibility</span></p>
+
+<p>HTML와 접근성(스크린리더)에 관해 작성된 글입니다.<br>
+<code>lang</code> 속성, <code>alt</code> 속성, <code>&lt;buton&gt;</code> 속성, landmarks 등을 이야기합니다.</p>
+
+<hr>
+
+<h2 id="postcss-정리---qiita(일본어)">PostCSS 정리 - Qiita(일본어)</h2>
+
+<p><a href="http://qiita.com/morishitter/items/4a04eb144abf49f41d7d" title="PostCSS まとめ - Qiita">qiita.com/morishitter/items/4a04eb144abf49f41d7d</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">PostCSS</span></p>
+
+<p>PostCSS의 개요와 특징 그리고 만든 동기 등을 소개합니다.</p>
+
+<hr>
+
+<h2 id="front-end-performance-checklist-2017-(pdf,-apple-pages)-–-smashing-magazine">Front-End Performance Checklist 2017 (PDF, Apple Pages) – Smashing Magazine</h2>
+
+<p><a href="https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/" title="Front-End Performance Checklist 2017 (PDF, Apple Pages) – Smashing Magazine">www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">performance</span> <span class="jser-tag">browser</span></p>
+
+<p>웹 프론트엔드의 성능과 관련된 체크 리스트가 정리돼 있습니다.<br>
+파일 사이즈, 전송 방법, 렌더링, 모니터링, 테스트 방법 등을 소개합니다.</p>
+
+<hr>
+
+<h2 id="the-reflect-api-of-es6-–-zsolt-nagy">The Reflect API of ES6 – Zsolt Nagy</h2>
+
+<p><a href="http://www.zsoltnagy.eu/the-reflect-api-of-es6/" title="The Reflect API of ES6 – Zsolt Nagy">www.zsoltnagy.eu/the-reflect-api-of-es6/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">ECMAScript</span></p>
+
+<p>Reflect API를 소개하는 글입니다.</p>
+
+<hr>
+
+<h2 id="mozanime-in-2016-|-nothing-new">MozAnime in 2016 | Nothing new</h2>
+
+<p><a href="https://birtles.wordpress.com/2016/12/27/mozanime-in-2016/" title="MozAnime in 2016 | Nothing new">birtles.wordpress.com/2016/12/27/mozanime-in-2016/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">firefox</span> <span class="jser-tag">animation</span></p>
+
+<p>2016년 시점에서 Firefox의 Web Animations 대응 수준과 새롭게 바뀐 디버깅 기능에 관해 소개합니다.</p>
+
+<hr>
+
+<h1 class="site-genre">슬라이드, 영상</h1>
+
+<hr>
+
+<h2 id="optimise-your-web-development-workflow-2016">Optimise your web development workflow 2016</h2>
+
+<p><a href="https://umaar.github.io/devtools-optimise-your-web-development-workflow-2016/" title="Optimise your web development workflow 2016">umaar.github.io/devtools-optimise-your-web-development-workflow-2016/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">Chrome</span> <span class="jser-tag">CSS</span> <span class="jser-tag">debug</span> <span class="jser-tag">slide</span> <span class="jser-tag">accessibility</span></p>
+
+<p>Chrome 개발자 도구의 기능과 활용법을 소개하는 슬라이드입니다.<br>
+주로 CSS, 접근성, 성능과 관련된 기능과 활용법을 GIF 애니메이션과 함께 소개하고 있습니다.</p>
+
+<hr>
+
+<h1 class="site-genre">소프트웨어, 도구, 라이브러리</h1>
+
+<hr>
+
+<h2 id="fuse-box-bundler-/-api-reference">Fuse-Box bundler / API Reference</h2>
+
+<p><a href="http://fuse-box.org/" title="Fuse-Box bundler / API Reference">fuse-box.org/</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">Tools</span></p>
+
+<p>webpack/Browserify와 같은 bundler 기능과 JSPM/SystemJS와 같은 loader 기능을 가지고 있는 도구입니다.<br>
+모듈의 의존 관계와 변환 후의 파일을 캐시하여 빠르게 변환됩니다.<br>
+플러그인으로 변환 방법을 확장할 수 있습니다.</p>
+
+<ul>
+<li><a href="https://medium.com/@ivanorlov/fusebox-bundle-your-project-within-a-fraction-of-a-second-f2360ba95727" title="FuseBox — bundle your project within a fraction of a second">FuseBox — bundle your project within a fraction of a second</a></li>
+</ul>
+
+<hr>
+
+<h2 id="gothdo/range:-a-javascript-implementation-of-the-python&#x27;s-range()-function.">Gothdo/range: A JavaScript implementation of the Python&#x27;s range() function.</h2>
+
+<p><a href="https://github.com/Gothdo/range" title="Gothdo/range: A JavaScript implementation of the Python&#39;s range() function.">github.com/Gothdo/range</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">library</span></p>
+
+<p>Python의 <code>range()</code>를 JavaScript 구현한 라이브러리입니다.</p>
+
+<hr>
+
+<h2 id="andywer/leakage:-🐛-memory-leak-testing-for-node.">andywer/leakage: 🐛 Memory leak testing for node.</h2>
+
+<p><a href="https://github.com/andywer/leakage" title="andywer/leakage: 🐛 Memory leak testing for node.">github.com/andywer/leakage</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">node.js</span> <span class="jser-tag">test</span> <span class="jser-tag">libn</span></p>
+
+<p>Node.js에서 메모리 누수와 관련된 테스트 코드를 작성할 수 있는 라이브러리입니다.</p>
+
+<hr>
+
+<h2 id="nolanlawson/marky:-high-resolution-javascript-timer-based-on-performance.mark()-and-measure()">nolanlawson/marky: High-resolution JavaScript timer based on performance.mark() and measure()</h2>
+
+<p><a href="https://github.com/nolanlawson/marky" title="nolanlawson/marky: High-resolution JavaScript timer based on performance.mark() and measure()">github.com/nolanlawson/marky</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">performance</span> <span class="jser-tag">libn</span></p>
+
+<p>User Timing API(<code>performance.mark</code>와 <code>performance.measure</code>) 기반으로 구현한 처리 시간 측정 라이브러리입니다.</p>
+
+<hr>
+
+<h2 id="maniart/diffyjs:-a-dependency-free-motion-detection-library-for-the-browser">maniart/diffyjs: A dependency-free motion detection library for the browser</h2>
+
+<p><a href="https://github.com/maniart/diffyjs" title="maniart/diffyjs: A dependency-free motion detection library for the browser">github.com/maniart/diffyjs</a></p>
+
+<p class="jser-tags jser-tag-icon"><span class="jser-tag">JavaScript</span> <span class="jser-tag">画像</span></p>
+
+<p><code>MediaDevices.getUserMedia()</code>를 사용해 얻은 사진 이용해 프레임별 움직임을 diif하여 취득할 수 있는 라이브러리입니다.<br>
+motion detection 라이브러리로 불립니다.</p>
+
+<hr>
+
+    </article>
+
+    <div class="post-post-toolbar">
+        <span class="svg-icon"><img src="/public/svg/github.svg"/></span>
+        <a class="btn edit-on-github"
+           href="https://github.com/jser/jser.github.io/edit/develop/_i18n/ko/_posts/2017/2017-01-04-postcss-chrome-fusebox.md"><span
+                class="edit-on-github-label"></span>Pull Request to this article</a>
+        
+        <nav class="tags"
+             id="js-post-tags"
+             data-post-tags='["bundler","Tools","Chrome","PostCSS"]'>
+            <span><span class="svg-icon"><img src="/public/svg/tag.svg"/></span>Tags:</span>
+            <ul>
+                
+                <li>bundler</li>
+                
+                <li>Tools</li>
+                
+                <li>Chrome</li>
+                
+                <li>PostCSS</li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="social-buttons post-content">
+    <ul>
+    <!-- Feedly -->
+    
+    <li>
+      <a href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttps://jser.info/ko/rss/'  target='blank'><img id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a>
+    </li>
+    <!-- Twitter -->
+    <li class="twitter-button-item">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="jser_info">Tweet</a>
+    </li>
+    <!-- Hatena -->
+    <li>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button"
+           data-hatena-bookmark-layout="standard-balloon"
+           data-hatena-bookmark-url="https://jser.info/ko/2017/01/04/postcss-chrome-fusebox/">
+            <img src="https://b.st-hatena.com/images/entry-button/button-only.gif"
+                 alt="はてなブックマークに追加" width="20" height="20"
+                 style="border: none">
+        </a>
+    </li>
+    <!-- Pocket -->
+    <li>
+        <a href="https://getpocket.com/save" class="pocket-btn" data-lang="ja"
+           data-save-url="https://jser.info/ko/2017/01/04/postcss-chrome-fusebox/"
+           data-pocket-count="horizontal"
+           data-pocket-align="left">Pocket</a>
+    </li>
+</ul>
+
+</div>
+<div class="disqus-embed" id="js-disqus-embed">
+    <button class="comment-button" id="js-comment-button">Show Comments</button>
+</div>
+
+<script async type="text/javascript" src="/public/js/show-disqus.js"></script>
+<script>
+    (function (w, d) {
+        var s, e = d.getElementsByTagName("script")[0],
+                a = function (u, f) {
+                    if (!d.getElementById(f)) {
+                        s = d.createElement("script");
+                        s.async = true;
+                        s.src = u;
+                        e.parentNode.insertBefore(s, e);
+                    }
+                };
+        a("//b.st-hatena.com/js/bookmark_button_wo_al.js");
+        a("//platform.twitter.com/widgets.js");
+        a("//widgets.getpocket.com/v1/j/btn.js?v=1");
+    })(window, document);
+</script>
+
+        </div>
+    </article>
+    <aside>
+        <div class="page-sidebar">
+    <div class="profile">
+        <a href="https://twitter.com/azu_re"><img src="/public/img/azu.png" alt="Profile"></a>
+
+        <h2><a href="https://twitter.com/azu_re">azu</a></h2>
+    </div>
+    
+    <div class="social-icons">
+        <a class="social-icon__twitter" href="https://twitter.com/jser_info" title="Twitter">
+            <img src="/public/svg/twitter.svg" alt="twitter">
+        </a>
+        <a class="social-icon__github" href="https://github.com/jser" title="GitHub">
+            <img src="/public/svg/github.svg" alt="GitHub">
+        </a>
+        <a class="social-icon__rss" href="https://jser.info/ko/rss/" title="RSS Feed">
+            <img src="/public/svg/feed.svg" alt="RSS">
+        </a>
+        <a class="social-icon__feedly" href='https://cloud.feedly.com/#subscription%2Ffeed%2Fhttps://jser.info/ko/rss/'
+           target='blank'>
+            <img id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-square-flat-green_2x.png'
+                 alt='follow us in feedly' width='28' height='28'></a>
+    </div>
+
+    <nav>
+        <div class="search-bar">
+            <div class="search-and-submit">
+                <form class="search-box" method="get" action="https://www.google.co.jp/search">
+                    <input type="search" name="q" placeholder="Enter Search"/>
+                    <input type="hidden" name="q" value="site:jser.info">
+                    <button type="submit">
+                        <span class="drawic drawic-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="side-menu">
+            <h1>페이지</h1>
+            <ul>
+                <li><a class="page-link" href="https://jser.info/about/">JSer.info 소개</a></li>
+                <li><a class="page-link" href="https://jser.info/support/">Support</a></li>
+            </ul>
+        </div>
+        <div class="side-menu">
+            <h1>최신 글</h1>
+            <ul>
+                
+                
+                <li><a class="page-link" href="/ko/2017/01/04/postcss-chrome-fusebox/">2017-01-04 JS: PostCSS 개요, Chrome 개발자 도구, FuseBox</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2016/11/29/node.js-v7.2.0-yarn/">2016-11-29 JS: Node.js v7.2.0, Yarn으로 오프라인 인스톨</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2016/11/01/node.js-v7-node.js-v0.10-eol-webassembly-browser-preview/">2016-11-01 JS: Node.js v7, Node.js v0.10 EOL, WebAssembly Browser Preview</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2016/10/24/npm-4.0.0-node.js-v6.9.0-lts-webpack2/">2016-10-24 JS: npm 4.0.0, Node.js v6.9.0 (LTS), webpack@2 마이그레이션</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2016/10/10/300posts/">JSer.info 300회째 && https 적용 && 사용자 투고 기능</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2016/10/10/javascriptunicodeweb-componentsnpm-scripts/">2016-10-10 JS: JavaScript와 Unicode, Web Components, npm-scripts</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2016/10/03/vuejs-20babel-6170javascript/">2016-10-03 JS: Vue.js 2.0, Babel 6.17.0, 복잡한 JavaScript</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2016/09/05/babili-atypescript20-rcsass-35-rc/">2016-09-05 JS: Babili α, TypeScript 2.0 RC, Sass 3.5 RC</a></li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    </aside>
+</div>
+<footer>
+    <div class="page-footer">
+    <div class="copyright-footer">
+        <div class="copyright">
+            <p>JSer.info is maintained by @<a href="https://twitter.com/azu_re"
+                                              title="azu (azu_re) on Twitter">azu_re</a>.
+            </p>
+        </div>
+        <div class="cc-license">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative commons LISENCE"
+                                                                                     style="border-width:0"
+                                                                                     src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
+        </div>
+    </div>
+</div>
+</footer>
+<style>
+    @media screen and (max-width: 1000px) and (max-height: 800px) {
+        .ping-show-button {
+            display: none;
+        }
+    }
+
+    .ping-show-button {
+        color: #fff;
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        padding: 1em 3em;
+        background-color: #36bc98;
+        border: 0;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+</style>
+<a class="ping-show-button" href="https://jser.info/ping/">記事を紹介する</a>
+</body>
+</html>
