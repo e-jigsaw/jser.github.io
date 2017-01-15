@@ -5,8 +5,8 @@
     <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
     <link>https://jser.info/</link>
     <atom:link href="https://jser.info/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 15 Jan 2017 20:53:59 +0900</pubDate>
-    <lastBuildDate>Sun, 15 Jan 2017 20:53:59 +0900</lastBuildDate>
+    <pubDate>Sun, 15 Jan 2017 23:58:27 +0900</pubDate>
+    <lastBuildDate>Sun, 15 Jan 2017 23:58:27 +0900</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -435,8 +435,8 @@
 
 &lt;ul&gt;
 &lt;li&gt;1st, 2nd, 3rd で全て Editor が違う&lt;/li&gt;
-&lt;li&gt;https://github.com/rwaldron (TC39)&lt;/li&gt;
-&lt;li&gt;https://github.com/caridy (TC39)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/rwaldron&quot;&gt;https://github.com/rwaldron&lt;/a&gt; (TC39)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/caridy&quot;&gt;https://github.com/caridy&lt;/a&gt; (TC39)&lt;/li&gt;
 &lt;li&gt;ブラウザベンダの人たちではない&lt;/li&gt;
 &lt;li&gt;実はブラウザベンダのサポートが弱い&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -472,7 +472,7 @@
 &lt;li&gt;ファイルサイズが増える&lt;/li&gt;
 &lt;li&gt;強硬に反対されている&lt;/li&gt;
 &lt;li&gt;ICUライブラリ&lt;/li&gt;
-&lt;li&gt;http://site.icu-project.org/&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://site.icu-project.org/&quot;&gt;http://site.icu-project.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;IBMが作成
 
 &lt;ul&gt;
@@ -495,7 +495,7 @@
 &lt;li&gt;ECMA-402 NEXT
 
 &lt;ul&gt;
-&lt;li&gt;https://github.com/tc39/ecma402 にまとまっている&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tc39/ecma402&quot;&gt;https://github.com/tc39/ecma402&lt;/a&gt; にまとまっている&lt;/li&gt;
 &lt;li&gt;次のバージョンに入れようというもの&lt;/li&gt;
 &lt;li&gt;Zibi Braniecki
 
@@ -505,7 +505,7 @@
 &lt;li&gt;Rafael Xavier&lt;/li&gt;
 &lt;li&gt;Stage 4&lt;/li&gt;
 &lt;li&gt;Intl.DateTimeFormat.prototype.formatToParts&lt;/li&gt;
-&lt;li&gt;https://github.com/tc39/ecma402/issues/30
+&lt;li&gt;&lt;a href=&quot;https://github.com/tc39/ecma402/issues/30&quot;&gt;https://github.com/tc39/ecma402/issues/30&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;JSON 配列で返る&lt;/li&gt;
@@ -526,13 +526,12 @@
 &lt;li&gt;&lt;code&gt;IntelPluralRules(&amp;quot;en-US&amp;quot;).select(1)&lt;/code&gt;&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;quot;one&amp;quot;&lt;/code&gt;&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;IntelPluralRules(&amp;quot;en-US&amp;quot;).select(2)&lt;/code&gt; &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;--&amp;quot;other&amp;quot;-&quot;&gt;- &lt;code&gt;&amp;quot;other&amp;quot;&lt;/code&gt; &lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;other&amp;quot;&lt;/code&gt; &lt;/li&gt;
 &lt;li&gt;デモ中&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;ICUで提供されている機能をJSに持ってこようという話がある&lt;/li&gt;
 &lt;li&gt;多数の Issue が上がっている&lt;/li&gt;
-&lt;li&gt;https://github.com/tc39/ecma402/issues&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tc39/ecma402/issues&quot;&gt;https://github.com/tc39/ecma402/issues&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -603,7 +602,7 @@
 &lt;ul&gt;
 &lt;li&gt;Express + Serverless&lt;/li&gt;
 &lt;li&gt;Serverless Framework&lt;/li&gt;
-&lt;li&gt;https://serverless.com/&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://serverless.com/&quot;&gt;https://serverless.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;いい感じにサーバレスなバックエンドを構成できるフレームワーク
 
 &lt;ul&gt;
@@ -663,7 +662,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;レイヤーの越境を楽しむのが良いのではないか？&lt;/li&gt;
 &lt;li&gt;フロントエンドカンファレンス（3/18開催）&lt;/li&gt;
-&lt;li&gt;http://kfug.jp/frontconf2017/&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kfug.jp/frontconf2017/&quot;&gt;http://kfug.jp/frontconf2017/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;関西&lt;/li&gt;
 &lt;li&gt;興味あれば是非！&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -692,8 +691,8 @@
 &lt;li&gt;GitHub repo
 
 &lt;ul&gt;
-&lt;li&gt;https://github.com/ovrmrw/angular-realtime-translation-presentation&lt;/li&gt;
-&lt;li&gt;https://github.com/ovrmrw/cognitive-server-starter&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ovrmrw/angular-realtime-translation-presentation&quot;&gt;https://github.com/ovrmrw/angular-realtime-translation-presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ovrmrw/cognitive-server-starter&quot;&gt;https://github.com/ovrmrw/cognitive-server-starter&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;今日はアプリの紹介をしていく
 
@@ -716,9 +715,8 @@
 &lt;li&gt;Watson
 
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;li&gt;Speech to Text API&lt;/li&gt;
-&lt;li&gt;http://www.ibm.com/smarterplanet/jp/ja/ibmwatson/developercloud/speech-to-text.html&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ibm.com/smarterplanet/jp/ja/ibmwatson/developercloud/speech-to-text.html&quot;&gt;http://www.ibm.com/smarterplanet/jp/ja/ibmwatson/developercloud/speech-to-text.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;音声データをテキストデータとしてリアルタイムで返ってくる&lt;/li&gt;
 &lt;li&gt;スタート・ストップボタンを押してない&lt;/li&gt;
 &lt;li&gt;リアルタイムレコーディング&lt;/li&gt;
@@ -747,7 +745,7 @@
 &lt;li&gt;Google Cloud Translator&lt;/li&gt;
 &lt;li&gt;100万文字毎に $20（無料枠はない）&lt;/li&gt;
 &lt;li&gt;Microsoft Cognitive Serivices&lt;/li&gt;
-&lt;li&gt;https://www.microsoft.com/cognitive-services/en-us/&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.microsoft.com/cognitive-services/en-us/&quot;&gt;https://www.microsoft.com/cognitive-services/en-us/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;200万文字/月は無料
 
 &lt;ul&gt;
@@ -799,8 +797,8 @@
 &lt;li&gt;A. GitHub にある（スライド中にURLがある・スライドは後ほど公開）
 
 &lt;ul&gt;
-&lt;li&gt;https://github.com/ovrmrw/angular-realtime-translation-presentation&lt;/li&gt;
-&lt;li&gt;https://github.com/ovrmrw/cognitive-server-starter&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ovrmrw/angular-realtime-translation-presentation&quot;&gt;https://github.com/ovrmrw/angular-realtime-translation-presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ovrmrw/cognitive-server-starter&quot;&gt;https://github.com/ovrmrw/cognitive-server-starter&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Q. Hapi を使った理由は？&lt;/li&gt;
 &lt;li&gt;A. Express がよくわからないから。Hapi に慣れているから。デモはサーバに上げずにローカルで動かしている。&lt;/li&gt;
@@ -819,7 +817,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;OpalのVirtualDOMなど作っている&lt;/li&gt;
-&lt;li&gt;https://github.com/youchan/hyalite&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/youchan/hyalite&quot;&gt;https://github.com/youchan/hyalite&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Ruby方面から来ました
 
@@ -905,9 +903,9 @@
 
 &lt;ul&gt;
 &lt;li&gt;Hyalite&lt;/li&gt;
-&lt;li&gt;https://github.com/youchan/hyalite&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/youchan/hyalite&quot;&gt;https://github.com/youchan/hyalite&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Menilite&lt;/li&gt;
-&lt;li&gt;https://github.com/youchan/menilite&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/youchan/menilite&quot;&gt;https://github.com/youchan/menilite&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Hyalite
 
@@ -933,7 +931,7 @@
 &lt;li&gt;Slackにあるので参加してくれると嬉しい
 
 &lt;ul&gt;
-&lt;li&gt;https://opalrb-jp-slack.herokuapp.com/&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://opalrb-jp-slack.herokuapp.com/&quot;&gt;https://opalrb-jp-slack.herokuapp.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1053,7 +1051,7 @@
 &lt;li&gt;&lt;code&gt;registerElement()&lt;/code&gt; &lt;/li&gt;
 &lt;li&gt;AMP Component = HTML Custom Elements&lt;/li&gt;
 &lt;li&gt;新しいHTMLタイプを定義してライフサイクルを制御&lt;/li&gt;
-&lt;li&gt;https://www.w3.org/TR/custom-elements/&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.w3.org/TR/custom-elements/&quot;&gt;https://www.w3.org/TR/custom-elements/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;W3C標準の機能&lt;/li&gt;
 &lt;li&gt;AMPライフサイクルはこれを拡張
 
@@ -1089,12 +1087,13 @@
 &lt;li&gt;&lt;code&gt;measure()&lt;/code&gt; &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;runScheduledTasks()&lt;/code&gt; &lt;/li&gt;
 &lt;li&gt;egjs&lt;/li&gt;
-&lt;li&gt;https://github.com/naver/egjs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/naver/egjs&quot;&gt;https://github.com/naver/egjs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Navar で公開しているUIコンポーネントライブラリ&lt;/li&gt;
+&lt;li&gt;パフォーマンス重視&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;--パフォーマンス重視&quot;&gt;- パフォーマンス重視&lt;/h2&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr&gt;
 
 &lt;h2 id=&quot;javascript-discussion&quot;&gt;JavaScript Discussion&lt;/h2&gt;
 
@@ -1130,11 +1129,7 @@
 &lt;li&gt;3 はスキップ、次は 4 になる&lt;/li&gt;
 &lt;li&gt;「Angularのバージョン4を使っている」という表現にしてほしい&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;テーマ: jQueryは辞めようみたいにいう声よく聞きますけど、ぶっちゃけまだまだ使ってますよね？
-
-&lt;ul&gt;
+&lt;li&gt;テーマ: jQueryは辞めようみたいにいう声よく聞きますけど、ぶっちゃけまだまだ使ってますよね？&lt;/li&gt;
 &lt;li&gt;まだ使っている人は？&lt;/li&gt;
 &lt;li&gt;会場の半分くらいはいる&lt;/li&gt;
 &lt;li&gt;クライアントに指定されている&lt;/li&gt;
@@ -1165,12 +1160,8 @@
 &lt;li&gt;ブラウザ側の実装は進んでいる&lt;/li&gt;
 &lt;li&gt;全ブラウザで進んでいる&lt;/li&gt;
 &lt;li&gt;CORS のスペックが厳しい&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;--node-はまだ&quot;&gt;- Node はまだ&lt;/h2&gt;&lt;/li&gt;
-&lt;li&gt;テーマ: SSRのアプローチって率直に言って「正解」だと思いますか？
-
-&lt;ul&gt;
+&lt;li&gt;Node はまだ&lt;/li&gt;
+&lt;li&gt;テーマ: SSRのアプローチって率直に言って「正解」だと思いますか？&lt;/li&gt;
 &lt;li&gt;SSRをやっている人は？&lt;/li&gt;
 &lt;li&gt;会場では数人？&lt;/li&gt;
 &lt;li&gt;正解かはわからないが速い&lt;/li&gt;
@@ -1466,11 +1457,7 @@
 &lt;li&gt;テーマ: 次のフレームワークプロレスはいつ起こると思いますか？
 
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;テーマ: react native や native script をガッツリ触ってる人はいますか？
-
-&lt;ul&gt;
+&lt;li&gt;テーマ: react native や native script をガッツリ触ってる人はいますか？&lt;/li&gt;
 &lt;li&gt;使っている人？&lt;/li&gt;
 &lt;li&gt;React Native をプロダクション投入&lt;/li&gt;
 &lt;li&gt;React Native ミートアップあるよ&lt;/li&gt;
